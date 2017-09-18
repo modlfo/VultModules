@@ -2,6 +2,9 @@
 
 A set of modules for VCVRack written in Vult.
 
+![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
+![Stabile](/images/Stabile-render.png?raw=true "Stabile")
+
 ## Use
 
 Download from the releases page the file corresponding to the VCVRack version you have. Place the `VultModules` directory in the plugins folder.
