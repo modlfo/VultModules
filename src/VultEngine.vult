@@ -1,0 +1,15 @@
+
+
+fun rescomb(in, cv_in, tone_in, res_in) {
+   val i = clip(in, -10.0, 10.0);
+   val cv = clip(cv_in, 0.0 , 1.0);
+   val tone = clip(tone_in, -1.05 , 1.05);
+   val res = clip(res_in, -1.1 , 1.1);
+   return inst:Rescomb.do(i, cv, tone, res);
+}
+
+
+fun stabile(in, cut_in, res) {
+   val cut = clip(cut_in, 0.0 , 1.0);
+   return Stabile.process(in, cut, res);
+}

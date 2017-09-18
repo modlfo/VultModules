@@ -1,0 +1,48 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+Collection of small useful functions
+*/
+
+fun edge(x:bool) : bool {
+   mem pre;
+   val ret = x && not(pre);
+   pre = x;
+   return ret;
+}
+
+fun change(x:real):bool {
+    mem pre_x;
+    val v:bool = pre_x <> x;
+    pre_x = x;
+    return v;
+}
+
+fun map(x:real,x0,x1,y0,y1) : real {
+  return (x-x0)*(y1-y0)/(x1-x0) + y0;
+}
+
+fun dcblock(x0){
+  mem x1,y1;
+  val y0 = x0-x1+y1*0.995;
+  x1,y1 = x0,y0;
+  return y0;
+}
+
+fun smooth(input){
+   mem x;
+   x = x+(input-x)*0.005;
+   return x;
+}
+
+fun cvToPitch(cv) {
+   return cv * 120.0 + 24.0;
+}
+
+fun cvToperiodUnit(cv) @[table(size=32,min=0.0,max=1.0)] {
+   val pitch = cvToPitch(cv);
+   val f = 8.175798915643707 * exp(0.057762265046662105 * pitch); //440. 2^((pitch - 69)/12.)
+   return 1.0 / f / 2.0;
+}

@@ -1,0 +1,87 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+State variable filter
+*/
+
+external getSampleRate() : real "getSampleRate";
+
+fun calc_g(cv, fs) {
+   val pitch = Util.cvToPitch(cv);
+   val f = 8.175798915643707*exp(0.057762265046662105*pitch);
+   val wd = 2.0 * pi() * f;
+	val T  = 1.0/fs;
+	val wa = (2.0/T)*tan(wd*T/2.0);
+	val g  = wa*T/2.0;
+   return g;
+}
+
+fun calc_g_44100(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 44100.0);
+}
+
+fun calc_g_48000(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 48000.0);
+}
+
+fun calc_g_88200(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 88200.0);
+}
+
+fun calc_g_96000(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 96000.0);
+}
+
+fun calc_g_176400(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 176400.0);
+}
+
+fun calc_g_192000(cv) @[table(size=128, min=0.0, max=0.9)]{
+   return calc_g(cv, 192000.0);
+}
+
+fun process(x, cv, q) {
+   mem z1, z2;
+   mem g,inv_den, R;
+   q = q + 0.5;
+   if(Util.change(cv) || Util.change(q)) {
+      val fs = getSampleRate ();
+      if (fs == 44100.0)
+         g = calc_g_44100(cv);
+      else if (fs == 48000.0)
+         g = calc_g_48000(cv);
+      else if (fs == 88200.0)
+         g = calc_g_88200(cv);
+      else if (fs == 96000.0)
+         g = calc_g_96000(cv);
+      else if (fs == 176400.0)
+         g = calc_g_176400(cv);
+      else if (fs == 192000.0)
+         g = calc_g_192000(cv);
+      else
+         g = calc_g(0.0, getSampleRate());
+
+      R = 1.0/(2.0*(q+eps()));
+      inv_den = 1.0/(1.0 + 2.0*R*g + g*g);
+   }
+
+   val high  = (x - (2.0*R + g)*z1 - z2) * inv_den;
+	val band  = g*high + z1;
+	val low   = g*band + z2;
+   val notch = low + high;
+
+	z1 = g*high + band;
+	z2 = g*band + low;
+
+   return low, band, high;
+}
+and noteOn(note:int,velocity:int,channel:int){ }
+and noteOff(note:int,channel:int){ }
+and controlChange(control:int,value:int,channel:int){ }
+and default() @[init] {
+   g = calc_g(0.0, getSampleRate());
+   R = 1.0/(2.0*0.5);
+   inv_den = 1.0/(1.0 + 2.0*0.0*g + g*g);
+ }
