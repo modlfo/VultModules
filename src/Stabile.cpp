@@ -47,36 +47,18 @@ void Stabile::step()
 
    float audio = getf(inputs[AUDIO_INPUT]) / 5.0;
 
-   /*float pitch = getf(inputs[PITCH_INPUT]) / 10.0;
-   float tune = params[TUNE_PARAM];
-
-
-   float comb_cv = getf(inputs[COMB_INPUT]) / 5.0;
-   float comb_p = params[COMB_PARAM];
-   float comb_amt = params[COMB_AMT_PARAM];
-
-   float feedback_cv = getf(inputs[FEEDBACK_INPUT]) / 5.0;
-   float feedback_p = params[FEEDBACK_PARAM];
-   float feedback_amt = params[FEEDBACK_AMT_PARAM];
-
-   float comb = comb_p + comb_cv * comb_amt;
-
-   float feedback = feedback_p + feedback_cv * feedback_amt;
-
-   float out = VultEngine_stabile(processor, audio, pitch + tune, comb, feedback);
-
-   if (outputs[AUDIO_OUTPUT])
-      *outputs[AUDIO_OUTPUT] = out * 5.0;*/
-
    float cutoff_knob = params[CUTOFF_PARAM];
    float cutoff_cv = getf(inputs[CUTOFF_INPUT]) / 5.0;
    float cutoff_amt = params[CUTOFF_AMT_PARAM];
    float cutoff = cutoff_knob + cutoff_amt * cutoff_cv;
 
    float resonance_knob = params[RESONANCE_PARAM];
+   float resonance_cv = getf(inputs[RESONANCE_INPUT]) / 5.0;
+   float resonance_amt = params[RESONANCE_AMT_PARAM];
+   float resonance = resonance_knob + resonance_amt * resonance_cv;
 
    _tuple___real_real_real__ out;
-   VultEngine_stabile(processor, audio / 5.0, cutoff, resonance_knob, out);
+   VultEngine_stabile(processor, audio, cutoff, resonance, out);
 
    if (outputs[LP_OUTPUT])
       *outputs[LP_OUTPUT] = out.field_0 * 5.0;

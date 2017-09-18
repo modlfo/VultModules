@@ -228,8 +228,6 @@ void Stabile_process(Stabile__ctx_type_8 &_ctx, float x, float cv, float q, _tup
    band = ((_ctx.g * high) + _ctx.z1);
    float low;
    low = ((_ctx.g * band) + _ctx.z2);
-   float notch;
-   notch = (low + high);
    _ctx.z1 = ((_ctx.g * high) + band);
    _ctx.z2 = ((_ctx.g * band) + low);
    _tuple___real_real_real__ _tuple_42;
@@ -457,9 +455,11 @@ void VultEngine_stabile_init(VultEngine__ctx_type_1 &_output_){
    return ;
 }
 
-void VultEngine_stabile(VultEngine__ctx_type_1 &_ctx, float in, float cut_in, float res, _tuple___real_real_real__ &_output_){
+void VultEngine_stabile(VultEngine__ctx_type_1 &_ctx, float in, float cut_in, float res_in, _tuple___real_real_real__ &_output_){
    float cut;
    cut = float_clip(cut_in,0.f,1.f);
+   float res;
+   res = float_clip(res_in,0.f,4.f);
    _tuple___real_real_real__ _call_73;
    Stabile_process(_ctx._inst72,in,cut,res,_call_73);
    _output_ = _call_73;

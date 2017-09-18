@@ -67,10 +67,9 @@ fun process(x, cv, q) {
       inv_den = 1.0/(1.0 + 2.0*R*g + g*g);
    }
 
-   val high  = (x - (2.0*R + g)*z1 - z2) * inv_den;
+  val high  = (x - (2.0*R + g)*z1 - z2) * inv_den;
 	val band  = g*high + z1;
 	val low   = g*band + z2;
-   val notch = low + high;
 
 	z1 = g*high + band;
 	z2 = g*band + low;
