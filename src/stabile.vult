@@ -61,7 +61,7 @@ fun process(x, cv, q) {
       else if (fs == 192000.0)
          g = calc_g_192000(cv);
       else
-         g = calc_g(0.0, getSampleRate());
+         g = calc_g(cv, getSampleRate());
 
       R = 1.0/(2.0*(q+eps()));
       inv_den = 1.0/(1.0 + 2.0*R*g + g*g);

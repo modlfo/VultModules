@@ -11,3 +11,8 @@ struct StabileWidget : ModuleWidget
 {
    StabileWidget();
 };
+
+struct LateralusWidget : ModuleWidget
+{
+   LateralusWidget();
+};

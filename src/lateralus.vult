@@ -1,0 +1,122 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+Diode ladder filter
+*/
+
+external getSampleRate() : real "getSampleRate";
+
+fun tune(cut, fs, oversampling) {
+   val f = Util.cvTokHz(cut);
+   f = clip(f, 0.0, 20.0);
+   val fh = (2.0 * pi()) * f / (oversampling * fs);
+   return fh;
+}
+
+fun tune_44100(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 44.1, 4.0);
+}
+
+fun tune_48000(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 48.0, 4.0);
+}
+
+fun tune_88200(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 88.2, 2.0);
+}
+
+fun tune_96000(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 96.0, 2.0);
+}
+
+fun tune_176400(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 176.4, 1.0);
+}
+
+fun tune_192000(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
+   return tune(cut, 192.0, 1.0);
+}
+
+fun heun(input, fh, res) {
+   mem p0, p1, p2, p3;
+
+   val wt0 = Util.cubic_clipper(input - 4.0 * res * p3);
+   val wt1 = Util.cubic_clipper(p0);
+   val dpt0 = (wt0 - wt1) * fh;
+   val wt3 = Util.cubic_clipper(p1);
+   val dpt1 = (wt1 - wt3) * fh;
+   val wt5 = Util.cubic_clipper(p2);
+   val dpt2 = (wt3 - wt5) * fh;
+   val wt7 = Util.cubic_clipper(p3);
+   val dpt3 = (wt5 - wt7) * fh;
+
+   val pt0 = p0 + dpt0;
+   val pt1 = p1 + dpt1;
+   val pt2 = p2 + dpt2;
+   val pt3 = p3 + dpt3;
+
+   val w0 = Util.cubic_clipper(input - 4.0 * res * pt3);
+   val w1 = Util.cubic_clipper(pt0);
+   val dp0 = (w0 - w1) * fh;
+   val w3 = Util.cubic_clipper(pt1);
+   val dp1 = (w1 - w3) * fh;
+   val w5 = Util.cubic_clipper(pt2);
+   val dp2 = (w3 - w5) * fh;
+   val w7 = Util.cubic_clipper(pt3);
+   val dp3 = (w5 - w7) * fh;
+
+   p0 = p0 + (dp0 + dpt0)/ 2.0;
+   p1 = p1 + (dp1 + dpt1)/ 2.0;
+   p2 = p2 + (dp2 + dpt2)/ 2.0;
+   p3 = p3 + (dp3 + dpt3)/ 2.0;
+
+   return p1, p3;
+}
+
+fun process_heun(input:real, cut:real, res:real) {
+   mem fh;
+   val fs = getSampleRate();
+   if(Util.change(cut)) {
+      if (fs == 44100.0)
+         fh = tune_44100(cut);
+      else if (fs == 48000.0)
+         fh = tune_48000(cut);
+      else if (fs == 88200.0)
+         fh = tune_88200(cut);
+      else if (fs == 96000.0)
+         fh = tune_96000(cut);
+      else if (fs == 176400.0)
+         fh = tune_176400(cut);
+      else if (fs == 192000.0)
+         fh = tune_192000(cut);
+      else
+         fh = tune(cut, getSampleRate(), 4.0);
+   }
+   val db12, db24 = 0.0, 0.0;
+
+   if(fs == 176400.0 || fs == 192000.0) {
+      db12, db24 = h:heun(input, fh, res);
+   }
+   else if(fs == 88200.0 || fs == 96000.0) {
+      db12, db24 = h:heun(input, fh, res);
+      db12, db24 = h:heun(input, fh, res);
+   }
+   else {
+      db12, db24 = h:heun(input, fh, res);
+      db12, db24 = h:heun(input, fh, res);
+      db12, db24 = h:heun(input, fh, res);
+      db12, db24 = h:heun(input, fh, res);
+   }
+   return db12 * (1.0 + res * 0.5), db24 * (1.0 + res);
+}
+
+fun process(input:real, cut:real, res:real) {
+    return process_heun(input + 0.00001, cut, res);
+}
+
+and noteOn(note:int,velocity:int,channel:int){ }
+and noteOff(note:int,channel:int){ }
+and controlChange(control:int,value:int,channel:int){ }
+and default(){ }

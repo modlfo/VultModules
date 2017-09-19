@@ -15,6 +15,7 @@ struct VultModulesPlugin : Plugin
       name = "VultModules";
       createModel<RescombWidget>(this, "Rescomb", "Rescomb");
       createModel<StabileWidget>(this, "Stabile", "Stabile");
+      createModel<LateralusWidget>(this, "Lateralus", "Lateralus");
    }
 };
 
