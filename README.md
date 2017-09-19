@@ -4,6 +4,7 @@ A set of modules for VCVRack written in Vult.
 
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
+![Stabile](/images/Lateralus-render.png?raw=true "Lateralus")
 
 ## Use
 
