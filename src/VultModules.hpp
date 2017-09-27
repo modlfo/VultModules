@@ -2,6 +2,8 @@
 
 using namespace rack;
 
+extern Plugin *plugin;
+
 struct RescombWidget : ModuleWidget
 {
    RescombWidget();

@@ -76,18 +76,13 @@ StabileWidget::StabileWidget()
    setModule(module);
    box.size = Vec(15 * 10, 380);
 
-   /*{
+   {
       SVGPanel *panel = new SVGPanel();
       panel->box.size = box.size;
-      panel->addBackground(SVG::load("plugins/VultModules/res/Stabile.svg"));
-      addChild(panel);
-   }*/
-   {
-      Panel *panel = new LightPanel();
-      panel->box.size = box.size;
-      panel->backgroundImage = Image::load("plugins/VultModules/res/Stabile.png");
+      panel->setBackground(SVG::load(assetPlugin(plugin, "res/Stabile.svg")));
       addChild(panel);
    }
+
    addChild(createScrew<ScrewSilver>(Vec(15, 0)));
    addChild(createScrew<ScrewSilver>(Vec(box.size.x - 30, 0)));
    addChild(createScrew<ScrewSilver>(Vec(15, 365)));

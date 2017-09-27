@@ -72,16 +72,10 @@ LateralusWidget::LateralusWidget()
    setModule(module);
    box.size = Vec(15 * 10, 380);
 
-   /*{
+   {
       SVGPanel *panel = new SVGPanel();
       panel->box.size = box.size;
-      panel->addBackground(SVG::load("plugins/VultModules/res/Lateralus.svg"));
-      addChild(panel);
-   }*/
-   {
-      Panel *panel = new LightPanel();
-      panel->box.size = box.size;
-      panel->backgroundImage = Image::load("plugins/VultModules/res/Lateralus.png");
+      panel->setBackground(SVG::load(assetPlugin(plugin, "res/Lateralus.svg")));
       addChild(panel);
    }
    addChild(createScrew<ScrewSilver>(Vec(15, 0)));

@@ -7,19 +7,15 @@ float getSampleRate()
    return gSampleRate;
 }
 
-struct VultModulesPlugin : Plugin
-{
-   VultModulesPlugin()
-   {
-      slug = "VultModules";
-      name = "VultModules";
-      createModel<RescombWidget>(this, "Rescomb", "Rescomb");
-      createModel<StabileWidget>(this, "Stabile", "Stabile");
-      createModel<LateralusWidget>(this, "Lateralus", "Lateralus");
-   }
-};
+Plugin *plugin;
 
-Plugin *init()
+void init(rack::Plugin *p)
 {
-   return new VultModulesPlugin();
+   plugin = p;
+   plugin->slug = "VultModules";
+   plugin->name = "VultModules";
+   plugin->homepageUrl = "https://github.com/modlfo/VultModules";
+   createModel<RescombWidget>(plugin, "Rescomb", "Rescomb");
+   createModel<StabileWidget>(plugin, "Stabile", "Stabile");
+   createModel<LateralusWidget>(plugin, "Lateralus", "Lateralus");
 }

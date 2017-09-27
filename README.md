@@ -1,10 +1,19 @@
 # Vult Modules for Rack
 
-A set of modules for VCVRack written in Vult.
+A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://modlfo.github.io/vult/).
 
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
-![Stabile](/images/Lateralus-render.png?raw=true "Lateralus")
+![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
+
+## Description
+
+- Rescomb: a module can be used either as a filter or as a resonator (when increasing the feedback). The frequency can be controlled with a pitch voltage 1 V/Oct.
+
+- Stabile: a state variable filter that provides three outputs: low-pass, band-pass and high-pass.
+
+- Lateralus: a diode/transistor ladder filter based on the physical structure of the Moog filter.
+
 
 ## Use
 
