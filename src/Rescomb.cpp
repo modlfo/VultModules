@@ -44,18 +44,18 @@ Rescomb::Rescomb()
 
 void Rescomb::step()
 {
-   float pitch = getf(inputs[PITCH_INPUT]) / 10.0;
-   float tune = params[TUNE_PARAM];
+   float pitch = inputs[PITCH_INPUT].value / 10.0;
+   float tune = params[TUNE_PARAM].value;
 
-   float audio = getf(inputs[AUDIO_INPUT]) / 5.0;
+   float audio = inputs[AUDIO_INPUT].value / 5.0;
 
-   float comb_cv = getf(inputs[COMB_INPUT]) / 5.0;
-   float comb_p = params[COMB_PARAM];
-   float comb_amt = params[COMB_AMT_PARAM];
+   float comb_cv = inputs[COMB_INPUT].value / 5.0;
+   float comb_p = params[COMB_PARAM].value;
+   float comb_amt = params[COMB_AMT_PARAM].value;
 
-   float feedback_cv = getf(inputs[FEEDBACK_INPUT]) / 5.0;
-   float feedback_p = params[FEEDBACK_PARAM];
-   float feedback_amt = params[FEEDBACK_AMT_PARAM];
+   float feedback_cv = inputs[FEEDBACK_INPUT].value / 5.0;
+   float feedback_p = params[FEEDBACK_PARAM].value;
+   float feedback_amt = params[FEEDBACK_AMT_PARAM].value;
 
    float comb = comb_p + comb_cv * comb_amt;
 
@@ -63,8 +63,7 @@ void Rescomb::step()
 
    float out = VultEngine_rescomb(processor, audio, pitch + tune, comb, feedback);
 
-   if (outputs[AUDIO_OUTPUT])
-      *outputs[AUDIO_OUTPUT] = out * 5.0;
+   outputs[AUDIO_OUTPUT].value = out * 5.0;
 }
 
 RescombWidget::RescombWidget()

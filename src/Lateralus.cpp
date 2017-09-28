@@ -44,26 +44,24 @@ Lateralus::Lateralus()
 void Lateralus::step()
 {
 
-   float audio = getf(inputs[AUDIO_INPUT]) / 7.0;
+   float audio = inputs[AUDIO_INPUT].value / 7.0;
 
-   float cutoff_knob = params[CUTOFF_PARAM];
-   float cutoff_cv = getf(inputs[CUTOFF_INPUT]) / 5.0;
-   float cutoff_amt = params[CUTOFF_AMT_PARAM];
+   float cutoff_knob = params[CUTOFF_PARAM].value;
+   float cutoff_cv = inputs[CUTOFF_INPUT].value / 5.0;
+   float cutoff_amt = params[CUTOFF_AMT_PARAM].value;
    float cutoff = cutoff_knob + cutoff_amt * cutoff_cv;
 
-   float resonance_knob = params[RESONANCE_PARAM];
-   float resonance_cv = getf(inputs[RESONANCE_INPUT]) / 5.0;
-   float resonance_amt = params[RESONANCE_AMT_PARAM];
+   float resonance_knob = params[RESONANCE_PARAM].value;
+   float resonance_cv = inputs[RESONANCE_INPUT].value / 5.0;
+   float resonance_amt = params[RESONANCE_AMT_PARAM].value;
    float resonance = resonance_knob + resonance_amt * resonance_cv;
 
    _tuple___real_real__ out;
    VultEngine_lateralus(processor, audio, cutoff, resonance, out);
 
-   if (outputs[DB12_OUTPUT])
-      *outputs[DB12_OUTPUT] = out.field_0 * 7.0;
+   outputs[DB12_OUTPUT].value = out.field_0 * 7.0;
 
-   if (outputs[DB24_OUTPUT])
-      *outputs[DB24_OUTPUT] = out.field_1 * 7.0;
+   outputs[DB24_OUTPUT].value = out.field_1 * 7.0;
 }
 
 LateralusWidget::LateralusWidget()

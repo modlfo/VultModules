@@ -45,29 +45,26 @@ Stabile::Stabile()
 void Stabile::step()
 {
 
-   float audio = getf(inputs[AUDIO_INPUT]) / 5.0;
+   float audio = inputs[AUDIO_INPUT].value / 5.0;
 
-   float cutoff_knob = params[CUTOFF_PARAM];
-   float cutoff_cv = getf(inputs[CUTOFF_INPUT]) / 5.0;
-   float cutoff_amt = params[CUTOFF_AMT_PARAM];
+   float cutoff_knob = params[CUTOFF_PARAM].value;
+   float cutoff_cv = inputs[CUTOFF_INPUT].value / 5.0;
+   float cutoff_amt = params[CUTOFF_AMT_PARAM].value;
    float cutoff = cutoff_knob + cutoff_amt * cutoff_cv;
 
-   float resonance_knob = params[RESONANCE_PARAM];
-   float resonance_cv = getf(inputs[RESONANCE_INPUT]) / 5.0;
-   float resonance_amt = params[RESONANCE_AMT_PARAM];
+   float resonance_knob = params[RESONANCE_PARAM].value;
+   float resonance_cv = inputs[RESONANCE_INPUT].value / 5.0;
+   float resonance_amt = params[RESONANCE_AMT_PARAM].value;
    float resonance = resonance_knob + resonance_amt * resonance_cv;
 
    _tuple___real_real_real__ out;
    VultEngine_stabile(processor, audio, cutoff, resonance, out);
 
-   if (outputs[LP_OUTPUT])
-      *outputs[LP_OUTPUT] = out.field_0 * 5.0;
+   outputs[LP_OUTPUT].value = out.field_0 * 5.0;
 
-   if (outputs[BP_OUTPUT])
-      *outputs[BP_OUTPUT] = out.field_1 * 5.0;
+   outputs[BP_OUTPUT].value = out.field_1 * 5.0;
 
-   if (outputs[HP_OUTPUT])
-      *outputs[HP_OUTPUT] = out.field_2 * 5.0;
+   outputs[HP_OUTPUT].value = out.field_2 * 5.0;
 }
 
 StabileWidget::StabileWidget()
