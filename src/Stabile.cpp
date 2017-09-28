@@ -34,7 +34,7 @@ struct Stabile : Module
    void step();
 };
 
-Stabile::Stabile()
+Stabile::Stabile() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)
 {
    params.resize(NUM_PARAMS);
    inputs.resize(NUM_INPUTS);

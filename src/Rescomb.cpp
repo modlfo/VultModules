@@ -34,7 +34,7 @@ struct Rescomb : Module
    void step();
 };
 
-Rescomb::Rescomb()
+Rescomb::Rescomb() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)
 {
    params.resize(NUM_PARAMS);
    inputs.resize(NUM_INPUTS);
