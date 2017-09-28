@@ -10,7 +10,7 @@ fun rescomb(in, cv_in, tone_in, res_in) {
 
 
 fun stabile(in, cut_in, res_in) {
-   val cut = clip(cut_in, 0.0 , 1.0);
+   val cut = clip(cut_in, 0.0 , 0.92);
    val res = clip(res_in, 0.0 , 4.0);
    return Stabile.process(in, cut, res);
 }
