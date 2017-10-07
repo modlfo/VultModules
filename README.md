@@ -14,10 +14,22 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 
 - Lateralus: a diode/transistor ladder filter based on the physical structure of the Moog filter.
 
+New modules comming!
 
 ## Use
 
 Download from the [releases page](https://github.com/modlfo/VultModules/releases) the file corresponding to the VCVRack version you have. Place the `VultModules` directory in the plugins folder.
+
+If you want to support the development of these plugins you can make a donation.
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="PNHBZ9J4CGYQU">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
 
 ## Build
 
