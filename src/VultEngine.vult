@@ -8,7 +8,6 @@ fun rescomb(in, cv_in, tone_in, res_in) {
    return inst:Rescomb.do(i, cv, tone, res);
 }
 
-
 fun stabile(in, cut_in, res_in) {
    val cut = clip(cut_in, 0.0 , 0.92);
    val res = clip(res_in, 0.0 , 4.0);
@@ -19,4 +18,12 @@ fun lateralus(in, cut_in, res_in) {
    val cut = clip(cut_in, 0.0 , 1.0);
    val res = clip(res_in, 0.0 , 1.0);
    return Lateralus.process(in, cut, res);
+}
+
+fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
+   val fold = clip(fold_in, 0.0 , 1.0);
+   val crush = clip(crush_in, 0.0 , 1.0);
+   val distort = clip(distort_in, 0.0 , 1.0);
+   val saturate = clip(saturate_in, 0.0 , 1.0);
+   return Debriatus.process(in, fold, crush, distort, saturate);
 }

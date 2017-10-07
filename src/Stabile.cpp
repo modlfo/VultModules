@@ -80,23 +80,23 @@ StabileWidget::StabileWidget()
       addChild(panel);
    }
 
-   addChild(createScrew<ScrewSilver>(Vec(15, 0)));
-   addChild(createScrew<ScrewSilver>(Vec(box.size.x - 30, 0)));
-   addChild(createScrew<ScrewSilver>(Vec(15, 365)));
-   addChild(createScrew<ScrewSilver>(Vec(box.size.x - 30, 365)));
+   addChild(createScrew<VultScrew>(Vec(15, 0)));
+   addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 0)));
+   addChild(createScrew<VultScrew>(Vec(15, 365)));
+   addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 365)));
 
-   addParam(createParam<Davies1900hLargeBlackKnob>(Vec(28, 94), module, Stabile::CUTOFF_PARAM, 0.0, 1.0, 0.5));
-   addParam(createParam<Davies1900hBlackKnob>(Vec(30, 186), module, Stabile::RESONANCE_PARAM, 0.0, 4.0, 0.0));
+   addParam(createParam<VultKnobBig>(Vec(25, 75), module, Stabile::CUTOFF_PARAM, 0.0, 1.0, 0.5));
+   addParam(createParam<VultKnob>(Vec(34, 173), module, Stabile::RESONANCE_PARAM, 0.0, 4.0, 0.0));
 
-   addParam(createParam<Trimpot>(Vec(101, 100), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
-   addParam(createParam<Trimpot>(Vec(101, 188), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 82), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 173), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
 
-   addInput(createInput<PJ301MPort>(Vec(97, 130), module, Stabile::CUTOFF_INPUT));
-   addInput(createInput<PJ301MPort>(Vec(97, 210), module, Stabile::RESONANCE_INPUT));
+   addInput(createInput<VultJack>(Vec(105, 107), module, Stabile::CUTOFF_INPUT));
+   addInput(createInput<VultJack>(Vec(105, 198), module, Stabile::RESONANCE_INPUT));
 
-   addInput(createInput<PJ301MPort>(Vec(60, 320), module, Stabile::AUDIO_INPUT));
+   addInput(createInput<VultJack>(Vec(60, 318), module, Stabile::AUDIO_INPUT));
 
-   addOutput(createOutput<PJ301MPort>(Vec(22, 264), module, Stabile::LP_OUTPUT));
-   addOutput(createOutput<PJ301MPort>(Vec(64, 264), module, Stabile::BP_OUTPUT));
-   addOutput(createOutput<PJ301MPort>(Vec(106, 264), module, Stabile::HP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(22, 253), module, Stabile::LP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(64, 253), module, Stabile::BP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(102, 253), module, Stabile::HP_OUTPUT));
 }

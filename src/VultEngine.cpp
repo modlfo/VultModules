@@ -739,6 +739,71 @@ void Lateralus_default_init(Lateralus__ctx_type_10 &_output_){
 void Lateralus_default(Lateralus__ctx_type_10 &_ctx){
 }
 
+float Debriatus_saturate(float x){
+   int index;
+   index = int_clip(float_to_int((5.f * (x + 24.f))),0,240);
+   return (float_wrap_array(Debriatus_saturate_c0)[index] + (x * (float_wrap_array(Debriatus_saturate_c1)[index] + (float_wrap_array(Debriatus_saturate_c2)[index] * x))));
+}
+
+float Debriatus_factor(float cv){
+   int index;
+   index = int_clip(float_to_int((127.f * cv)),0,127);
+   return (float_wrap_array(Debriatus_factor_c0)[index] + (cv * (float_wrap_array(Debriatus_factor_c1)[index] + (float_wrap_array(Debriatus_factor_c2)[index] * cv))));
+}
+
+float Debriatus_crush(float i, float cv){
+   float out;
+   out = i;
+   uint8_t _cond_209;
+   _cond_209 = (cv == 0.f);
+   if(_cond_209){
+      out = i;
+   }
+   else
+   {
+      float b;
+      b = Debriatus_factor(cv);
+      int x;
+      x = float_to_int((i * b));
+      out = (int_to_float(x) / b);
+   }
+   return out;
+}
+
+float Debriatus_fold(float signal, float level){
+   float sign;
+   uint8_t _cond_210;
+   _cond_210 = (signal > 0.f);
+   if(_cond_210){ sign = 1.f; }
+   else
+   { sign = -1.f; }
+   float amp;
+   amp = (fabsf(signal) * ((8.f * level) + 1.f));
+   float base;
+   base = floorf(amp);
+   float delta;
+   delta = (amp + (- base));
+   float out;
+   uint8_t _cond_211;
+   _cond_211 = ((float_to_int(base) % 2) != 0);
+   if(_cond_211){ out = (1.f + (- delta)); }
+   else
+   { out = delta; }
+   return (sign * out);
+}
+
+float Debriatus_process(float input, float fold, float crush, float distort, float saturate){
+   float x;
+   x = Debriatus_fold(input,fold);
+   float y;
+   y = Debriatus_crush(x,crush);
+   float z;
+   z = ((y * (1.f + (-2.f * distort))) + (y * y * y * distort * 8.f) + (- distort));
+   float out;
+   out = Debriatus_saturate((z * (1.f + (saturate * 8.f))));
+   return out;
+}
+
 void VultEngine__ctx_type_0_init(VultEngine__ctx_type_0 &_output_){
    VultEngine__ctx_type_0 _ctx;
    Rescomb__ctx_type_3_init(_ctx.inst);
@@ -765,7 +830,7 @@ float VultEngine_rescomb(VultEngine__ctx_type_0 &_ctx, float in, float cv_in, fl
 
 void VultEngine__ctx_type_1_init(VultEngine__ctx_type_1 &_output_){
    VultEngine__ctx_type_1 _ctx;
-   Stabile__ctx_type_9_init(_ctx._inst204);
+   Stabile__ctx_type_9_init(_ctx._inst214);
    _output_ = _ctx;
    return ;
 }
@@ -780,15 +845,15 @@ void VultEngine_stabile(VultEngine__ctx_type_1 &_ctx, float in, float cut_in, fl
    cut = float_clip(cut_in,0.f,0.92f);
    float res;
    res = float_clip(res_in,0.f,4.f);
-   _tuple___real_real_real__ _call_207;
-   Stabile_process(_ctx._inst204,in,cut,res,_call_207);
-   _output_ = _call_207;
+   _tuple___real_real_real__ _call_218;
+   Stabile_process(_ctx._inst214,in,cut,res,_call_218);
+   _output_ = _call_218;
    return ;
 }
 
 void VultEngine__ctx_type_2_init(VultEngine__ctx_type_2 &_output_){
    VultEngine__ctx_type_2 _ctx;
-   Lateralus__ctx_type_10_init(_ctx._inst206);
+   Lateralus__ctx_type_10_init(_ctx._inst216);
    _output_ = _ctx;
    return ;
 }
@@ -803,10 +868,22 @@ void VultEngine_lateralus(VultEngine__ctx_type_2 &_ctx, float in, float cut_in, 
    cut = float_clip(cut_in,0.f,1.f);
    float res;
    res = float_clip(res_in,0.f,1.f);
-   _tuple___real_real__ _call_209;
-   Lateralus_process(_ctx._inst206,in,cut,res,_call_209);
-   _output_ = _call_209;
+   _tuple___real_real__ _call_220;
+   Lateralus_process(_ctx._inst216,in,cut,res,_call_220);
+   _output_ = _call_220;
    return ;
+}
+
+float VultEngine_debriatus(float in, float fold_in, float crush_in, float distort_in, float saturate_in){
+   float fold;
+   fold = float_clip(fold_in,0.f,1.f);
+   float crush;
+   crush = float_clip(crush_in,0.f,1.f);
+   float distort;
+   distort = float_clip(distort_in,0.f,1.f);
+   float saturate;
+   saturate = float_clip(saturate_in,0.f,1.f);
+   return Debriatus_process(in,fold,crush,distort,saturate);
 }
 
 

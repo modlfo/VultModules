@@ -18,4 +18,5 @@ void init(rack::Plugin *p)
    createModel<RescombWidget>(plugin, "Rescomb", "Rescomb");
    createModel<StabileWidget>(plugin, "Stabile", "Stabile");
    createModel<LateralusWidget>(plugin, "Lateralus", "Lateralus");
+   createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
 }

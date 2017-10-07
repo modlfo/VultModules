@@ -76,22 +76,22 @@ LateralusWidget::LateralusWidget()
       panel->setBackground(SVG::load(assetPlugin(plugin, "res/Lateralus.svg")));
       addChild(panel);
    }
-   addChild(createScrew<ScrewSilver>(Vec(15, 0)));
-   addChild(createScrew<ScrewSilver>(Vec(box.size.x - 30, 0)));
-   addChild(createScrew<ScrewSilver>(Vec(15, 365)));
-   addChild(createScrew<ScrewSilver>(Vec(box.size.x - 30, 365)));
+   addChild(createScrew<VultScrew>(Vec(15, 0)));
+   addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 0)));
+   addChild(createScrew<VultScrew>(Vec(15, 365)));
+   addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 365)));
 
-   addParam(createParam<Davies1900hLargeBlackKnob>(Vec(29, 91), module, Lateralus::CUTOFF_PARAM, 0.0, 1.0, 0.5));
-   addParam(createParam<Davies1900hBlackKnob>(Vec(31, 183), module, Lateralus::RESONANCE_PARAM, 0.0, 1.0, 0.0));
+   addParam(createParam<VultKnobBig>(Vec(25, 75), module, Lateralus::CUTOFF_PARAM, 0.0, 1.0, 0.5));
+   addParam(createParam<VultKnob>(Vec(34, 173), module, Lateralus::RESONANCE_PARAM, 0.0, 1.0, 0.0));
 
-   addParam(createParam<Trimpot>(Vec(102, 98), module, Lateralus::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
-   addParam(createParam<Trimpot>(Vec(102, 186), module, Lateralus::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 82), module, Lateralus::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 173), module, Lateralus::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
 
-   addInput(createInput<PJ301MPort>(Vec(97, 130), module, Lateralus::CUTOFF_INPUT));
-   addInput(createInput<PJ301MPort>(Vec(97, 210), module, Lateralus::RESONANCE_INPUT));
+   addInput(createInput<VultJack>(Vec(105, 107), module, Lateralus::CUTOFF_INPUT));
+   addInput(createInput<VultJack>(Vec(105, 198), module, Lateralus::RESONANCE_INPUT));
 
-   addInput(createInput<PJ301MPort>(Vec(60, 320), module, Lateralus::AUDIO_INPUT));
+   addInput(createInput<VultJack>(Vec(63, 318), module, Lateralus::AUDIO_INPUT));
 
-   addOutput(createOutput<PJ301MPort>(Vec(34, 264), module, Lateralus::DB12_OUTPUT));
-   addOutput(createOutput<PJ301MPort>(Vec(94, 264), module, Lateralus::DB24_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(27, 253), module, Lateralus::DB12_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(105, 253), module, Lateralus::DB24_OUTPUT));
 }
