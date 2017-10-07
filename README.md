@@ -6,6 +6,9 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
 ![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
 
+If you want to support the development of these plugins you can make a donation in this link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNHBZ9J4CGYQU)
+
+
 ## Description
 
 - Rescomb: a module can be used either as a filter or as a resonator (when increasing the feedback). The frequency can be controlled with a pitch voltage 1 V/Oct.
@@ -19,16 +22,6 @@ New modules comming!
 ## Use
 
 Download from the [releases page](https://github.com/modlfo/VultModules/releases) the file corresponding to the VCVRack version you have. Place the `VultModules` directory in the plugins folder.
-
-If you want to support the development of these plugins you can make a donation.
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="PNHBZ9J4CGYQU">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
 
 
 ## Build
