@@ -19,4 +19,5 @@ void init(rack::Plugin *p)
    createModel<StabileWidget>(plugin, "Stabile", "Stabile");
    createModel<LateralusWidget>(plugin, "Lateralus", "Lateralus");
    createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
+   createModel<SplieWidget>(plugin, "Splie", "Splie");
 }

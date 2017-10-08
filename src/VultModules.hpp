@@ -76,3 +76,8 @@ struct DebriatusWidget : ModuleWidget
 {
    DebriatusWidget();
 };
+
+struct SplieWidget : ModuleWidget
+{
+   SplieWidget();
+};
