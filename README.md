@@ -6,7 +6,6 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
 ![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
 
-If you want to support the development of these plugins you can make a donation in this link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNHBZ9J4CGYQU)
 
 
 ## Description
@@ -18,6 +17,10 @@ If you want to support the development of these plugins you can make a donation 
 - Lateralus: a diode/transistor ladder filter based on the physical structure of the Moog filter.
 
 New modules comming!
+
+## Donate
+
+I dedicate many hours to the development of these plugins and related projects, like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution in the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNHBZ9J4CGYQU)
 
 ## Use
 
