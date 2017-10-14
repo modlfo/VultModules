@@ -12,11 +12,15 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 
 ## Description
 
-- Rescomb: a module can be used either as a filter or as a resonator (when increasing the feedback). The frequency can be controlled with a pitch voltage 1 V/Oct.
+- **Rescomb**: a module can be used either as a filter or as a resonator (when increasing the feedback). The frequency can be controlled with a pitch voltage 1 V/Oct.
 
-- Stabile: a state variable filter that provides three outputs: low-pass, band-pass and high-pass.
+- **Stabile**: state variable filter that provides three outputs: low-pass, band-pass and high-pass.
 
-- Lateralus: a diode/transistor ladder filter based on the physical structure of the Moog filter.
+- **Lateralus**: diode/transistor ladder filter based on the physical structure of the Moog filter.
+
+- **Debriatus**: distortion unit containing wave folding, saturation and asymmetric distortion.
+
+- **Splie**: audio splitter, just an utility but that I require when testing the modules.
 
 New modules comming!
 
