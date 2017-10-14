@@ -6,6 +6,8 @@ Copyright (c) 2017 Leonardo Laguna Ruiz
 Collection of small useful functions
 */
 
+external getSampleRate() : real "getSampleRate";
+
 fun edge(x:bool) : bool {
    mem pre;
    val ret = x && not(pre);
@@ -27,6 +29,18 @@ fun cubic_clipper(x) {
       return 2.0/3.0;
    else
       return x - (x * x * x) / 3.0;
+}
+
+fun stanh(x) @[table(min = -24.0, max = 24.0, size = 241)] {
+  return 16.0 * tanh(x / 16.0);
+}
+
+fun sine(x) @[table(min = 0.0, max = 1.0, size = 101)] {
+  return sin(x * 2.0 * pi());
+}
+
+fun saturate(x) @[table(min = -24.0, max = 24.0, size = 241)] {
+  return tanh(x);
 }
 
 fun map(x:real,x0,x1,y0,y1) : real {
@@ -63,3 +77,26 @@ fun cvTokHz(cv) @[table(size=32,min=0.0,max=1.0)] {
    return f/1000.0;
 }
 
+fun pitchToRateUnit(pitch) @[table(size=32, min=0.0, max=127.0)] {
+   return 8.175798915643707 * exp(0.057762265046662105 * pitch);
+}
+
+fun cvToRateUnit(cv) @[table(size=128, min=0.0, max=0.9)] {
+   return pitchToRateUnit(cvToPitch(cv));
+}
+
+fun pitchToRate(pitch) {
+   mem rate;
+   val fs = getSampleRate();
+   if(change(pitch) || change(fs))
+      rate = pitchToRateUnit(pitch) / getSampleRate();
+   return rate;
+}
+
+fun cvToRate(cv) {
+   mem rate;
+   val fs = getSampleRate();
+   if(change(cv) || change(fs))
+       rate = cvToRateUnit(cv) / fs;
+   return rate;
+}

@@ -1,0 +1,45 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+Triangle oscillator with reset
+*/
+
+fun process(cv:real, reset:real, disable:real) : real {
+   mem reset_state;
+   mem phase, reset_phase;
+   // Determine the next value
+   phase = phase + Util.cvToRate(cv);
+   if (phase > 1.0)
+      phase = phase - 1.0;
+
+   val sine_out = Util.sine(phase);
+
+   val bdisable = disable > 0.5;
+
+   // if reset or disable were triggered, then enter reset state
+   if(Util.edge(reset > 0.0) || Util.edge(bdisable)) {
+      // this is gonna be the initial value from which the oscillator starts resetting
+      reset_phase = 1.0;
+      // enter the reset state
+      reset_state = true;
+   }
+
+   val reset_out = 1.0;
+   if(reset_state) {
+      // exponentially reduce the value until, if it's reseted and not dissable
+      // when the value is very small goes out of reset state
+      if(abs(reset_phase) > 0.001 || bdisable) {
+         // dissable produces a softer transition
+         val reset_speed = if bdisable then 0.01 else 0.5;
+         reset_phase = reset_phase - reset_phase * reset_speed;
+      }
+      else {
+         reset_phase = if reset_phase > 0.001 then reset_phase else 0.0;
+         reset_state = false;
+      }
+      reset_out = reset_phase;
+   }
+   return sine_out * reset_out;
+}

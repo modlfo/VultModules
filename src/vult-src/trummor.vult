@@ -1,0 +1,55 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+Drum synth in the 909 kick style
+*/
+
+fun do(gate) {
+   mem level1, level2;
+   mem env1_a, env1_h, env1_r;
+   mem env2_a, env2_h, env2_r;
+   mem pitch, bend;
+   // Envelope of the drum. One parameter affects the hold and relase
+   val osc_env, env_reset = Ahr.do(gate, env1_a, env1_h, env1_r);
+   // Change of pitch
+   val cv = Swept.process(1.0 - env_reset, pitch + bend * 0.4, pitch, 0.1);
+   // Main triangle oscillator
+   // Note: the oscillator is dissabled while the nevelop resets
+   val osc = Tricore.process(cv, 0.0, env_reset);
+   // Saturates the triangle to get a sine with some harmonics
+   val osc_sat = osc;
+
+   val noise_env, _ = Ahr.do(gate, env2_a, env2_h, env2_r);
+   val noise_osc = Noise.process(1.0) / 3.0;
+
+   val output = level1 * osc_env * osc_sat + level2 * noise_env * noise_osc;
+   return output, cv, osc_env, noise_env;
+}
+and setParameter(param:int, value:real) {
+   if(param == 0)
+      level1 = value;
+   else if(param == 1)
+      level2 = value;
+
+   else if(param == 2)
+      env1_a = value;
+   else if(param == 3)
+      env1_h = value;
+   else if(param == 4)
+      env1_r = value;
+
+   else if(param == 5)
+      env2_a = value;
+   else if(param == 6)
+      env2_h = value;
+   else if(param == 7)
+      env2_r = value;
+
+   else if(param == 8)
+      pitch = value;
+   else if(param == 9)
+      bend = value;
+
+}

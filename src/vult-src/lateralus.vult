@@ -6,8 +6,6 @@ Copyright (c) 2017 Leonardo Laguna Ruiz
 Diode ladder filter
 */
 
-external getSampleRate() : real "getSampleRate";
-
 fun tune(cut, fs, oversampling) {
    val f = Util.cvTokHz(cut);
    f = clip(f, 0.0, 20.0);
@@ -37,6 +35,23 @@ fun tune_176400(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
 
 fun tune_192000(cut) @[table(min = 0.0, max = 1.0, size = 128)]{
    return tune(cut, 192.0, 1.0);
+}
+
+fun getTune(cut, fs) {
+   if (fs == 44100.0)
+      return tune_44100(cut);
+   else if (fs == 48000.0)
+      return tune_48000(cut);
+   else if (fs == 88200.0)
+      return tune_88200(cut);
+   else if (fs == 96000.0)
+      return tune_96000(cut);
+   else if (fs == 176400.0)
+      return tune_176400(cut);
+   else if (fs == 192000.0)
+      return tune_192000(cut);
+   else
+      return tune(cut, fs, 4.0);
 }
 
 fun heun(input, fh, res) {
@@ -77,22 +92,9 @@ fun heun(input, fh, res) {
 
 fun process_heun(input:real, cut:real, res:real) {
    mem fh;
-   val fs = getSampleRate();
-   if(Util.change(cut)) {
-      if (fs == 44100.0)
-         fh = tune_44100(cut);
-      else if (fs == 48000.0)
-         fh = tune_48000(cut);
-      else if (fs == 88200.0)
-         fh = tune_88200(cut);
-      else if (fs == 96000.0)
-         fh = tune_96000(cut);
-      else if (fs == 176400.0)
-         fh = tune_176400(cut);
-      else if (fs == 192000.0)
-         fh = tune_192000(cut);
-      else
-         fh = tune(cut, getSampleRate(), 4.0);
+   val fs = Util.getSampleRate();
+   if(Util.change(cut) || Util.change(fs)) {
+      fh = getTune(cut, fs);
    }
    val db12, db24 = 0.0, 0.0;
 
@@ -115,8 +117,3 @@ fun process_heun(input:real, cut:real, res:real) {
 fun process(input:real, cut:real, res:real) {
     return process_heun(input + 0.00001, cut, res);
 }
-
-and noteOn(note:int,velocity:int,channel:int){ }
-and noteOff(note:int,channel:int){ }
-and controlChange(control:int,value:int,channel:int){ }
-and default(){ }

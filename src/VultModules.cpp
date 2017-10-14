@@ -1,6 +1,5 @@
 #include <math.h>
 #include "VultModules.hpp"
-#include "dsp.hpp"
 
 float getSampleRate()
 {
@@ -20,4 +19,5 @@ void init(rack::Plugin *p)
    createModel<LateralusWidget>(plugin, "Lateralus", "Lateralus");
    createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
    createModel<SplieWidget>(plugin, "Splie", "Splie");
+   //createModel<TrummorWidget>(plugin, "Trummor", "Trummor");
 }

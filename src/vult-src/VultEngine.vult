@@ -27,3 +27,10 @@ fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
    val saturate = clip(saturate_in, 0.0 , 1.0);
    return Debriatus.process(in, fold, crush, distort, saturate);
 }
+
+fun trummor(gate) {
+   return processor:Trummor.do(gate);
+}
+and trummor_param(param, value) {
+   _ = processor:Trummor.setParameter(param, value);
+}

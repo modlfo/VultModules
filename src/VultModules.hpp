@@ -26,6 +26,17 @@ struct VultKnob : SVGKnob
    }
 };
 
+struct VultKnobAlt : SVGKnob
+{
+   VultKnobAlt()
+   {
+      box.size = Vec(30, 30);
+      minAngle = -0.75 * M_PI;
+      maxAngle = 0.75 * M_PI;
+      setSVG(SVG::load(assetPlugin(plugin, "res/KnobAlt.svg")));
+   }
+};
+
 struct VultKnobSmall : SVGKnob
 {
    VultKnobSmall()
@@ -80,4 +91,9 @@ struct DebriatusWidget : ModuleWidget
 struct SplieWidget : ModuleWidget
 {
    SplieWidget();
+};
+
+struct TrummorWidget : ModuleWidget
+{
+   TrummorWidget();
 };
