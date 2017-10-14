@@ -5,6 +5,8 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
 ![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
+![Lateralus](/images/Debriatus-render.png?raw=true "Lateralus")
+![Lateralus](/images/Splie-render.png?raw=true "Lateralus")
 
 
 
