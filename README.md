@@ -26,7 +26,7 @@ New modules comming!
 
 ## Donate
 
-I dedicate many hours to the development of these plugins and related projects, like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution in the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PNHBZ9J4CGYQU)
+I dedicate many hours to the development of these plugins and related projects, like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution in the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RRMY2QPYEZT2S)
 
 ## Use
 
