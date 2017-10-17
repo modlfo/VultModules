@@ -32,7 +32,7 @@ New modules coming!
 
 ## Donate
 
-I dedicate many hours to the development of these plugins and related projects, like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution in the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RRMY2QPYEZT2S)
+I've dedicated many hours developing these plugins and related projects like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution to the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RRMY2QPYEZT2S)
 
 ## Use
 
@@ -41,9 +41,9 @@ Download from the [releases page](https://github.com/modlfo/VultModules/releases
 
 ## Build
 
-First you need to build [Rack](https://github.com/VCVRack/Rack) following the instruction in the [README](https://github.com/VCVRack/Rack/blob/master/README.md).
+First you need to build [Rack](https://github.com/VCVRack/Rack) following the instructions in its [README](https://github.com/VCVRack/Rack/blob/master/README.md).
 
-The clone this repository inside the `plugins` folder of Rack and use make.
+Then clone this repository inside the `plugins` folder of Rack and use `make`.
 
 ```
 $ cd plugins
