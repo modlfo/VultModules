@@ -34,3 +34,8 @@ fun trummor(gate, osc_in, noise_in) {
 and trummor_param(param, value) {
    _ = processor:Trummor.setParameter(param, value);
 }
+
+fun tohe(x, tone_in) {
+   val tone = clip(tone_in, -1.0, 1.0);
+   return Tohe.do(x, tone);
+}

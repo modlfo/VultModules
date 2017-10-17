@@ -25,7 +25,7 @@ fun do(gate, osc_in, noise_in) {
    val osc_sat = Util.saturate((drive + 1.0) * osc);
 
    val noise_env, _ = Ahr.do(gate, env2_a, env2_h, env2_r);
-   val noise_osc = Toh.do(int_noise * Noise.process() + ext_noise * noise_in, tone);
+   val noise_osc = Tohe.do(int_noise * Noise.process() + ext_noise * noise_in, tone);
 
    val output = level1 * osc_env * osc_sat + level2 * noise_env * noise_osc;
    return output, cv, osc_env, noise_env;

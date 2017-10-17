@@ -20,4 +20,5 @@ void init(rack::Plugin *p)
    createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
    createModel<SplieWidget>(plugin, "Splie", "Splie");
    createModel<TrummorWidget>(plugin, "Trummor", "Trummor");
+   createModel<ToheWidget>(plugin, "Tohe", "Tohe");
 }

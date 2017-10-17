@@ -109,3 +109,8 @@ struct TrummorWidget : ModuleWidget
 {
    TrummorWidget();
 };
+
+struct ToheWidget : ModuleWidget
+{
+   ToheWidget();
+};

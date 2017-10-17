@@ -422,41 +422,41 @@ float Tricore_process(Tricore__ctx_type_0 &_ctx, float cv, float reset, float di
    return (sine_out * reset_out);
 }
 
-float Toh_tone_k1(float g){
+float Tohe_tone_k1(float g){
    int index;
    index = int_clip(float_to_int((15.5f * (g + 1.f))),0,31);
-   return (float_wrap_array(Toh_tone_k1_c0)[index] + (g * (float_wrap_array(Toh_tone_k1_c1)[index] + (float_wrap_array(Toh_tone_k1_c2)[index] * g))));
+   return (float_wrap_array(Tohe_tone_k1_c0)[index] + (g * (float_wrap_array(Tohe_tone_k1_c1)[index] + (float_wrap_array(Tohe_tone_k1_c2)[index] * g))));
 }
 
-float Toh_tone_k0(float g){
+float Tohe_tone_k0(float g){
    int index;
    index = int_clip(float_to_int((15.5f * (g + 1.f))),0,31);
-   return (float_wrap_array(Toh_tone_k0_c0)[index] + (g * (float_wrap_array(Toh_tone_k0_c1)[index] + (float_wrap_array(Toh_tone_k0_c2)[index] * g))));
+   return (float_wrap_array(Tohe_tone_k0_c0)[index] + (g * (float_wrap_array(Tohe_tone_k0_c1)[index] + (float_wrap_array(Tohe_tone_k0_c2)[index] * g))));
 }
 
-void Toh__ctx_type_2_init(Toh__ctx_type_2 &_output_){
-   Toh__ctx_type_2 _ctx;
+void Tohe__ctx_type_2_init(Tohe__ctx_type_2 &_output_){
+   Tohe__ctx_type_2 _ctx;
    _ctx.w1 = 0.f;
    _ctx.k1 = 0.f;
    _ctx.k0 = 0.f;
    _ctx.comp = 0.f;
    Util__ctx_type_2_init(_ctx._inst85);
-   Toh_start(_ctx);
+   Tohe_start(_ctx);
    _output_ = _ctx;
    return ;
 }
 
-void Toh_do_init(Toh__ctx_type_2 &_output_){
-   Toh__ctx_type_2_init(_output_);
+void Tohe_do_init(Tohe__ctx_type_2 &_output_){
+   Tohe__ctx_type_2_init(_output_);
    return ;
 }
 
-float Toh_do(Toh__ctx_type_2 &_ctx, float x, float gain){
+float Tohe_do(Tohe__ctx_type_2 &_ctx, float x, float gain){
    uint8_t _cond_88;
    _cond_88 = Util_change(_ctx._inst85,gain);
    if(_cond_88){
-      _ctx.k1 = Toh_tone_k1(gain);
-      _ctx.k0 = Toh_tone_k0(gain);
+      _ctx.k1 = Tohe_tone_k1(gain);
+      _ctx.k0 = Tohe_tone_k0(gain);
       _ctx.comp = Util_map(fabsf(gain),0.f,1.f,1.f,1.8f);
    }
    float w0;
@@ -473,12 +473,12 @@ float Toh_do(Toh__ctx_type_2 &_ctx, float x, float gain){
    return (((_ctx.k1 * (x + (sign * y0)) * 0.5f) + x) * _ctx.comp);
 }
 
-void Toh_start_init(Toh__ctx_type_2 &_output_){
-   Toh__ctx_type_2_init(_output_);
+void Tohe_start_init(Tohe__ctx_type_2 &_output_){
+   Tohe__ctx_type_2_init(_output_);
    return ;
 }
 
-void Toh_start(Toh__ctx_type_2 &_ctx){
+void Tohe_start(Tohe__ctx_type_2 &_ctx){
    _ctx.k1 = 0.f;
    _ctx.k0 = -0.852723285867f;
    _ctx.comp = 1.f;
@@ -781,7 +781,7 @@ void Trummor__ctx_type_0_init(Trummor__ctx_type_0 &_output_){
    _ctx.env1_a = 0.f;
    _ctx.drive = 0.f;
    _ctx.bend = 0.f;
-   Toh__ctx_type_2_init(_ctx._inst153);
+   Tohe__ctx_type_2_init(_ctx._inst153);
    Noise__ctx_type_0_init(_ctx._inst152);
    Ahr__ctx_type_0_init(_ctx._inst151);
    Tricore__ctx_type_0_init(_ctx._inst150);
@@ -813,7 +813,7 @@ void Trummor_do(Trummor__ctx_type_0 &_ctx, float gate, float osc_in, float noise
    Ahr_do(_ctx._inst151,gate,_ctx.env2_a,_ctx.env2_h,_ctx.env2_r,_call_183);
    noise_env = _call_183.field_0;
    float noise_osc;
-   noise_osc = Toh_do(_ctx._inst153,((_ctx.int_noise * Noise_process(_ctx._inst152)) + (_ctx.ext_noise * noise_in)),_ctx.tone);
+   noise_osc = Tohe_do(_ctx._inst153,((_ctx.int_noise * Noise_process(_ctx._inst152)) + (_ctx.ext_noise * noise_in)),_ctx.tone);
    float output;
    output = ((_ctx.level1 * osc_env * osc_sat) + (_ctx.level2 * noise_env * noise_osc));
    _tuple___real_real_real_real__ _tuple_184;
@@ -1402,9 +1402,9 @@ void VultEngine_stabile(VultEngine__ctx_type_1 &_ctx, float in, float cut_in, fl
    cut = float_clip(cut_in,0.f,0.92f);
    float res;
    res = float_clip(res_in,0.f,4.f);
-   _tuple___real_real_real__ _call_361;
-   Stabile_process(_ctx._inst355,in,cut,res,_call_361);
-   _output_ = _call_361;
+   _tuple___real_real_real__ _call_363;
+   Stabile_process(_ctx._inst355,in,cut,res,_call_363);
+   _output_ = _call_363;
    return ;
 }
 
@@ -1425,9 +1425,9 @@ void VultEngine_lateralus(VultEngine__ctx_type_2 &_ctx, float in, float cut_in, 
    cut = float_clip(cut_in,0.f,1.f);
    float res;
    res = float_clip(res_in,0.f,1.f);
-   _tuple___real_real__ _call_363;
-   Lateralus_process(_ctx._inst357,in,cut,res,_call_363);
-   _output_ = _call_363;
+   _tuple___real_real__ _call_365;
+   Lateralus_process(_ctx._inst357,in,cut,res,_call_365);
+   _output_ = _call_365;
    return ;
 }
 
@@ -1456,9 +1456,9 @@ void VultEngine_trummor_init(VultEngine__ctx_type_4 &_output_){
 }
 
 void VultEngine_trummor(VultEngine__ctx_type_4 &_ctx, float gate, float osc_in, float noise_in, _tuple___real_real_real_real__ &_output_){
-   _tuple___real_real_real_real__ _call_365;
-   Trummor_do(_ctx.processor,gate,osc_in,noise_in,_call_365);
-   _output_ = _call_365;
+   _tuple___real_real_real_real__ _call_367;
+   Trummor_do(_ctx.processor,gate,osc_in,noise_in,_call_367);
+   _output_ = _call_367;
    return ;
 }
 
@@ -1469,6 +1469,24 @@ void VultEngine_trummor_param_init(VultEngine__ctx_type_4 &_output_){
 
 void VultEngine_trummor_param(VultEngine__ctx_type_4 &_ctx, int param, float value){
    Trummor_setParameter(_ctx.processor,param,value);
+}
+
+void VultEngine__ctx_type_5_init(VultEngine__ctx_type_5 &_output_){
+   VultEngine__ctx_type_5 _ctx;
+   Tohe__ctx_type_2_init(_ctx._inst362);
+   _output_ = _ctx;
+   return ;
+}
+
+void VultEngine_tohe_init(VultEngine__ctx_type_5 &_output_){
+   VultEngine__ctx_type_5_init(_output_);
+   return ;
+}
+
+float VultEngine_tohe(VultEngine__ctx_type_5 &_ctx, float x, float tone_in){
+   float tone;
+   tone = float_clip(tone_in,-1.f,1.f);
+   return Tohe_do(_ctx._inst362,x,tone);
 }
 
 
