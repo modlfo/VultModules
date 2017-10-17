@@ -68,6 +68,18 @@ struct VultJack : SVGPort
    }
 };
 
+struct VultSelector3 : SVGSwitch, ToggleSwitch
+{
+   VultSelector3()
+   {
+      addFrame(SVG::load(assetPlugin(plugin, "res/Select3_A.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/Select3_B.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/Select3_C.svg")));
+      sw->wrap();
+      box.size = sw->box.size;
+   }
+};
+
 struct RescombWidget : ModuleWidget
 {
    RescombWidget();

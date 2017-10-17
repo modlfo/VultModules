@@ -218,9 +218,41 @@ void Tricore_process_init(Tricore__ctx_type_0 &_output_);
 
 float Tricore_process(Tricore__ctx_type_0 &_ctx, float cv, float reset, float disable);
 
+static const float Toh_tone_k1_c0[33] = {-0.264992498134f,-0.234467800158f,-0.204634930201f,-0.175775271557f,-0.148186855456f,-0.122179143863f,-0.0980656700886f,-0.0761540163313f,-0.056732502782f,-0.0400528396166f,-0.026307847783f,-0.01560318336f,-0.00792179906726f,-0.00307964028465f,-0.000670795925112f,-0.f,-0.f,-0.000670795925112f,-0.00307964028465f,-0.00792179906726f,-0.01560318336f,-0.026307847783f,-0.0400528396166f,-0.056732502782f,-0.0761540163313f,-0.0980656700886f,-0.122179143863f,-0.148186855456f,-0.175775271557f,-0.204634930201f,-0.234467800158f,-0.264992498134f,-0.295947796331f};
+static const float Toh_tone_k1_c1[33] = {0.861423192973f,0.926573808042f,0.994798298684f,1.06587681164f,1.13949007626f,1.21519841636f,1.29241712029f,1.37038759311f,1.44814362823f,1.52447203686f,1.59786676068f,1.66647546359f,1.72803745011f,1.77981158927f,1.8184927291f,1.8401148662f,-1.8401148662f,-1.8184927291f,-1.77981158927f,-1.72803745011f,-1.66647546359f,-1.59786676068f,-1.52447203686f,-1.44814362823f,-1.37038759311f,-1.29241712029f,-1.21519841636f,-1.13949007626f,-1.06587681164f,-0.994798298684f,-0.926573808042f,-0.861423192973f,-0.799484736616f};
+static const float Toh_tone_k1_c2[33] = {0.284905656103f,0.319669322478f,0.358674787758f,0.402439628477f,0.451544574908f,0.50664121697f,0.568460650392f,0.637823177863f,0.715649193904f,0.80297139789f,0.900948497283f,1.01088058291f,1.13422638029f,1.27262260596f,1.42790568564f,1.60213612231f,1.60213612231f,1.42790568564f,1.27262260596f,1.13422638029f,1.01088058291f,0.900948497283f,0.80297139789f,0.715649193904f,0.637823177863f,0.568460650392f,0.50664121697f,0.451544574908f,0.402439628477f,0.358674787758f,0.319669322478f,0.284905656103f,0.253922497942f};
+float Toh_tone_k1(float g);
+
+static const float Toh_tone_k0_c0[33] = {-1.94206665922f,-1.54285147978f,-1.29347147132f,-1.13481972588f,-1.03262443774f,-0.966342903093f,-0.923306034348f,-0.895505176445f,-0.877767671643f,-0.866690058302f,-0.859998098363f,-0.85615402505f,-0.854110438918f,-0.853152998884f,-0.852797843791f,-0.852723285867f,-0.852723285867f,-0.852591088909f,-0.85210391203f,-0.851161778365f,-0.849879849299f,-0.848688768543f,-0.848427246521f,-0.850404654914f,-0.856407380056f,-0.868623714769f,-0.889470428696f,-0.92132063574f,-0.966155353831f,-1.0251853405f,-1.09850823034f,-1.18487145652f,-1.28159952929f};
+static const float Toh_tone_k0_c1[33] = {-2.84375825875f,-1.9933256159f,-1.42411645444f,-1.0341324635f,-0.761991037776f,-0.569444067159f,-0.431925959311f,-0.333228591776f,-0.262393640641f,-0.211842970672f,-0.176223870798f,-0.151679338278f,-0.135377677043f,-0.125203875836f,-0.119553879265f,-0.117195378781f,0.385242776087f,0.380997510855f,0.373175443249f,0.36308463872f,0.352772321043f,0.345076467735f,0.343593300524f,0.352531091683f,0.376430442098f,0.419750229622f,0.486345705627f,0.578896306467f,0.698367947294f,0.843608542411f,1.01116837601f,1.19540591487f,1.38888937396f};
+static const float Toh_tone_k0_c2[33] = {-1.88206408317f,-1.42915409052f,-1.10435016192f,-0.864694402862f,-0.683519680806f,-0.543683367106f,-0.433828778535f,-0.3462312316f,-0.275511348539f,-0.217841837897f,-0.17044484225f,-0.131265648905f,-0.0987563820836f,-0.0717299588342f,-0.049259912232f,-0.0306107328251f,0.416993484794f,0.451075307248f,0.482472527844f,0.509491683288f,0.530230088947f,0.542660152592f,0.544755553001f,0.534657266035f,0.510869465773f,0.472466160626f,0.41928098667f,0.352047492913f,0.272458137306f,0.183118686441f,0.087390406203f,-0.0108674756809f,-0.107622862013f};
+float Toh_tone_k0(float g);
+
+typedef struct Toh__ctx_type_2 {
+   float w1;
+   float k1;
+   float k0;
+   float comp;
+   Util__ctx_type_2 _inst85;
+} Toh__ctx_type_2;
+
+typedef Toh__ctx_type_2 Toh_do_type;
+
+void Toh__ctx_type_2_init(Toh__ctx_type_2 &_output_);
+
+void Toh_do_init(Toh__ctx_type_2 &_output_);
+
+float Toh_do(Toh__ctx_type_2 &_ctx, float x, float gain);
+
+typedef Toh__ctx_type_2 Toh_start_type;
+
+void Toh_start_init(Toh__ctx_type_2 &_output_);
+
+void Toh_start(Toh__ctx_type_2 &_ctx);
+
 typedef struct Swept__ctx_type_0 {
    float out;
-   Util__ctx_type_1 _inst83;
+   Util__ctx_type_1 _inst91;
 } Swept__ctx_type_0;
 
 typedef Swept__ctx_type_0 Swept_process_type;
@@ -256,54 +288,41 @@ void Swept_default_init(Swept__ctx_type_0 &_output_);
 void Swept_default(Swept__ctx_type_0 &_ctx);
 
 typedef struct Noise__ctx_type_0 {
-   float w1;
+   int x2;
+   int x1;
 } Noise__ctx_type_0;
 
-typedef Noise__ctx_type_0 Noise_pinker_type;
+typedef Noise__ctx_type_0 Noise_process_type;
 
 void Noise__ctx_type_0_init(Noise__ctx_type_0 &_output_);
 
-void Noise_pinker_init(Noise__ctx_type_0 &_output_);
+void Noise_process_init(Noise__ctx_type_0 &_output_);
 
-float Noise_pinker(Noise__ctx_type_0 &_ctx, float x);
+float Noise_process(Noise__ctx_type_0 &_ctx);
 
-typedef struct Noise__ctx_type_1 {
-   int x2;
-   int x1;
-   Noise__ctx_type_0 _inst92;
-} Noise__ctx_type_1;
+typedef Noise__ctx_type_0 Noise_noteOn_type;
 
-typedef Noise__ctx_type_1 Noise_process_type;
+void Noise_noteOn_init(Noise__ctx_type_0 &_output_);
 
-void Noise__ctx_type_1_init(Noise__ctx_type_1 &_output_);
+void Noise_noteOn(Noise__ctx_type_0 &_ctx, int note, int velocity, int channel);
 
-void Noise_process_init(Noise__ctx_type_1 &_output_);
+typedef Noise__ctx_type_0 Noise_noteOff_type;
 
-float Noise_process(Noise__ctx_type_1 &_ctx, float color);
+void Noise_noteOff_init(Noise__ctx_type_0 &_output_);
 
-typedef Noise__ctx_type_1 Noise_noteOn_type;
+void Noise_noteOff(Noise__ctx_type_0 &_ctx, int note, int channel);
 
-void Noise_noteOn_init(Noise__ctx_type_1 &_output_);
+typedef Noise__ctx_type_0 Noise_controlChange_type;
 
-void Noise_noteOn(Noise__ctx_type_1 &_ctx, int note, int velocity, int channel);
+void Noise_controlChange_init(Noise__ctx_type_0 &_output_);
 
-typedef Noise__ctx_type_1 Noise_noteOff_type;
+void Noise_controlChange(Noise__ctx_type_0 &_ctx, int control, int value, int channel);
 
-void Noise_noteOff_init(Noise__ctx_type_1 &_output_);
+typedef Noise__ctx_type_0 Noise_default_type;
 
-void Noise_noteOff(Noise__ctx_type_1 &_ctx, int note, int channel);
+void Noise_default_init(Noise__ctx_type_0 &_output_);
 
-typedef Noise__ctx_type_1 Noise_controlChange_type;
-
-void Noise_controlChange_init(Noise__ctx_type_1 &_output_);
-
-void Noise_controlChange(Noise__ctx_type_1 &_ctx, int control, int value, int channel);
-
-typedef Noise__ctx_type_1 Noise_default_type;
-
-void Noise_default_init(Noise__ctx_type_1 &_output_);
-
-void Noise_default(Noise__ctx_type_1 &_ctx);
+void Noise_default(Noise__ctx_type_0 &_ctx);
 
 typedef struct Ahr__ctx_type_0 {
    float target;
@@ -311,8 +330,8 @@ typedef struct Ahr__ctx_type_0 {
    float rate;
    float out;
    float hold_phase;
-   Util__ctx_type_1 _inst99;
-   Util__ctx_type_1 _inst101;
+   Util__ctx_type_1 _inst106;
+   Util__ctx_type_1 _inst104;
 } Ahr__ctx_type_0;
 
 typedef Ahr__ctx_type_0 Ahr_do_type;
@@ -327,7 +346,7 @@ typedef struct Ahr__ctx_type_1 {
    float knob3;
    float knob2;
    float knob1;
-   Ahr__ctx_type_0 _inst110;
+   Ahr__ctx_type_0 _inst115;
 } Ahr__ctx_type_1;
 
 typedef Ahr__ctx_type_1 Ahr_process_type;
@@ -363,21 +382,28 @@ void Ahr_default_init(Ahr__ctx_type_1 &_output_);
 void Ahr_default(Ahr__ctx_type_1 &_ctx);
 
 typedef struct Trummor__ctx_type_0 {
+   float tone;
    float pitch;
    float level2;
    float level1;
+   float int_osc;
+   float int_noise;
+   float ext_osc;
+   float ext_noise;
    float env2_r;
    float env2_h;
    float env2_a;
    float env1_r;
    float env1_h;
    float env1_a;
+   float drive;
    float bend;
-   Noise__ctx_type_1 _inst147;
-   Ahr__ctx_type_0 _inst146;
-   Tricore__ctx_type_0 _inst145;
-   Swept__ctx_type_0 _inst144;
-   Ahr__ctx_type_0 _inst143;
+   Toh__ctx_type_2 _inst153;
+   Noise__ctx_type_0 _inst152;
+   Ahr__ctx_type_0 _inst151;
+   Tricore__ctx_type_0 _inst150;
+   Swept__ctx_type_0 _inst149;
+   Ahr__ctx_type_0 _inst148;
 } Trummor__ctx_type_0;
 
 typedef Trummor__ctx_type_0 Trummor_do_type;
@@ -386,7 +412,7 @@ void Trummor__ctx_type_0_init(Trummor__ctx_type_0 &_output_);
 
 void Trummor_do_init(Trummor__ctx_type_0 &_output_);
 
-void Trummor_do(Trummor__ctx_type_0 &_ctx, float gate, _tuple___real_real_real_real__ &_output_);
+void Trummor_do(Trummor__ctx_type_0 &_ctx, float gate, float osc_in, float noise_in, _tuple___real_real_real_real__ &_output_);
 
 typedef Trummor__ctx_type_0 Trummor_setParameter_type;
 
@@ -415,9 +441,9 @@ float Rescomb_toneCurve(float tone);
 typedef struct Rescomb__ctx_type_2 {
    float stone;
    float output;
-   Rescomb__ctx_type_0 _inst196;
-   Util__ctx_type_8 _inst195;
-   Util__ctx_type_2 _inst193;
+   Rescomb__ctx_type_0 _inst218;
+   Util__ctx_type_8 _inst217;
+   Util__ctx_type_2 _inst215;
 } Rescomb__ctx_type_2;
 
 typedef Rescomb__ctx_type_2 Rescomb_do_type;
@@ -480,8 +506,8 @@ void Lateralus_heun(Lateralus__ctx_type_8 &_ctx, float input, float fh, float re
 typedef struct Lateralus__ctx_type_9 {
    Lateralus__ctx_type_8 h;
    float fh;
-   Util__ctx_type_2 _inst223;
-   Util__ctx_type_2 _inst222;
+   Util__ctx_type_2 _inst245;
+   Util__ctx_type_2 _inst244;
 } Lateralus__ctx_type_9;
 
 typedef Lateralus__ctx_type_9 Lateralus_process_heun_type;
@@ -493,7 +519,7 @@ void Lateralus_process_heun_init(Lateralus__ctx_type_9 &_output_);
 void Lateralus_process_heun(Lateralus__ctx_type_9 &_ctx, float input, float cut, float res, _tuple___real_real__ &_output_);
 
 typedef struct Lateralus__ctx_type_10 {
-   Lateralus__ctx_type_9 _inst230;
+   Lateralus__ctx_type_9 _inst252;
 } Lateralus__ctx_type_10;
 
 typedef Lateralus__ctx_type_10 Lateralus_process_type;
@@ -533,7 +559,7 @@ void VultEngine_rescomb_init(VultEngine__ctx_type_0 &_output_);
 float VultEngine_rescomb(VultEngine__ctx_type_0 &_ctx, float in, float cv_in, float tone_in, float res_in);
 
 typedef struct VultEngine__ctx_type_1 {
-   Stabile__ctx_type_8 _inst333;
+   Stabile__ctx_type_8 _inst355;
 } VultEngine__ctx_type_1;
 
 typedef VultEngine__ctx_type_1 VultEngine_stabile_type;
@@ -545,7 +571,7 @@ void VultEngine_stabile_init(VultEngine__ctx_type_1 &_output_);
 void VultEngine_stabile(VultEngine__ctx_type_1 &_ctx, float in, float cut_in, float res_in, _tuple___real_real_real__ &_output_);
 
 typedef struct VultEngine__ctx_type_2 {
-   Lateralus__ctx_type_10 _inst335;
+   Lateralus__ctx_type_10 _inst357;
 } VultEngine__ctx_type_2;
 
 typedef VultEngine__ctx_type_2 VultEngine_lateralus_type;
@@ -568,7 +594,7 @@ void VultEngine__ctx_type_4_init(VultEngine__ctx_type_4 &_output_);
 
 void VultEngine_trummor_init(VultEngine__ctx_type_4 &_output_);
 
-void VultEngine_trummor(VultEngine__ctx_type_4 &_ctx, float gate, _tuple___real_real_real_real__ &_output_);
+void VultEngine_trummor(VultEngine__ctx_type_4 &_ctx, float gate, float osc_in, float noise_in, _tuple___real_real_real_real__ &_output_);
 
 typedef VultEngine__ctx_type_4 VultEngine_trummor_param_type;
 

@@ -28,8 +28,8 @@ fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
    return Debriatus.process(in, fold, crush, distort, saturate);
 }
 
-fun trummor(gate) {
-   return processor:Trummor.do(gate);
+fun trummor(gate, osc_in, noise_in) {
+   return processor:Trummor.do(gate, osc_in, noise_in);
 }
 and trummor_param(param, value) {
    _ = processor:Trummor.setParameter(param, value);

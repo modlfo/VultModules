@@ -45,26 +45,26 @@ fun do(gate:real, a:real, h:real, r:real) {
    // states
 
    if(state == reset) {
-      rate = 1.0 / (100.0 * 0.01 + 0.01);
+      rate = 1.0 / (100.0 * 0.01 + 0.05);
       target = 0.0;
    }
    if(state == attack) {
-      rate = 1.0 / (100.0 * a + 0.01);
+      rate = 1.0 / (100.0 * a + 0.05);
       target = 1.2 * 1024.0;
    }
    if(state == hold) {
-      val hrate = 1.0 / (100.0 * h + 0.01);
+      val hrate = 1.0 / (100.0 * h + 0.05);
       hold_phase = hold_phase + hrate;
    }
    if(state == release) {
-      rate = 1.0 / (100.0 * r + 0.01);
+      rate = 1.0 / (200.0 * r + 0.05);
       target = 0.0;
    }
 
    out = out + (target - out) * rate * 0.005;
 
 
-   return clip(out/1024.0,0.0,1.0), resetting;
+   return clip(out / 1024.0, 0.0, 1.0), resetting;
 }
 
 fun process(gate:real) {

@@ -1,0 +1,38 @@
+/*
+The MIT License (MIT)
+
+Copyright (c) 2017 Leonardo Laguna Ruiz
+-----
+Simple tone control
+*/
+
+fun tone_k1(g) @[table(size=32, min=-1.0, max=1.0)] {
+    val k = exp(0.115129 * -abs(g * 16.0));
+    return k - 1.0;
+}
+
+fun tone_k0(g) @[table(size=32, min=-1.0, max=1.0)] {
+  val k = exp(0.115129 * -abs(g * 16.0));
+  val wc = Util.map(g,-1.0, 1.0, 0.001, 0.1);
+  return (tan(pi() * wc / 2.0) - k) / (tan(pi()* wc / 2.0) + k);
+}
+
+fun do(x, gain) {
+   mem k0, k1;
+   mem w1, comp;
+   if(Util.change(gain)) {
+       k1 = tone_k1(gain);
+       k0 = tone_k0(gain);
+       comp = Util.map(abs(gain),0.0, 1.0, 1.0, 1.8);
+   }
+   val w0 = x - k0 * w1;
+   val y0 = k0 * w0 + w1;
+   w1 = w0;
+   val sign = if gain < 0.0 then -1.0 else 1.0;
+   return (k1 * (x + sign * y0) / 2.0 + x) * comp;
+}
+and start() @[init] {
+   k1 = tone_k1(0.0);
+   k0 = tone_k0(0.0);
+   comp = 1.0;
+}
