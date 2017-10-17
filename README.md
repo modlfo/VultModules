@@ -5,8 +5,10 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
 ![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
-![Lateralus](/images/Debriatus-render.png?raw=true "Lateralus")
-![Lateralus](/images/Splie-render.png?raw=true "Lateralus")
+![Debriatus](/images/Debriatus-render.png?raw=true "Debriatus")
+![Splie](/images/Splie-render.png?raw=true "Splie")
+![Tohe](/images/Tohe-render.png?raw=true "Tohe")
+![Trummor](/images/Trummor-render.png?raw=true "Trummor")
 
 
 
@@ -22,7 +24,11 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 
 - **Splie**: audio splitter, just an utility but that I require when testing the modules.
 
-New modules comming!
+- **Tohe**: simple tone control to change the character of the sound.
+
+- **Trummor**: semi-modular drum synthesizer that can be combined with different sound and noise sources to create percussive sounds.
+
+New modules coming!
 
 ## Donate
 
