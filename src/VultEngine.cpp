@@ -498,8 +498,6 @@ void Swept_process_init(Swept__ctx_type_0 &_output_){
 }
 
 float Swept_process(Swept__ctx_type_0 &_ctx, float gate, float start, float end, float rate){
-   float a_rate;
-   a_rate = (1.f / ((100.f * rate) + 0.01f));
    uint8_t bgate;
    bgate = (gate > 0.5f);
    _ctx.out = (_ctx.out + (((end * 1024.f) + (- _ctx.out)) * rate * 0.004f));
