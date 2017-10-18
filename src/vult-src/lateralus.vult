@@ -114,6 +114,21 @@ fun process_heun(input:real, cut:real, res:real) {
    return db12 * (1.0 + res * 0.5), db24 * (1.0 + res);
 }
 
-fun process(input:real, cut:real, res:real) {
-    return process_heun(input + 0.00001, cut, res);
+fun simple_noise() {
+   mem x1 = (x1 * 17389 + 7919) % 32768;
+   val y1 = real(x1) / 32768.0;
+   return y1;
+}
+
+fun process(input:real, cut_in:real, res_in:real) {
+   val res = clip(res_in, 0.0 , 1.0);
+   val comp = Util.map(res, 0.95, 1.0, 0.0, 0.25);
+   val limit = if comp > 0.0 then 1.0 - comp else 1.0;
+   val cut = clip(cut_in, 0.0, limit);
+   val noise = 0.0;
+   if(res >= 0.999) {
+      noise = simple_noise() * 0.005;
+      res = 1.07;
+   }
+   return process_heun(input + noise, cut, res);
 }

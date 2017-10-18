@@ -14,9 +14,7 @@ fun stabile(in, cut_in, res_in) {
    return Stabile.process(in, cut, res);
 }
 
-fun lateralus(in, cut_in, res_in) {
-   val cut = clip(cut_in, 0.0 , 1.0);
-   val res = clip(res_in, 0.0 , 1.0);
+fun lateralus(in, cut, res) {
    return Lateralus.process(in, cut, res);
 }
 
