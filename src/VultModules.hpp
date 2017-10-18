@@ -80,6 +80,17 @@ struct VultSelector3 : SVGSwitch, ToggleSwitch
    }
 };
 
+struct VultSelector2 : SVGSwitch, ToggleSwitch
+{
+   VultSelector2()
+   {
+      addFrame(SVG::load(assetPlugin(plugin, "res/Select2_A.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/Select2_B.svg")));
+      sw->wrap();
+      box.size = sw->box.size;
+   }
+};
+
 struct RescombWidget : ModuleWidget
 {
    RescombWidget();

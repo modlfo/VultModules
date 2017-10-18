@@ -21,6 +21,8 @@ struct Trummor : Module
       TONE_PARAM,
       SEL_OSC_PARAM,
       SEL_NOISE_PARAM,
+      SEL_ENV1_PARAM,
+      SEL_ENV2_PARAM,
       NUM_PARAMS
    };
    enum InputIds
@@ -76,6 +78,9 @@ void Trummor::step()
    VultEngine_trummor_param(processor, SEL_OSC_PARAM, params[SEL_OSC_PARAM].value);
    VultEngine_trummor_param(processor, SEL_NOISE_PARAM, params[SEL_NOISE_PARAM].value);
 
+   VultEngine_trummor_param(processor, SEL_ENV1_PARAM, params[SEL_ENV1_PARAM].value);
+   VultEngine_trummor_param(processor, SEL_ENV2_PARAM, params[SEL_ENV2_PARAM].value);
+
    _tuple___real_real_real_real__ out;
    VultEngine_trummor(processor, inputs[GATE_INPUT].value / 10.0, inputs[OSC_INPUT].value / 10.0, inputs[NOISE_INPUT].value / 10.0, out);
 
@@ -102,8 +107,8 @@ TrummorWidget::TrummorWidget()
    addChild(createScrew<VultScrew>(Vec(15, 365)));
    addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 365)));
 
-   addParam(createParam<VultKnob>(Vec(88, 196), module, Trummor::LEVEL1_PARAM, 0.0, 1.0, 0.7));
-   addParam(createParam<VultKnob>(Vec(230, 196), module, Trummor::LEVEL2_PARAM, 0.0, 1.0, 0.1));
+   addParam(createParam<VultKnob>(Vec(101, 196), module, Trummor::LEVEL1_PARAM, 0.0, 1.0, 0.7));
+   addParam(createParam<VultKnob>(Vec(244, 196), module, Trummor::LEVEL2_PARAM, 0.0, 1.0, 0.1));
 
    addParam(createParam<VultKnobAlt>(Vec(17, 142), module, Trummor::ENV1_A_PARAM, 0.0, 1.0, 0.0));
    addParam(createParam<VultKnobAlt>(Vec(63, 142), module, Trummor::ENV1_H_PARAM, 0.0, 1.0, 0.2));
@@ -119,8 +124,11 @@ TrummorWidget::TrummorWidget()
 
    addParam(createParam<VultKnobAlt>(Vec(206, 85), module, Trummor::TONE_PARAM, -1.0, 1.0, -0.7));
 
-   addParam(createParam<VultSelector3>(Vec(25, 203), module, Trummor::SEL_OSC_PARAM, 0.0, 2.0, 0.0));
-   addParam(createParam<VultSelector3>(Vec(170, 203), module, Trummor::SEL_NOISE_PARAM, 0.0, 2.0, 0.0));
+   addParam(createParam<VultSelector3>(Vec(55, 201), module, Trummor::SEL_OSC_PARAM, 0.0, 2.0, 0.0));
+   addParam(createParam<VultSelector3>(Vec(198, 201), module, Trummor::SEL_NOISE_PARAM, 0.0, 2.0, 0.0));
+
+   addParam(createParam<VultSelector2>(Vec(12, 201), module, Trummor::SEL_ENV1_PARAM, 0.0, 1.0, 0.0));
+   addParam(createParam<VultSelector2>(Vec(155, 201), module, Trummor::SEL_ENV2_PARAM, 0.0, 1.0, 0.0));
 
    addInput(createInput<VultJack>(Vec(63, 313), module, Trummor::GATE_INPUT));
 

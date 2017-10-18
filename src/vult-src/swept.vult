@@ -10,10 +10,10 @@ when 'gate' is triggered.
 fun process(gate, start, end, rate) {
    mem out;
    val bgate = gate > 0.5;
-   out = out + ((end *  1024.0) - out) * rate * 0.004;
+   out = out + (end  - out) * rate * 0.004 * Util.sampleRateScale();
    if(Util.edge(bgate))
-      out = start * 1024.0;
-   return out/1024.0;
+      out = start;
+   return out;
 }
 
 and noteOn(note:int,velocity:int,channel:int){ }

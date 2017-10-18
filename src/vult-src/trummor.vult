@@ -14,8 +14,9 @@ fun do(gate, osc_in, noise_in) {
    mem tone;
    mem int_osc, ext_osc;
    mem int_noise, ext_noise;
+   mem env1_scale, env2_scale;
    // Envelope of the drum. One parameter affects the hold and relase
-   val osc_env, env_reset = Ahr.do(gate, env1_a, env1_h, env1_r);
+   val osc_env, env_reset = Ahr.do(gate, env1_scale * env1_a, env1_scale * env1_h, env1_scale * env1_r);
    // Change of pitch
    val cv = Swept.process(1.0 - env_reset, pitch + bend * 0.4, pitch, 0.1);
    // Main triangle oscillator
@@ -24,7 +25,7 @@ fun do(gate, osc_in, noise_in) {
    // Saturates the triangle to get a sine with some harmonics
    val osc_sat = Util.saturate((drive + 1.0) * osc);
 
-   val noise_env, _ = Ahr.do(gate, env2_a, env2_h, env2_r);
+   val noise_env, _ = Ahr.do(gate, env2_scale * env2_a, env2_scale * env2_h, env2_scale * env2_r);
    val noise_osc = Tohe.do(int_noise * Noise.process() + ext_noise * noise_in, tone);
 
    val output = level1 * osc_env * osc_sat + level2 * noise_env * noise_osc;
@@ -65,9 +66,16 @@ and setParameter(param:int, value:real) {
       ext_osc = if value == 1.0 || value == 2.0 then 1.0 else 0.0;
    }
 
-   else if(param == 13){
+   else if(param == 13) {
       int_noise = if value == 0.0 || value == 1.0 then 1.0 else 0.0;
       ext_noise = if value == 1.0 || value == 2.0 then 1.0 else 0.0;
+   }
+
+   else if(param == 14) {
+      env1_scale = if value == 0.0 then 1.0 else 0.2;
+   }
+   else if(param == 15) {
+      env2_scale = if value == 0.0 then 1.0 else 0.2;
    }
 
 

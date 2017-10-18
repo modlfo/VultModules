@@ -45,7 +45,7 @@ fun do(gate:real, a:real, h:real, r:real) {
    // states
 
    if(state == reset) {
-      rate = 1.0 / (100.0 * 0.01 + 0.05);
+      rate = 1.0 / (100.0 * 0.005 + 0.05);
       target = 0.0;
    }
    if(state == attack) {
@@ -57,11 +57,11 @@ fun do(gate:real, a:real, h:real, r:real) {
       hold_phase = hold_phase + hrate;
    }
    if(state == release) {
-      rate = 1.0 / (200.0 * r + 0.05);
+      rate = 1.0 / (200.0 * r + 0.01);
       target = 0.0;
    }
 
-   out = out + (target - out) * rate * 0.005;
+   out = out + (target - out) * rate * 0.005 * Util.sampleRateScale();
 
 
    return clip(out / 1024.0, 0.0, 1.0), resetting;

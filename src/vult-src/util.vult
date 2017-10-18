@@ -8,6 +8,10 @@ Collection of small useful functions
 
 external getSampleRate() : real "getSampleRate";
 
+fun sampleRateScale() {
+   return 44100.0 / Util.getSampleRate();
+}
+
 fun edge(x:bool) : bool {
    mem pre;
    val ret = x && not(pre);
