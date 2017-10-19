@@ -6,12 +6,16 @@ Copyright (c) 2017 Leonardo Laguna Ruiz
 Simple noise generator
 */
 
-fun process() {
+fun process(gate) {
    mem x1 = (x1 * 17389 + 7919) % 32768;
    val y1 = real(x1) / 32768.0;
    mem x2 = (x2 * 27449 + 12553) % 32768;
    val y2 = real(x2) / 32768.0;
    val out = y1 - y2;
+   if(Util.edge(gate > 0.5)) {
+      x1 = 0;
+      x2 = 0;
+   }
    return 2.0 * out;
 }
 and noteOn(note:int,velocity:int,channel:int){ }
