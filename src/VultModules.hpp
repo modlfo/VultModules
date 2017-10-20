@@ -125,3 +125,8 @@ struct ToheWidget : ModuleWidget
 {
    ToheWidget();
 };
+
+struct TangentsWidget : ModuleWidget
+{
+   TangentsWidget();
+};

@@ -32,7 +32,7 @@ fun cubic_clipper(x) {
    else if(x >= 2.0/3.0)
       return 2.0/3.0;
    else
-      return x - (x * x * x) / 3.0;
+      return 27.0/23.0 * (x - (x * x * x) / 3.0);
 }
 
 fun stanh(x) @[table(min = -24.0, max = 24.0, size = 241)] {
@@ -103,4 +103,15 @@ fun cvToRate(cv) {
    if(change(cv) || change(fs))
        rate = cvToRateUnit(cv) / fs;
    return rate;
+}
+
+fun simple_noise() {
+   mem x1 = (x1 * 17389 + 7919) % 32768;
+   val y1 = real(x1) / 32768.0;
+   return y1;
+}
+
+fun polylog(x){
+   val xx = clip(x, 0.0, 1.0);
+   return (2.0 - xx) * xx;
 }

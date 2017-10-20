@@ -18,6 +18,10 @@ fun lateralus(in, cut, res) {
    return Lateralus.process(in, cut, res);
 }
 
+fun tangents(lp, bp, hp, cut, res) {
+   return Tangents.process(lp, bp, hp, cut, res);
+}
+
 fun debriatus(in, fold_in, crush_in, distort_in, saturate_in) {
    val fold = clip(fold_in, 0.0 , 1.0);
    val crush = clip(crush_in, 0.0 , 1.0);
