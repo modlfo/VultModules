@@ -1,6 +1,6 @@
 # Vult Modules for Rack
 
-A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://modlfo.github.io/vult/).
+A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://modlfo.github.io/vult/). Read more about these modules here: http://modlfo.github.io/projects/vult-modules/
 
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
