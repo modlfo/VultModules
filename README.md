@@ -11,27 +11,7 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Trummor](/images/Trummor-render.png?raw=true "Trummor")
 ![Tangents](/images/Tangents-render.png?raw=true "Tangents")
 
-
-
-## Description
-
-- **Rescomb**: a module can be used either as a filter or as a resonator (when increasing the feedback). The frequency can be controlled with a pitch voltage 1 V/Oct.
-
-- **Stabile**: state variable filter that provides three outputs: low-pass, band-pass and high-pass.
-
-- **Lateralus**: diode/transistor ladder filter based on the physical structure of the Moog filter.
-
-- **Debriatus**: distortion unit containing wave folding, saturation and asymmetric distortion.
-
-- **Splie**: audio splitter, just an utility but that I require when testing the modules.
-
-- **Tohe**: simple tone control to change the character of the sound.
-
-- **Trummor**: semi-modular drum synthesizer that can be combined with different sound and noise sources to create percussive sounds.
-
-- **Tangents**: a screaming filter based on the Steiner-Parker structure.
-
-New modules coming!
+*This repository builds against the latest released version of Rack (the latest tag). It may take a day or two for me to catch up when a new version of Rack is released. Let me know if I haven't fixed that.*
 
 ## Donate
 
@@ -44,7 +24,7 @@ Download from the [releases page](https://github.com/modlfo/VultModules/releases
 
 ## Build
 
-First you need to build [Rack](https://github.com/VCVRack/Rack) following the instructions in its [README](https://github.com/VCVRack/Rack/blob/master/README.md).
+First you need to build the latest release version of [Rack](https://github.com/VCVRack/Rack) following the instructions in its [README](https://github.com/VCVRack/Rack/blob/master/README.md).
 
 Then clone this repository inside the `plugins` folder of Rack and use `make`.
 
