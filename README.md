@@ -9,6 +9,7 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 ![Splie](/images/Splie-render.png?raw=true "Splie")
 ![Tohe](/images/Tohe-render.png?raw=true "Tohe")
 ![Trummor](/images/Trummor-render.png?raw=true "Trummor")
+![Tangents](/images/Tangents-render.png?raw=true "Tangents")
 
 
 
@@ -27,6 +28,8 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 - **Tohe**: simple tone control to change the character of the sound.
 
 - **Trummor**: semi-modular drum synthesizer that can be combined with different sound and noise sources to create percussive sounds.
+
+- **Tangents**: a screaming filter based on the Steiner-Parker structure.
 
 New modules coming!
 
