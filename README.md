@@ -42,3 +42,9 @@ Once you have Vult installed you can regenerate the code with the following line
 ```
 $ vultc src/VultEngine.vult -ccode -o src/VultEngine
 ```
+
+## License
+
+The license is a BSD 3-Clause with the addition that any commercial use requires explicit permission of the author. That applies for the source code.
+
+For the image resources (all SVG files), any use requires explicit permission of the author.
