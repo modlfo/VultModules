@@ -2,6 +2,8 @@
 
 A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://modlfo.github.io/vult/). Read more about these modules here: http://modlfo.github.io/projects/vult-modules/
 
+I provide precompiled binaries for: Linux, Mac and Windows.
+
 ![Rescomb](/images/Rescomb-render.png?raw=true "Rescomb")
 ![Stabile](/images/Stabile-render.png?raw=true "Stabile")
 ![Lateralus](/images/Lateralus-render.png?raw=true "Lateralus")
