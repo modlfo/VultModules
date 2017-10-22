@@ -15,7 +15,7 @@ A set of modules for [VCVRack](https://vcvrack.com) written in [Vult](http://mod
 
 ## Donate
 
-I've dedicated many hours developing these plugins and related projects like [Vult](http://modlfo.github.io/vult/). If you enjoy this, I would feel really happy if you make a contribution to the following link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RRMY2QPYEZT2S)
+I’m glad to publish these modules for free so anyone can use them. Behind every module there are many hours of work (and many litters of coffee). If you enjoy these modules you can support the development by making a donation. As a suggestion, you can send me the amount to buy 1 kg of roasted coffee beans in your country. That will make me very happy. Here's the link: [DONATE](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RRMY2QPYEZT2S)
 
 ## Use
 
