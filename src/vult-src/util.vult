@@ -120,3 +120,11 @@ fun polylog(x){
    val xx = clip(x, 0.0, 1.0);
    return (2.0 - xx) * xx;
 }
+
+fun fadeA(x) @[table(size=32, min=0.0, max=1.0)]{
+   return cos(2.0 * pi() * x / 4.0);
+}
+
+fun fadeB(x) @[table(size=32, min=0.0, max=1.0)]{
+   return sin(2.0 * pi() * x / 4.0);
+}

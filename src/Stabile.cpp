@@ -23,6 +23,8 @@ struct Stabile : Module
       RESONANCE_PARAM,
       CUTOFF_AMT_PARAM,
       RESONANCE_AMT_PARAM,
+      SEMBLANCE_PARAM,
+      SEMBLANCE_AMT_PARAM,
       NUM_PARAMS
    };
    enum InputIds
@@ -30,6 +32,7 @@ struct Stabile : Module
       AUDIO_INPUT,
       CUTOFF_INPUT,
       RESONANCE_INPUT,
+      SEMBLANCE_INPUT,
       NUM_INPUTS
    };
    enum OutputIds
@@ -37,6 +40,7 @@ struct Stabile : Module
       LP_OUTPUT,
       BP_OUTPUT,
       HP_OUTPUT,
+      SEM_OUTPUT,
       NUM_OUTPUTS
    };
 
@@ -69,14 +73,21 @@ void Stabile::step()
    float resonance_amt = params[RESONANCE_AMT_PARAM].value;
    float resonance = resonance_knob + resonance_amt * resonance_cv;
 
-   _tuple___real_real_real__ out;
-   VultEngine_stabile(processor, audio, cutoff, resonance, out);
+   float semblance_knob = params[SEMBLANCE_PARAM].value;
+   float semblance_cv = inputs[SEMBLANCE_INPUT].value / 5.0;
+   float semblance_amt = params[SEMBLANCE_AMT_PARAM].value;
+   float semblance = semblance_knob + semblance_amt * semblance_cv;
+
+   _tuple___real_real_real_real__ out;
+   VultEngine_stabile(processor, audio, cutoff, resonance, semblance, out);
 
    outputs[LP_OUTPUT].value = out.field_0 * 5.0;
 
    outputs[BP_OUTPUT].value = out.field_1 * 5.0;
 
    outputs[HP_OUTPUT].value = out.field_2 * 5.0;
+
+   outputs[SEM_OUTPUT].value = out.field_3 * 5.0;
 }
 
 StabileWidget::StabileWidget()
@@ -97,18 +108,24 @@ StabileWidget::StabileWidget()
    addChild(createScrew<VultScrew>(Vec(15, 365)));
    addChild(createScrew<VultScrew>(Vec(box.size.x - 30, 365)));
 
-   addParam(createParam<VultKnobBig>(Vec(25, 75), module, Stabile::CUTOFF_PARAM, 0.0, 1.0, 0.5));
-   addParam(createParam<VultKnob>(Vec(34, 173), module, Stabile::RESONANCE_PARAM, 0.0, 4.0, 0.0));
+   addParam(createParam<VultKnobBig>(Vec(25, 53), module, Stabile::CUTOFF_PARAM, 0.0, 1.0, 0.5));
+   addParam(createParam<VultKnob>(Vec(34, 134), module, Stabile::RESONANCE_PARAM, 0.0, 4.0, 0.0));
 
-   addParam(createParam<VultKnobSmall>(Vec(108, 82), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
-   addParam(createParam<VultKnobSmall>(Vec(108, 173), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 60), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.5));
+   addParam(createParam<VultKnobSmall>(Vec(108, 134), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.5));
 
-   addInput(createInput<VultJack>(Vec(105, 107), module, Stabile::CUTOFF_INPUT));
-   addInput(createInput<VultJack>(Vec(105, 198), module, Stabile::RESONANCE_INPUT));
+   addParam(createParam<VultKnob>(Vec(34, 202), module, Stabile::SEMBLANCE_PARAM, 0.0, 1.0, 0.5));
+   addParam(createParam<VultKnobSmall>(Vec(108, 202), module, Stabile::SEMBLANCE_AMT_PARAM, -1.0, 1.0, 0.0));
+
+   addInput(createInput<VultJack>(Vec(105, 85), module, Stabile::CUTOFF_INPUT));
+   addInput(createInput<VultJack>(Vec(105, 159), module, Stabile::RESONANCE_INPUT));
 
    addInput(createInput<VultJack>(Vec(60, 318), module, Stabile::AUDIO_INPUT));
 
-   addOutput(createOutput<VultJack>(Vec(22, 253), module, Stabile::LP_OUTPUT));
-   addOutput(createOutput<VultJack>(Vec(64, 253), module, Stabile::BP_OUTPUT));
-   addOutput(createOutput<VultJack>(Vec(102, 253), module, Stabile::HP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(9, 277), module, Stabile::LP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(45, 277), module, Stabile::BP_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(82, 277), module, Stabile::HP_OUTPUT));
+
+   addInput(createInput<VultJack>(Vec(105, 227), module, Stabile::SEMBLANCE_INPUT));
+   addOutput(createOutput<VultJack>(Vec(118, 277), module, Stabile::SEM_OUTPUT));
 }

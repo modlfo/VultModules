@@ -66,7 +66,7 @@ fun tune(cv) {
    return g;
 }
 
-fun process(x, cv, q) {
+fun process(x, cv, q, semblance) {
    mem z1, z2;
    mem g,inv_den, R;
    q = q + 0.5;
@@ -83,7 +83,8 @@ fun process(x, cv, q) {
 	z1 = g * high + band;
 	z2 = g * band + low;
 
-   return low, band, high;
+   val sem = Util.fadeA(semblance) * low + Util.fadeB(semblance) * high;
+   return low, band, high, sem;
 }
 and default() @[init] {
    g = calc_g(0.0, Util.getSampleRate());
