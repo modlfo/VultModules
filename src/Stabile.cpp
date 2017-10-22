@@ -111,8 +111,8 @@ StabileWidget::StabileWidget()
    addParam(createParam<VultKnobBig>(Vec(25, 53), module, Stabile::CUTOFF_PARAM, 0.0, 1.0, 0.5));
    addParam(createParam<VultKnob>(Vec(34, 134), module, Stabile::RESONANCE_PARAM, 0.0, 4.0, 0.0));
 
-   addParam(createParam<VultKnobSmall>(Vec(108, 60), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.5));
-   addParam(createParam<VultKnobSmall>(Vec(108, 134), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.5));
+   addParam(createParam<VultKnobSmall>(Vec(108, 60), module, Stabile::CUTOFF_AMT_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(108, 134), module, Stabile::RESONANCE_AMT_PARAM, -1.0, 1.0, 0.0));
 
    addParam(createParam<VultKnob>(Vec(34, 202), module, Stabile::SEMBLANCE_PARAM, 0.0, 1.0, 0.5));
    addParam(createParam<VultKnobSmall>(Vec(108, 202), module, Stabile::SEMBLANCE_AMT_PARAM, -1.0, 1.0, 0.0));
