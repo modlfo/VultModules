@@ -7,5 +7,5 @@ include ../../plugin.mk
 dist: all
 	mkdir -p dist/VultModules
 	cp LICENSE* dist/VultModules/
-	cp plugin.* dist/VultModules/
+	cp $(TARGET) dist/VultModules/
 	cp -R res dist/VultModules/

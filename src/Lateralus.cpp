@@ -42,7 +42,7 @@ struct Lateralus : Module
    VultEngine_lateralus_type processor;
 
    Lateralus();
-   void step();
+   void step() override;
 };
 
 Lateralus::Lateralus() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

@@ -16,7 +16,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 float getSampleRate()
 {
-   return gSampleRate;
+   return engineGetSampleRate();
 }
 
 Plugin *plugin;
@@ -24,15 +24,16 @@ Plugin *plugin;
 void init(rack::Plugin *p)
 {
    plugin = p;
-   plugin->slug = "VultModules";
-   plugin->name = "VultModules";
-   plugin->homepageUrl = "https://github.com/modlfo/VultModules";
-   createModel<RescombWidget>(plugin, "Rescomb", "Rescomb");
-   createModel<StabileWidget>(plugin, "Stabile", "Stabile");
-   createModel<LateralusWidget>(plugin, "Lateralus", "Lateralus");
-   createModel<DebriatusWidget>(plugin, "Debriatus", "Debriatus");
-   createModel<SplieWidget>(plugin, "Splie", "Splie");
-   createModel<TrummorWidget>(plugin, "Trummor", "Trummor");
-   createModel<ToheWidget>(plugin, "Tohe", "Tohe");
-   createModel<TangentsWidget>(plugin, "Tangents", "Tangents");
+   p->slug = "VultModules";
+#ifdef VERSION
+   p->version = TOSTRING(VERSION);
+#endif
+   p->addModel(createModel<RescombWidget>("VultModules", "Vult Modules", "Rescomb", "Rescomb"));
+   p->addModel(createModel<StabileWidget>("VultModules", "Vult Modules", "Stabile", "Stabile"));
+   p->addModel(createModel<LateralusWidget>("VultModules", "Vult Modules", "Lateralus", "Lateralus"));
+   p->addModel(createModel<DebriatusWidget>("VultModules", "Vult Modules", "Debriatus", "Debriatus"));
+   p->addModel(createModel<SplieWidget>("VultModules", "Vult Modules", "Splie", "Splie"));
+   p->addModel(createModel<TrummorWidget>("VultModules", "Vult Modules", "Trummor", "Trummor"));
+   p->addModel(createModel<ToheWidget>("VultModules", "Vult Modules", "Tohe", "Tohe"));
+   p->addModel(createModel<TangentsWidget>("VultModules", "Vult Modules", "Tangents", "Tangents"));
 }

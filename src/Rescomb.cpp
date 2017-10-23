@@ -43,7 +43,7 @@ struct Rescomb : Module
    VultEngine_rescomb_type processor;
 
    Rescomb();
-   void step();
+   void step() override;
 };
 
 Rescomb::Rescomb() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

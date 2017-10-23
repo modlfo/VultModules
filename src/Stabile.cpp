@@ -47,7 +47,7 @@ struct Stabile : Module
    VultEngine_stabile_type processor;
 
    Stabile();
-   void step();
+   void step() override;
 };
 
 Stabile::Stabile() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

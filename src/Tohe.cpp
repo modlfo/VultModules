@@ -38,7 +38,7 @@ struct Tohe : Module
    VultEngine_tohe_type processor;
 
    Tohe();
-   void step();
+   void step() override;
 };
 
 Tohe::Tohe() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

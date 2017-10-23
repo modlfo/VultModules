@@ -45,7 +45,7 @@ struct Debriatus : Module
    };
 
    Debriatus();
-   void step();
+   void step() override;
 };
 
 Debriatus::Debriatus() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

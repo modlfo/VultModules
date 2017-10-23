@@ -39,7 +39,7 @@ struct Splie : Module
    };
 
    Splie();
-   void step();
+   void step() override;
 };
 
 Splie::Splie() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)

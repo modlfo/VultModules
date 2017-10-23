@@ -43,7 +43,7 @@ struct Tangents : Module
    VultEngine_tangents_type processor;
 
    Tangents();
-   void step();
+   void step() override;
 };
 
 Tangents::Tangents() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)
