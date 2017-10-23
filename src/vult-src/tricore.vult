@@ -15,13 +15,14 @@ fun process(cv:real, reset:real, disable:real) : real {
    mem reset_state;
    mem phase, reset_phase;
    // Determine the next value
-   phase = phase + Util.cvToRate(cv);
-   if (phase > 1.0)
-      phase = phase - 1.0;
+   val bdisable = disable > 0.5;
+   if(not(reset_state)){
+      phase = phase + Util.cvToRate(cv);
+      if (phase > 1.0)
+         phase = phase - 1.0;
+   }
 
    val sine_out = Util.sine(phase);
-
-   val bdisable = disable > 0.5;
 
    // if reset or disable were triggered, then enter reset state
    if(Util.edge(reset > 0.0) || Util.edge(bdisable)) {
@@ -35,17 +36,17 @@ fun process(cv:real, reset:real, disable:real) : real {
    if(reset_state) {
       // exponentially reduce the value until, if it's reseted and not dissable
       // when the value is very small goes out of reset state
-      if(abs(reset_phase) > 0.001 || bdisable) {
+      if(abs(reset_phase) > 0.001) {
          // dissable produces a softer transition
-         val reset_speed = if bdisable then 0.001 else 0.05;
+         val reset_speed = 0.01;
          reset_phase = reset_phase - reset_phase * reset_speed;
       }
       else {
          reset_phase = if reset_phase > 0.001 then reset_phase else 0.0;
          reset_state = false;
+         phase = 0.0;
       }
       reset_out = reset_phase;
-      phase = 0.0;
    }
-   return sine_out * reset_out;
+   return reset_out * sine_out;
 }

@@ -17,11 +17,11 @@ fun process(gate) {
    mem x2 = (x2 * 27449 + 12553) % 32768;
    val y2 = real(x2) / 32768.0;
    val out = y1 - y2;
-   if(Util.edge(gate > 0.5)) {
+   if(Util.edge(gate > 0.1)) {
       x1 = 0;
       x2 = 0;
    }
-   return 2.0 * out;
+   return out;
 }
 and noteOn(note:int,velocity:int,channel:int){ }
 and noteOff(note:int,channel:int){ }

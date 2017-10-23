@@ -104,6 +104,41 @@ struct VultSelector2 : SVGSwitch, ToggleSwitch
    }
 };
 
+struct TrummodOscSelector : SVGSwitch, ToggleSwitch
+{
+   TrummodOscSelector()
+   {
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Tune.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Bend.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Drive.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Attack.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Hold.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Release.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Speed.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Source.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Level.svg")));
+      sw->wrap();
+      box.size = sw->box.size;
+   }
+};
+
+struct TrummodNoiseSelector : SVGSwitch, ToggleSwitch
+{
+   TrummodNoiseSelector()
+   {
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Tone.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Decimate.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Attack.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Hold.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Release.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Speed.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Source.svg")));
+      addFrame(SVG::load(assetPlugin(plugin, "res/LCD-Level.svg")));
+      sw->wrap();
+      box.size = sw->box.size;
+   }
+};
+
 struct RescombWidget : ModuleWidget
 {
    RescombWidget();

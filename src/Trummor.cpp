@@ -31,10 +31,15 @@ struct Trummor : Module
       BEND_PARAM,
       DRIVE_PARAM,
       TONE_PARAM,
-      SEL_OSC_PARAM,
-      SEL_NOISE_PARAM,
+      OSC_BLEND_PARAM,
+      NOISE_BLEND_PARAM,
       SEL_ENV1_PARAM,
       SEL_ENV2_PARAM,
+      DECIMATE_PARAM,
+      OSC_MOD_PARAM,
+      NOISE_MOD_PARAM,
+      OSC_SEL_PARAM,
+      NOISE_SEL_PARAM,
       NUM_PARAMS
    };
    enum InputIds
@@ -42,6 +47,8 @@ struct Trummor : Module
       GATE_INPUT,
       OSC_INPUT,
       NOISE_INPUT,
+      OSC_MOD_INPUT,
+      NOISE_MOD_INPUT,
       NUM_INPUTS
    };
    enum OutputIds
@@ -53,7 +60,7 @@ struct Trummor : Module
       NUM_OUTPUTS
    };
 
-   VultEngine_trummor_type processor;
+   Trummor_do_type processor;
 
    Trummor();
    void step();
@@ -64,42 +71,108 @@ Trummor::Trummor() : Module(NUM_PARAMS, NUM_INPUTS, NUM_OUTPUTS)
    params.resize(NUM_PARAMS);
    inputs.resize(NUM_INPUTS);
    outputs.resize(NUM_OUTPUTS);
-   VultEngine_trummor_init(processor);
+   Trummor_do_init(processor);
 }
 
 void Trummor::step()
 {
 
-   VultEngine_trummor_param(processor, LEVEL1_PARAM, params[LEVEL1_PARAM].value);
-   VultEngine_trummor_param(processor, LEVEL2_PARAM, params[LEVEL2_PARAM].value);
+   Trummor_setLevel1(processor, params[LEVEL1_PARAM].value);
+   Trummor_setLevel2(processor, params[LEVEL2_PARAM].value);
 
-   VultEngine_trummor_param(processor, ENV1_A_PARAM, params[ENV1_A_PARAM].value);
-   VultEngine_trummor_param(processor, ENV1_H_PARAM, params[ENV1_H_PARAM].value);
-   VultEngine_trummor_param(processor, ENV1_R_PARAM, params[ENV1_R_PARAM].value);
+   Trummor_setEnv1A(processor, params[ENV1_A_PARAM].value);
+   Trummor_setEnv1H(processor, params[ENV1_H_PARAM].value);
+   Trummor_setEnv1R(processor, params[ENV1_R_PARAM].value);
 
-   VultEngine_trummor_param(processor, ENV2_A_PARAM, params[ENV2_A_PARAM].value);
-   VultEngine_trummor_param(processor, ENV2_H_PARAM, params[ENV2_H_PARAM].value);
-   VultEngine_trummor_param(processor, ENV2_R_PARAM, params[ENV2_R_PARAM].value);
+   Trummor_setEnv2A(processor, params[ENV2_A_PARAM].value);
+   Trummor_setEnv2H(processor, params[ENV2_H_PARAM].value);
+   Trummor_setEnv2R(processor, params[ENV2_R_PARAM].value);
 
-   VultEngine_trummor_param(processor, PITCH_PARAM, params[PITCH_PARAM].value);
-   VultEngine_trummor_param(processor, BEND_PARAM, params[BEND_PARAM].value);
-   VultEngine_trummor_param(processor, DRIVE_PARAM, params[DRIVE_PARAM].value);
+   Trummor_setPitch(processor, params[PITCH_PARAM].value);
+   Trummor_setBend(processor, params[BEND_PARAM].value);
+   Trummor_setDrive(processor, params[DRIVE_PARAM].value);
 
-   VultEngine_trummor_param(processor, TONE_PARAM, params[TONE_PARAM].value);
+   Trummor_setTone(processor, params[TONE_PARAM].value);
 
-   VultEngine_trummor_param(processor, SEL_OSC_PARAM, params[SEL_OSC_PARAM].value);
-   VultEngine_trummor_param(processor, SEL_NOISE_PARAM, params[SEL_NOISE_PARAM].value);
+   Trummor_setOscBlend(processor, params[OSC_BLEND_PARAM].value);
+   Trummor_setNoiseBlend(processor, params[NOISE_BLEND_PARAM].value);
 
-   VultEngine_trummor_param(processor, SEL_ENV1_PARAM, params[SEL_ENV1_PARAM].value);
-   VultEngine_trummor_param(processor, SEL_ENV2_PARAM, params[SEL_ENV2_PARAM].value);
+   Trummor_setEnv1Scale(processor, params[SEL_ENV1_PARAM].value);
+   Trummor_setEnv2Scale(processor, params[SEL_ENV2_PARAM].value);
+
+   Trummor_setDecimate(processor, params[DECIMATE_PARAM].value);
+
+   int osc_sel = round(params[OSC_SEL_PARAM].value);
+   float osc_mod = params[OSC_MOD_PARAM].value * inputs[OSC_MOD_INPUT].value / 5.0;
+   switch (osc_sel)
+   {
+   case 0:
+      Trummor_setPitch(processor, osc_mod / 10.0f + params[PITCH_PARAM].value);
+      break;
+   case 1:
+      Trummor_setBend(processor, (osc_mod + params[BEND_PARAM].value));
+      break;
+   case 2:
+      Trummor_setDrive(processor, (osc_mod + params[DRIVE_PARAM].value));
+      break;
+   case 3:
+      Trummor_setEnv1A(processor, (osc_mod + params[ENV1_A_PARAM].value));
+      break;
+   case 4:
+      Trummor_setEnv1H(processor, (osc_mod + params[ENV1_H_PARAM].value));
+      break;
+   case 5:
+      Trummor_setEnv1R(processor, (osc_mod + params[ENV1_R_PARAM].value));
+      break;
+   case 6:
+      Trummor_setEnv1Scale(processor, (osc_mod + params[SEL_ENV1_PARAM].value));
+      break;
+   case 7:
+      Trummor_setOscBlend(processor, (osc_mod + params[OSC_BLEND_PARAM].value));
+      break;
+   case 8:
+      Trummor_setLevel1(processor, (osc_mod + params[LEVEL1_PARAM].value));
+      break;
+   }
+
+   int noise_sel = round(params[NOISE_SEL_PARAM].value);
+   float noise_mod = params[NOISE_MOD_PARAM].value * inputs[NOISE_MOD_INPUT].value / 5.0;
+
+   switch (noise_sel)
+   {
+   case 0:
+      Trummor_setTone(processor, (noise_mod + params[TONE_PARAM].value));
+      break;
+   case 1:
+      Trummor_setDecimate(processor, (noise_mod + params[DECIMATE_PARAM].value));
+      break;
+   case 2:
+      Trummor_setEnv2A(processor, (noise_mod + params[ENV2_A_PARAM].value));
+      break;
+   case 3:
+      Trummor_setEnv2H(processor, (noise_mod + params[ENV2_H_PARAM].value));
+      break;
+   case 4:
+      Trummor_setEnv2R(processor, (noise_mod + params[ENV2_R_PARAM].value));
+      break;
+   case 5:
+      Trummor_setEnv2Scale(processor, (noise_mod + params[SEL_ENV2_PARAM].value));
+      break;
+   case 6:
+      Trummor_setNoiseBlend(processor, (noise_mod + params[NOISE_BLEND_PARAM].value));
+      break;
+   case 7:
+      Trummor_setLevel2(processor, (noise_mod + params[LEVEL2_PARAM].value));
+      break;
+   }
 
    _tuple___real_real_real_real__ out;
-   VultEngine_trummor(processor, inputs[GATE_INPUT].value / 10.0, inputs[OSC_INPUT].value / 10.0, inputs[NOISE_INPUT].value / 10.0, out);
+   Trummor_do(processor, inputs[GATE_INPUT].value / 10.0f, inputs[OSC_INPUT].value / 10.0f, inputs[NOISE_INPUT].value / 10.0f, out);
 
-   outputs[AUDIO_OUTPUT].value = out.field_0 * 10.0;
-   outputs[PITCH_OUTPUT].value = (out.field_1 - 0.3) * 10.0;
-   outputs[ENV1_OUTPUT].value = out.field_2 * 10.0;
-   outputs[ENV2_OUTPUT].value = out.field_3 * 10.0;
+   outputs[AUDIO_OUTPUT].value = out.field_0 * 10.0f;
+   outputs[PITCH_OUTPUT].value = (out.field_1 - 0.3f) * 10.0f;
+   outputs[ENV1_OUTPUT].value = out.field_2 * 10.0f;
+   outputs[ENV2_OUTPUT].value = out.field_3 * 10.0f;
 }
 
 TrummorWidget::TrummorWidget()
@@ -122,35 +195,46 @@ TrummorWidget::TrummorWidget()
    addParam(createParam<VultKnob>(Vec(101, 196), module, Trummor::LEVEL1_PARAM, 0.0, 1.0, 0.7));
    addParam(createParam<VultKnob>(Vec(244, 196), module, Trummor::LEVEL2_PARAM, 0.0, 1.0, 0.1));
 
-   addParam(createParam<VultKnobAlt>(Vec(17, 142), module, Trummor::ENV1_A_PARAM, 0.0, 1.0, 0.0));
-   addParam(createParam<VultKnobAlt>(Vec(63, 142), module, Trummor::ENV1_H_PARAM, 0.0, 1.0, 0.2));
-   addParam(createParam<VultKnobAlt>(Vec(110, 142), module, Trummor::ENV1_R_PARAM, 0.0, 1.0, 0.2));
+   addParam(createParam<VultKnobAlt>(Vec(17, 140), module, Trummor::ENV1_A_PARAM, 0.0, 1.0, 0.0));
+   addParam(createParam<VultKnobAlt>(Vec(63, 140), module, Trummor::ENV1_H_PARAM, 0.0, 1.0, 0.2));
+   addParam(createParam<VultKnobAlt>(Vec(110, 140), module, Trummor::ENV1_R_PARAM, 0.0, 1.0, 0.2));
 
-   addParam(createParam<VultKnobAlt>(Vec(160, 142), module, Trummor::ENV2_A_PARAM, 0.0, 1.0, 0.0));
-   addParam(createParam<VultKnobAlt>(Vec(206, 142), module, Trummor::ENV2_H_PARAM, 0.0, 1.0, 0.05));
-   addParam(createParam<VultKnobAlt>(Vec(252, 142), module, Trummor::ENV2_R_PARAM, 0.0, 1.0, 0.05));
+   addParam(createParam<VultKnobAlt>(Vec(160, 140), module, Trummor::ENV2_A_PARAM, 0.0, 1.0, 0.0));
+   addParam(createParam<VultKnobAlt>(Vec(206, 140), module, Trummor::ENV2_H_PARAM, 0.0, 1.0, 0.05));
+   addParam(createParam<VultKnobAlt>(Vec(252, 140), module, Trummor::ENV2_R_PARAM, 0.0, 1.0, 0.05));
 
    addParam(createParam<VultKnobAlt>(Vec(17, 85), module, Trummor::PITCH_PARAM, -0.1, 0.3, 0.0));
    addParam(createParam<VultKnobAlt>(Vec(63, 85), module, Trummor::BEND_PARAM, -1.0, 1.0, 0.5));
    addParam(createParam<VultKnobAlt>(Vec(110, 85), module, Trummor::DRIVE_PARAM, 0.0, 4.0, 0.0));
 
-   addParam(createParam<VultKnobAlt>(Vec(206, 85), module, Trummor::TONE_PARAM, -1.0, 1.0, -0.7));
+   addParam(createParam<VultKnobAlt>(Vec(177, 85), module, Trummor::TONE_PARAM, -1.0, 1.0, -0.7));
 
-   addParam(createParam<VultSelector3>(Vec(55, 201), module, Trummor::SEL_OSC_PARAM, 0.0, 2.0, 0.0));
-   addParam(createParam<VultSelector3>(Vec(198, 201), module, Trummor::SEL_NOISE_PARAM, 0.0, 2.0, 0.0));
+   addParam(createParam<VultKnobAlt>(Vec(53, 205), module, Trummor::OSC_BLEND_PARAM, 0.0, 1.0, 0.0));
+   addParam(createParam<VultKnobAlt>(Vec(195, 205), module, Trummor::NOISE_BLEND_PARAM, 0.0, 1.0, 0.0));
 
    addParam(createParam<VultSelector2>(Vec(12, 201), module, Trummor::SEL_ENV1_PARAM, 0.0, 1.0, 0.0));
    addParam(createParam<VultSelector2>(Vec(155, 201), module, Trummor::SEL_ENV2_PARAM, 0.0, 1.0, 0.0));
 
-   addInput(createInput<VultJack>(Vec(63, 313), module, Trummor::GATE_INPUT));
+   addInput(createInput<VultJack>(Vec(63, 336), module, Trummor::GATE_INPUT));
 
-   addInput(createInput<VultJack>(Vec(20, 255), module, Trummor::OSC_INPUT));
-   addInput(createInput<VultJack>(Vec(188, 255), module, Trummor::NOISE_INPUT));
+   addInput(createInput<VultJack>(Vec(20, 295), module, Trummor::OSC_INPUT));
+   addInput(createInput<VultJack>(Vec(188, 295), module, Trummor::NOISE_INPUT));
 
-   addOutput(createOutput<VultJack>(Vec(213, 315), module, Trummor::AUDIO_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(213, 336), module, Trummor::AUDIO_OUTPUT));
 
-   addOutput(createOutput<VultJack>(Vec(112, 255), module, Trummor::PITCH_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(112, 295), module, Trummor::PITCH_OUTPUT));
 
-   addOutput(createOutput<VultJack>(Vec(67, 255), module, Trummor::ENV1_OUTPUT));
-   addOutput(createOutput<VultJack>(Vec(238, 255), module, Trummor::ENV2_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(67, 295), module, Trummor::ENV1_OUTPUT));
+   addOutput(createOutput<VultJack>(Vec(238, 295), module, Trummor::ENV2_OUTPUT));
+
+   addInput(createInput<VultJack>(Vec(14, 257), module, Trummor::OSC_MOD_INPUT));
+   addInput(createInput<VultJack>(Vec(157, 257), module, Trummor::NOISE_MOD_INPUT));
+
+   addParam(createParam<VultKnobSmall>(Vec(50, 260), module, Trummor::OSC_MOD_PARAM, -1.0, 1.0, 0.0));
+   addParam(createParam<VultKnobSmall>(Vec(193, 260), module, Trummor::NOISE_MOD_PARAM, -1.0, 1.0, 0.0));
+
+   addParam(createParam<TrummodNoiseSelector>(Vec(218, 262), module, Trummor::NOISE_SEL_PARAM, 0.0, 7.0, 0.0));
+   addParam(createParam<TrummodOscSelector>(Vec(75, 262), module, Trummor::OSC_SEL_PARAM, 0.0, 8.0, 0.0));
+
+   addParam(createParam<VultKnobAlt>(Vec(237, 85), module, Trummor::DECIMATE_PARAM, 0.0, 1.0, 0.0));
 }
