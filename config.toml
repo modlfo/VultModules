@@ -1,0 +1,6 @@
+languageCode = "en-us"
+baseurl = "https://modlfo.github.io/VultModules/"
+title = "My New Hugo Site"
+theme = "vultmodules"
+
+relativeURLs = "true"

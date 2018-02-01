@@ -1,0 +1,21 @@
+a {
+   color: #CE9400
+}
+
+a:hover {
+   color: #CE9400;
+   background-color: #dddddd;
+}
+
+button a {
+   color: #FFFFFF;
+}
+
+button a:hover {
+   color: #FFFFFF;
+   background-color: transparent;
+}
+
+h1 {
+   margin-bottom: 20px;
+}
