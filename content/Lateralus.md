@@ -5,7 +5,9 @@ layout = "module"
 image = "../images/Lateralus.png"
 +++
 
-Lateralus is ladder filter which is the same structure that the Moog synthesizers use. Lateralus has two implementations. Each implementation is based on a different simulation model that I have developed. One of the models has been developed to provide a sound similar to other well known filter that has the same structure.
+Lateralus is ladder filter which is the same structure that a very famous inventor created for his synthesizers.
+
+The paid version of Lateralus has two implementations. Each implementation is based on a different simulation model that I have developed. One of the models has been developed to provide a sound similar to other well known filter that has the same structure.
 
 ## Videos
 

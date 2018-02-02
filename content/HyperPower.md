@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/HyperPower.png"
 +++
 
-HyperPower is a very special module that can only be obtained by making a donation.
+*This is a silly module I sent as gratitude to the people that donated money. Now it comes as part of the paid package.*
 
 HyperPower provides the best power supply in the market for your VCV Rack. **If you love your Vult modules don’t let them get damaged**;  this is the recommended power supply. Using HyperPower will allow you using as many modules as your computer can handle.
 
@@ -16,7 +16,3 @@ Specifications:
 - Efficiency: 100 %
 - Output ripple: 0 %
 
-If you want to get one, you can donate by clicking the button below. The suggested donation for the Vult modules is 20 euro, but you can donate as little or as much as you want/can.
-
-
-<a href="https://www.paypal.me/VultModules" class="btn btn-info" role="button">Donate</a>
