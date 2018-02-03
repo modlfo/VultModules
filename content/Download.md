@@ -18,7 +18,15 @@ The modules can be purchased from the VCV Rack store. If you don't want the paid
 
 ## Free vs Premium
 
-Here's a list of the modules describing which are come in the Premium and in the Free package. As mentioned before, the number of Premium packages will increase as more complex modules are developed.
+Here's a short description on how the things are going to work. The Vult modules v0.5.5 is the last free release with the slug `VultModules`. The new slug will be `VultModulesFree` for the new free release. The implication of this change is that before opening your patches, you will have to manually change the slug name in the .vcv file. Use a text editor to change `VultModules` to `VultModulesFree` once the new free version is released. If you have the paid version you don't have to do anything. Within the current free modules I will make improvements that are gonna be available only in the Premium package.
+
+![Roadmap](../images/ModulesRoadmap.png "Logo Title Text 1")
+
+I will create more free and paid modules.
+
+**What will you get when you purchase the Premium version?** The Premium version will have 4 to 5 new complex modules plus any other free module I release. A complex module is a module that takes me a significate work to complete. For example: The filters, Caudal, Vessek and Trummor 2. While Flux, Slap, Spank are simple modules. I will release these modules in an undefined span of time, it can be from 3 months to 2 years. It will take the time it takes me to complete something that I think worths it. After I complete all the complex modules, I may release another commercial package using the same approach. I'm not sure yet.
+
+Here's a table describing which are part of the Premium and Free package. As mentioned before, the number of Premium packages will increase as more complex modules are developed.
 
 <table class="table">
 <thead>
