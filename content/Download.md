@@ -40,7 +40,7 @@ Here's a table describing which are part of the Premium and Free package. As men
 <tbody>
 <tr>
 <td>Tangents</td>
-<td>limited</td>
+<td><b>limited</b></td>
 <td>yes</td>
 </tr>
 
@@ -64,13 +64,13 @@ Here's a table describing which are part of the Premium and Free package. As men
 
 <tr>
 <td>Lateralus</td>
-<td>limited</td>
+<td><b>limited</b></td>
 <td>yes</td>
 </tr>
 
 <tr>
 <td>Vortex</td>
-<td>no</td>
+<td><b>no</b></td>
 <td>yes</td>
 </tr>
 
@@ -95,6 +95,12 @@ Here's a table describing which are part of the Premium and Free package. As men
 <tr>
 <td>Debriatus</td>
 <td>yes</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>Flame</td>
+<td><b>no</b></td>
 <td>yes</td>
 </tr>
 
@@ -148,13 +154,13 @@ Here's a table describing which are part of the Premium and Free package. As men
 
 <tr>
 <td>HyperPower</td>
-<td>no</td>
+<td><b>no</b></td>
 <td>yes</td>
 </tr>
 
 <tr>
 <td>Blank Panels</td>
-<td>no</td>
+<td><b>no</b></td>
 <td>yes</td>
 </tr>
 </tbody>
