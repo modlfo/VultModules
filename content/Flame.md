@@ -13,19 +13,19 @@ Over the years, I have build many distortion pedals based on known designs. Ofte
 
 Each of the following controls provides an attenuverter and a CV input to modulate them.
 
-- **Fuel (Knob)**: this is the main knob of Flame that controls the level of distortion. In low levels adds a little bit of bite, in it's maximum you get the full destruction.
-- **Tone (Knob)**: controls the balance between the frequencies. It behaves differently depending on the Tone model.
-- **Blend (Knob)**: it's a dry/wet control to balance how much of the original and processed signal you want.
-- **Type (Switch)**:
+- **Fuel**: this is the main knob of Flame that controls the level of distortion. In low levels adds a little bit of bite, in it's maximum you get the full destruction.
+- **Tone**: controls the balance between the frequencies. It behaves differently depending on the Tone model.
+- **Blend**: it's a dry/wet control to balance how much of the original and processed signal you want.
+- **Type**:
    - **Rodent**: provides a hard-clipping style of distortion.
    - **Cylinder**: a more subtle distortion in a soft-clipping style.
    - **Blur**: a very aggressive and asymmetrical distortion.
-- **Tone(Switch)**:
+- **Tone**:
    - **Crem**: full left reduces the treble and add a bit of boost to the bass. Full right opens in full trebble and boost the mid range.
    - **Diez**: full left boost the bass and cuts the treble. Full right cuts the bass and boost the treble. Adds a notch around 500 Hz.
    - **Puff**: Similar in behavior to Diez, but the notch is around 1Khz.
-- **Input(Input)**: left and right inputs to the distortion. If only one is connected, the processed signal is send to both outputs.
-- **Output(Output)**: left and right outputs.
+- **Input**: left and right inputs to the distortion. If only one is connected, the processed signal is send to both outputs.
+- **Output**: left and right outputs.
 
 ## Videos
 

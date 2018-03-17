@@ -12,19 +12,19 @@ I made the original model using SystemModeler and later applied manual optimizat
 
 ## Documentation
 
-- **Speed (Knob)**: defines how fast the pendula swings. To the left the pendula moves slow, to the right it moves fast.
-- **Energy (Knob)**: changes some of the properties of the model, for example the gravity and mass. The effect is that the pendula moves more (or less) aggressive. This parameter can be used to produce variations to the movement.
-- **Hit (Input and Button)**: When triggered, defines a new initial position of the pendula and new angular velocities. When triggered many times it can make the pendula rotate continuously.
-- **Rev (Input and button)**: reverses the angular velocities of the pendula that makes all the segments move in the exact opposite direction that they are going.
-- **Store (Input and button)**: Saves the current state of the pendula (positions and velocities).
-- **Recall (Input and button)**: Returns the pendula to the Stored state.
+- **Speed**: defines how fast the pendula swings. To the left the pendula moves slow, to the right it moves fast.
+- **Energy**: changes some of the properties of the model, for example the gravity and mass. The effect is that the pendula moves more (or less) aggressive. This parameter can be used to produce variations to the movement.
+- **Hit**: When triggered, defines a new initial position of the pendula and new angular velocities. When triggered many times it can make the pendula rotate continuously.
+- **Rev**: reverses the angular velocities of the pendula that makes all the segments move in the exact opposite direction that they are going.
+- **Store**: Saves the current state of the pendula (positions and velocities).
+- **Recall**: Returns the pendula to the Stored state.
 
 
 For every segment of the pendula there are the following 3 outputs:
 
-- **X (Output)**: Horizontal position of the segment (normalized from -5 V to 5 V).
-- **Y (Output)**: Vertical position of the segment (normalized from -5 V to 5 V).
-- **A (Output)**: Angle of the segment (normalized from -5 V to 5 V).
+- **X**: Horizontal position of the segment (normalized from -5 V to 5 V).
+- **Y**: Vertical position of the segment (normalized from -5 V to 5 V).
+- **A**: Angle of the segment (normalized from -5 V to 5 V).
 
 ## Videos
 
