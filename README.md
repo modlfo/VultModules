@@ -2,7 +2,6 @@
 
 A set of modules for VCV Rack written in Vult. You can read more about the modules here: https://modlfo.github.io/VultModules/
 
-
 ![Modules](https://modlfo.github.io/VultModules/images/modules.png "Modules")
 
 ### Filters
@@ -36,6 +35,9 @@ A set of modules for VCV Rack written in Vult. You can read more about the modul
 - [Flux](https://modlfo.github.io/VultModules/flux/): Quad Voltage Processor
 - [Splie](https://modlfo.github.io/VultModules/splie/): Buffer
 - [HyperPower](https://modlfo.github.io/VultModules/hyperpower/): Infinite Power Supply.
+
+## Support
+You can report any issue or ask me questions here: [issues](https://github.com/modlfo/VultModules/issues)
 
 ## Use
 
