@@ -23,7 +23,7 @@ The paid version of Tangents has 3 different implementations. Each implementatio
 - **Inputs**:
    - **LP**: low pass output. Good for making anything sound awesome.
    - **BP**: band pass output. When static, this band is not very interesting, but when modulated magic happens.
-   - **HP**: band pass output. When static, this band is not very interesting, but when modulated magic happens.
+   - **HP**: my favorite use is to remove very low frequencies and boost some bass by adding resonance and keeping the cutoff low.
 - **Output**: this will output the three input signals mixed together.
 
 ## Videos

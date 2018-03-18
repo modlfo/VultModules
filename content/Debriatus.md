@@ -5,12 +5,14 @@ layout = "module"
 image ="../images/Debriatus.png"
 +++
 
-Debriatus is a chain of distortion effects that can be controlled with CV. Debriatus contains:
+Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effect can turn a boring sine wave into a wave full of character.
 
-- Wave Folder
-- Bit Crushing
-- Asymetric Distortion
-- Saturation
+## Documentation
+
+- **Fold**: in this mode transforms the input signal by "folding" it within a defined threshold. It provides a sound that resembles adding extra harmonics to the signal.
+- **Crush**: Bit crusher. Reduces the number of bits used to represent the signal. It provides a sound that resembles low-fi digital equipment.
+- **Distort**: performs asymetric clipping of the signal.
+- **Saturate**: performs hard clipping of the singla.
 
 ## Videos
 

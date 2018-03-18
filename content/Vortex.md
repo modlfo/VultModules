@@ -21,6 +21,11 @@ Vortex is part of the Premium package that can be purchased through the VCV stor
 - **Input**: You may provide an input signal to be filtered, but only if you want to. If not, just crack up the resonance and the filter will self-oscillate.
 
 
+## Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FFFb7Z8uvMY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/R2kUzw-C9Ao" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
 
