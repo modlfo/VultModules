@@ -16,7 +16,7 @@ Some of the "weird" behaviors of the real filter were intentionally not reproduc
 - **Cutoff**: this is the main knob in a filter. It defines the frequency at which the filter starts taking action. Full left, the filter is completely closed. Full right it's open and should not have effect. The cutoff frequency can be controlled with a 1V/Oct signal through the included attenuverter.
 - **Resonance**: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
 - **Drive**: controls the amount of signal that enters to the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
-- **Model**:
+- **Model**: (Premium version only)
    - **DF**: this model is the diode based version of the circuit. It provides a smoother sound.
    - **TH**: This is an alternative model that follows the same ladder architecture but provides more harsh sounds when distorting.
 - **Outputs**: The outputs of Lateralus provide different slopes:
