@@ -9546,3 +9546,8 @@ legend,
 .popover-title {
    border-bottom: none;
 }
+
+img {
+   border-radius: 10px;
+   margin-bottom: 10px;
+}
