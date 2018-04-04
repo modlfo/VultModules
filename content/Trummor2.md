@@ -45,7 +45,10 @@ Trummor 2 is split into two main sections: the oscillator section and the noise 
 
 ### Noise Section
 - **Tone**: defines the character of the noise. To the left you get a pink-like noise that can be used for snare sounds. To the right you get a noise without low frequencies that can be used for hi hats.
-- **Decimate**: reduces the sample rate of the noise producing glitchy percussion sounds.
+- **Pitch**: this is knob that works in combination with the Rescomb knob. Trummor 2 integrates Rescomb in order to produce a metallic noise sound. Pitch controls the frequencies of the comb filter ripples.
+- **Rescomb**: similarly as in the Rescomb filter module, this parameter controls the kind of comb: positive or negative. Depending on the input signal it changes the way we perceive the noise. On one setting it can have a more low frequency sound and in the opposite a high.
+- **Cutoff**: controls the cut frequency of a multi-mode filter that it's applied to the noise. In combination with the Resonance control this can be used to enhance a certain group of frequencies to produce a more tuned noise sound.
+- **Type**: defines the type of filter: LP, BP or HP.
 - **Mode**: same as in the oscillator section.
 - **Source**: same as in the oscillator section.
 - **Level**: same as in the oscillator section.
