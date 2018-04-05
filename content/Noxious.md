@@ -79,6 +79,17 @@ This extension is shown only in Noxious-Poly. The poly section allow to use mult
 - **Level**: output level of the voice through the main output jack.
 - **Out**: separate audio output for the voice. The Level knob does not affect the output level on this jack.
 
+## Videos
+
+Audio demos by [Simon Bader](https://www.instagram.com/circadiansound/), [Alejandro Galán Álvaro](https://www.youtube.com/user/AGalanKh/) and me.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q6Ts9B0_EeY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+This video explains all the features of Noxious
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dteMrGhLTC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 
 
