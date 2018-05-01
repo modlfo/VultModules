@@ -17,6 +17,7 @@ A set of modules for VCV Rack written in Vult. You can read more about the modul
 ### Effects
 - [Debriatus](https://modlfo.github.io/VultModules/debriatus/): Wave Destruction. Wave Folder, Bit Crusher, Distortion and Saturation.
 - [Flame](https://modlfo.github.io/VultModules/flame/): Analog distortion based on guitar pedals.
+- [Nopskate](https://modlfo.github.io/VultModules/nopskate/): Flip-Flop octaver based on guitar pedals.
 
 ### Envelopes & VCA
 - [Spank](https://modlfo.github.io/VultModules/spank/): Drum Envelope.
