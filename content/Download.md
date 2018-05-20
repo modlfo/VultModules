@@ -1,11 +1,11 @@
 +++
 title = "Download"
 date = "2017-10-28T22:37:03+03:00"
-layout = "module"
+layout = "download"
 
 +++
 
-The modules come in two versions: Free edition and Premium edition. Both versions contain over 15 high quality modules. I kept some of the modules free because I believe that everybody should have access to this creations that make me happy.
+There are two series of modules, one simply called "Vult Modules" and the new "Vult Compacts". Both series contain some free and some paid modules. Vult Modules (free and paid) contain over 15 high quality modules. Most of my modules are free because I believe that everybody should have access to this creations that make me happy.
 
 The paid modules are the ones that do require more engineering and research work to develop. If you like the work I make for free, you should consider buying the paid modules to help me keep developing stuff.
 
@@ -16,22 +16,46 @@ The modules can be purchased from the VCV Rack store. If you don't want the paid
 <a href="https://github.com/modlfo/VultModules/releases" class="btn btn-primary" role="button">Download</a>
 
 
-## Free vs Premium
+## Vult Modules (Free and Premium)
 
-The Premium package is a superset of the Free package. All Free modules exists in the Premium package and can be used simultaneously if needed.
+The Free  and Premium versions contains the following modules among which you can find:
 
-The Premium package contains the following extra modules:
+- Two drum synthesizers
+- Six filters
+- One oscillator
+- One chaos source
+- Two envelopes
+- One low pass gate
+- Two utilities
+- Two effects
 
-- Vortex : russian Filter
-- Flame : analog distortion.
-- Noxious : pure distortion oscillator
-- T.B.D: CMOS Filter
-- T.B.D: multi compressor
+<center><img src="../images/FreeModules.png" style="max-width: 100%;"> </center>
 
-## Future Development
+## Vult Modules Premium
 
-I'm working on designing a new set of modules called: Vult Compacts. The main idea behind compacts is creating a set of modules with a most specific functionality. Some of the modules that have been defined are:
+The paid Vult Modules (Premium) contains all the free modules plus some of the most complex modules I have developed:
 
-- Super filter: including most Vult filters (stereo).
-- Full synthesizer voice: a VCO + VCF + LFO + Envelopes.
-- Trummor kit: kick, snare, hats, toms and others.
+<center><img src="../images/VultModulesPremium.png" style="max-width: 100%;"> </center>
+
+In addition, Vult Modules Premium contains 3 extra filters which are alternative models for Lateralus and Tangents.
+
+<center><img src="../images/VultModulesExtra.png" style="max-width: 100%;"> </center>
+
+Finally, the Premium version contains 4 blank panels (HyperPower can be considered a blank).
+
+<center><img src="../images/VultBlanks.png" style="max-width: 100%;"> </center>
+
+
+
+## Vult Compacts
+
+Vult Compacts is a new series that will contain free and paid modules. The idea behind the Compacts is to create alternate versions of the existing modules and expand/redesign the functionality. For example: the new Freak filter contains all Vult filters in a single package.
+
+These are some of the modules that are planed for the paid version of Vult Compacts:
+
+- Trummor Kit: new percussion synthesizers derived from Trummor 2.
+- Full Synth Voice: a Vult synthesizer in a single package.
+
+<center><img src="../images/VultCompacts.png" style="max-width: 100%;"> </center>
+
+
