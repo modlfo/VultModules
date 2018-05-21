@@ -5,6 +5,9 @@ layout = "module"
 image = "../images/Send.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Send (or Util-Send) provides the send/return functionality found in most mixers but for a single stereo channel. Just connect you audio to the inputs and take from the outputs. Connect your effect from the send jacks and connect it back in the return jacks.
 
 ## Documentation

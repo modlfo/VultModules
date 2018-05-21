@@ -5,6 +5,9 @@ layout = "module"
 image="../images/Vortex.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+
+
 
 Vortex is filter based on a famous russian design. The filter is a Low pass and Band pass capable of self-oscillating. Vortex is a detailed simulation of the original circuit with a few small tweaks to give my personal touch.
 

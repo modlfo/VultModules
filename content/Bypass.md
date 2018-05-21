@@ -5,6 +5,8 @@ layout = "module"
 image = "../images/Bypass.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
 Bypass (or Util-Bypass) provides an easy way to engage or disengage an audio effect. Bypass can be used to convert any effect into a stompbox like effect allowing to turn it on or off with the press of a pedal.
 
 ## Documentation

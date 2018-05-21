@@ -5,6 +5,9 @@ layout = "module"
 image = "../images/Trummor2.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Trummor 2 is the evolution of Trummor that was designed with the idea of expanding the sonic capabilities of Trummor.
 
 It was designed based on the input of many members of the VCV Rack community specially Alejandro Galán Álvaro who participated in most of the stages. Trummor 2 is, in his words:

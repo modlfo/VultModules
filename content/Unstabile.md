@@ -5,6 +5,9 @@ layout = "module"
 image ="../images/Unstabile.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Unstabile is "circuit bent" version of Stabile. When making Stabile I aimed to have a ver efficient and smooth filter that I could run in a small ARM processor. To achieve that I left out many things from the original circuit. With Unstabile remade the model and introduced nonlinearities that can occur when the circuit is fed with low voltage. The result is Unstabile a filter that makes everything sound big and distorted... and it can self-oscillate.
 
 ## Documentation

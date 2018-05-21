@@ -5,6 +5,9 @@ layout = "module"
 image = "../images/Trummor.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Trummor is a drum synthesizer that produces 909 style kicks. Trummor can be used to produce other type of percusive sounds like toms and simple snares or hats.
 
 I started developing the algorithms behind Trummor a long time ago and I made a simplified [hardware version](http://modlfo.github.io/projects/vult-analog-module/) of it. When VCV Rack came out, I adapted the code and started expanding the sonic capabilities.

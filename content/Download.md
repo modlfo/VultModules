@@ -5,7 +5,7 @@ layout = "download"
 
 +++
 
-There are two series of modules, one simply called "Vult Modules" and the new "Vult Compacts". Both series contain some free and some paid modules. Vult Modules (free and paid) contain over 15 high quality modules. Most of my modules are free because I believe that everybody should have access to this creations that make me happy.
+There are two series of modules, one simply called `Vult Modules` and the new `Vult Compacts`. Both series contain some free and some paid modules. Vult Modules (free and paid) contain over 15 high quality modules. Most of my modules are free because I believe that everybody should have access to this creations that make me happy.
 
 The paid modules are the ones that do require more engineering and research work to develop. If you like the work I make for free, you should consider buying the paid modules to help me keep developing stuff.
 

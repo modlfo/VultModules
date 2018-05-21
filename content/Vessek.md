@@ -5,6 +5,9 @@ layout = "module"
 image = "../images/Vessek.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Vessek is an oscillator for people looking for analog sound.
 
 Vessek started modeling the basic circuit of an analog saw wave oscillator. Most of the parameters were initially obtained from my compact analog bass synth. I got a pretty good matching of the sound that I bet it would pass a blind test. Later in the development, samples of other well known analog oscillators were sent to me by members of the VCV Rack community. From the samples I was able of extracting characteristics of the waves that help me fit my model.

@@ -5,6 +5,9 @@ layout = "module"
 image ="../images/Julste.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Julste is the only model that I haven't developed by myself. When I started doing research on low pass gates I came across the paper "A DIGITAL MODEL OF THE BUCHLA LOWPASS-GATE" by Julian Parker and Stefano D’Angelo. They did all the hard job modeling it, and I rewrote the code in the Vult language and created the module.
 
 The module has a few extensions to the original model, like controls to process the gate input.

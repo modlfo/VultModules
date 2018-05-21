@@ -5,6 +5,9 @@ layout = "module"
 image ="../images/Flame.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+
+
 Flame is a simulation of three different distortion pedals and three tone circuits. 
 
 Over the years, I have build many distortion pedals based on known designs. Often times I didn't have the exact components that the pedal required and I just used what I had. I built three different distortion circuits that I intended to use in my real eurorack and I based Flame on those three modules.

@@ -5,6 +5,9 @@ layout = "module"
 image ="../images/Slap.png"
 +++
 
+<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+
+
 Slap is an envelope based on the electrical circuit I found in a book of electronics for music. Slap has the same hitting nature of Spank. The module includes a VCA so you can use it directly to control an input source.
 
 ## Documentation
