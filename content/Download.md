@@ -11,7 +11,7 @@ The paid modules are the ones that do require more engineering and research work
 
 The modules can be purchased from the VCV Rack store. If you don't want the paid modules, but still want to donate you can do so as well. Finally, if you just want the free modules you can download them in the github page.
 
-<a href="https://vcvrack.com/plugins.html#Leonardo%20Laguna%20Ruiz" class="btn btn-primary" role="button">Buy</a>
+<a href="https://vcvrack.com/plugins.html#Vult" class="btn btn-primary" role="button">Buy</a>
 <a href="https://www.paypal.me/VultModules" class="btn btn-primary" role="button">Donate</a>
 <a href="https://github.com/modlfo/VultModules/releases" class="btn btn-primary" role="button">Download</a>
 
