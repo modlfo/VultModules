@@ -26,7 +26,7 @@ The Free  and Premium versions contains the following modules among which you ca
 - One chaos source
 - Two envelopes
 - One low pass gate
-- Two utilities
+- Five utilities
 - Two effects
 
 <center><img src="../images/FreeModules.png" style="max-width: 100%;"> </center>
