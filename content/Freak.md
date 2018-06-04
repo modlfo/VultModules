@@ -25,6 +25,7 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
    - Tangents-MS
    - Tangents-XX
    - Stabile-XX
+   - Ferox
 - **Mode**: selects the type of filter depending on the filter model
    - Band pass
    - Low pass
@@ -36,3 +37,7 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
    - **Inverse**: (A-B->L, B-A->R). In this mode modulation the difference of modulation A and B is applied to the Left channel while the difference B minus A is applied to the Right. This mode produces very interesting results in the stereo field.
 - **Outputs**: Marked L and R for the stereo pair.
 - **Input**: Marked L and R for the stereo pair.
+
+## Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tDjI8RTydJU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

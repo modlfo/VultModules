@@ -16,7 +16,8 @@ Knobs contains two similar sections. Most of the elements in the interface are u
 
 - **Mode**: defines how the big knob behaves.
    - **Uni**: produces an unipolar signal ranging from 0V to 10V.
-   - **Bi**: produces an bipolar signal ranging from -5V to 5V.
+   - **Bip**: produces an bipolar signal ranging from -5V to 5V.
+   - **Mix**: the big knob acts as a master level control and all signals are added.
 - **(Big Knob)**: depending on the mode, it defines the offset voltage in the output.
 - **(Small knobs)**: these are attenuverters that control the amplitude of the input signal below.
 - **(Output Jack)**: outputs the combined signal: all inputs with it's corresponding attenuation plus the main offset defined by the Big Knob.
