@@ -82,6 +82,15 @@ This extension is shown only in Noxious-Poly. The poly section allow to use mult
 - **Level**: output level of the voice through the main output jack.
 - **Out**: separate audio output for the voice. The Level knob does not affect the output level on this jack.
 
+## Audio
+
+This is a demo by <a href="http://cornwarning.com">Kent Williams</a> where he uses four Noxious into the Ferox filter.
+
+<audio controls>
+  <source src="../audio/beauty2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
 ## Videos
 
 Audio demos by [Simon Bader](https://www.instagram.com/circadiansound/), [Alejandro Galán Álvaro](https://www.youtube.com/user/AGalanKh/) and me.

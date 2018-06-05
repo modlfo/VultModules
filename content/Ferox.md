@@ -21,3 +21,18 @@ Ferox is based on the ingenious CMOS filter design. The CMOS filter uses an digi
    - **HP**: High pass filter.
    - **NOTCH**: Notch filter
 - **Input**: Signal to be filtered or destroyed.
+
+## Audio
+
+This is a demo by <a href="http://cornwarning.com">Kent Williams</a> where he uses four Noxious into the Ferox filter.
+
+<audio controls>
+  <source src="../audio/beauty2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+## Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KoRcuKnh3is" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
