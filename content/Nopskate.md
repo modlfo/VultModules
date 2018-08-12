@@ -5,7 +5,7 @@ layout = "module"
 image ="../images/Nopskate.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Nopskate is my take on the classic flip-flop octaver pedal but adapted to VCV Rack. Given any input signal, Nopskate will generate signals that are one and two octaves below the input signal. The generated signals can be added or multiplied (AM) to the original. These two ways of blending the generated signal can transform a simple input signal into a richer wave.

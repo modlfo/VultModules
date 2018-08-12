@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Trummor2.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Trummor 2 is the evolution of Trummor that was designed with the idea of expanding the sonic capabilities of Trummor.

@@ -5,7 +5,7 @@ layout = "module"
 image="../images/Vortex.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
 
 
 

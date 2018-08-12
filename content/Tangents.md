@@ -5,7 +5,7 @@ layout = "module"
 image="../images/Tangents.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Tangents is a filter based on the Steiner-Parker structure. One big addition I made in this version compared with the hardware version is that this module leaves exposed three inputs (LP, BP and HP). This makes possible to connect three sources and affecting the frequency content for each input differently.

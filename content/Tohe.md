@@ -5,7 +5,7 @@ layout = "module"
 image ="../images/Tohe.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Sometimes one needs just a gentle change to the sound in order to make it fit better. Tohe is a tone control that balances the high and low

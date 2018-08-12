@@ -5,7 +5,7 @@ layout = "module"
 image ="../images/Spank.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Spank is the envelope generator in charge of producing the snappy sounds of Trummor and Trummor 2. All transitions are exponential since they are modeled after the behavior of an analog envelope. The module includes a VCA so you can use it directly to control an input source.

@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Trummor.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Trummor is a drum synthesizer that produces 909 style kicks. Trummor can be used to produce other type of percusive sounds like toms and simple snares or hats.

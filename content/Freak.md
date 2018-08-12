@@ -5,7 +5,7 @@ image = "../images/Freak.png"
 layout = "module"
 +++
 
-<center>Included in:<img src="../images/VultCompactsSticker.svg"> </center>
+<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
 
 The Freak! is a collection of all the Vult filters into a single module (in stereo). The Freak! is part of the Vult Compacts package.
 

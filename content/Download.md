@@ -16,46 +16,11 @@ The modules can be purchased from the VCV Rack store. If you don't want the paid
 <a href="https://github.com/modlfo/VultModules/releases" class="btn btn-primary" role="button">Download</a>
 
 
-## Vult Modules (Free and Premium)
+## Module Packages
 
-The Free  and Premium versions contains the following modules among which you can find:
+The modules are split into three packages: Premium, Compacts and Free. The Free package is a reduced version ofthe Premium. You can find more information in the following links:
 
-- Two drum synthesizers
-- Six filters
-- One oscillator
-- One chaos source
-- Two envelopes
-- One low pass gate
-- Five utilities
-- Two effects
-
-<center><img src="../images/FreeModules.png" style="max-width: 100%;"> </center>
-
-## Vult Modules Premium
-
-The paid Vult Modules (Premium) contains all the free modules plus some of the most complex modules I have developed:
-
-<center><img src="../images/VultModulesPremium.png" style="max-width: 100%;"> </center>
-
-In addition, Vult Modules Premium contains 3 extra filters which are alternative models for Lateralus and Tangents.
-
-<center><img src="../images/VultModulesExtra.png" style="max-width: 100%;"> </center>
-
-Finally, the Premium version contains 4 blank panels (HyperPower can be considered a blank).
-
-<center><img src="../images/VultBlanks.png" style="max-width: 100%;"> </center>
-
-
-
-## Vult Compacts
-
-Vult Compacts is a new series that will contain free and paid modules. The idea behind the Compacts is to create alternate versions of the existing modules and expand/redesign the functionality. For example: the new Freak filter contains all Vult filters in a single package.
-
-These are some of the modules that are planed for the paid version of Vult Compacts:
-
-- Trummor Kit: new percussion synthesizers derived from Trummor 2.
-- Full Synth Voice: a Vult synthesizer in a single package.
-
-<center><img src="../images/VultCompacts.png" style="max-width: 100%;"> </center>
-
+<a href="/premium/" class="btn btn-primary" role="button">VultModules</a>
+<a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a>
+<a href="/free/" class="btn btn-primary" role="button">VultModules Free</a>
 

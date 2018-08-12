@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Flux.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Flux is a module that was specifically designed to work with Caudal. Flux provides the following functions:

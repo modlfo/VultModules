@@ -5,7 +5,7 @@ image = "../images/Ferox.png"
 layout = "module"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
 
 Ferox is based on the ingenious CMOS filter design. The CMOS filter uses an digital inverter chip to replace operational amplifiers. The result filter full of character, distorted and aggressive. Ferox can transform the simplest waveforms into completely new sound. In some cases it will make you doubt that it is a filter at all.
 

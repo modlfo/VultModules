@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Noxious.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+<center>Included in: <a href="../premium/"><a href="/premium/" class="btn btn-primary" role="button">VultModules</a></a> </center>
 
 
 Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.

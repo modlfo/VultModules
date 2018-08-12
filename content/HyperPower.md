@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/HyperPower.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
 
 
 *This is a silly module I sent as gratitude to the people that donated money. Now it comes as part of the paid package.*

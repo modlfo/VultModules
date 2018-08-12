@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Knobs.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Knobs (or Util-Knobs) is a simple but very handy utility. Knobs features four inputs with attenuverters and a big offset knob. Knobs can be used for many purposes, for example: to blend many modulation signals and send them to a single destination, as audio mixer, as constant voltage output.

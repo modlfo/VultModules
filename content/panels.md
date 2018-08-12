@@ -5,7 +5,7 @@ layout = "module"
 image ="../images/Panels.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
 
 
 The blank panels are an exclusive set of modules for the people that has the paid version. The only function of these panels is to make your Rack look more beautiful by adding the Vult logo.

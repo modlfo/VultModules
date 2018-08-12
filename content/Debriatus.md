@@ -5,7 +5,7 @@ layout = "module"
 image ="../images/Debriatus.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effect can turn a boring sine wave into a wave full of character.
 

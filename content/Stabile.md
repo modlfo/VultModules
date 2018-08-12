@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Stabile.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Stabile is a state variable filter. It provides LP, HP, and BP filters. Additionally to the three filter outputs it provides an extra output imitates the behavior of the SEM filter.
 

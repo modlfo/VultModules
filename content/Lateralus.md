@@ -5,7 +5,7 @@ layout = "module"
 image = "../images/Lateralus.png"
 +++
 
-<center>Included in:<img src="../images/VultModulesSticker.svg"> <img src="../images/VultModulesFreeSticker.svg"> </center>
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 
 Lateralus is ladder filter which is the same structure that a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
