@@ -20,7 +20,10 @@ The modules can be purchased from the VCV Rack store. If you don't want the paid
 
 The modules are split into three packages: Premium, Compacts and Free. The Free package is a reduced version ofthe Premium. You can find more information in the following links:
 
+
 <a href="/premium/" class="btn btn-primary" role="button">VultModules</a>
 <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a>
 <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a>
+
+<center><img src="../images/VultFamily.png" style="max-width: 100%;"> </center>
 
