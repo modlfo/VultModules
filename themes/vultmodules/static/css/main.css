@@ -86,7 +86,7 @@ body {
    line-height: 1.5;
    color: #CCCCCC;
    text-align: left;
-   background-color: #222222;
+   background-color: #000000;
 }
 
 [tabindex="-1"]:focus {
@@ -9548,6 +9548,6 @@ legend,
 }
 
 img {
-   border-radius: 10px;
+   border-radius: 5px;
    margin-bottom: 10px;
 }

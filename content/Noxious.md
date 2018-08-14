@@ -2,7 +2,7 @@
 title = "Noxious"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
-image = "../images/Noxious.png"
+image = "../images/Noxious-Poly.png"
 +++
 
 <center>Included in: <a href="../premium/"><a href="/premium/" class="btn btn-primary" role="button">VultModules</a></a> </center>

@@ -2,7 +2,7 @@
 title = "Blank Panels"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
-image ="../images/Panels.png"
+image ="../images/Blank-Big.png"
 +++
 
 <center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
