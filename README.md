@@ -58,6 +58,6 @@ The modules can be purchased from the VCV Rack store. If you don’t want the pa
 
 Vult logo and artwork Copyright (c) 2017 Leonardo Laguna Ruiz , All rights reserved.
 
-For more information check the [LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/ARTWORK-LICENSE.txt) and [LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/ARTWORK-LICENSE.txt) 
+For more information check the [LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/LICENSE.txt) and [ARTWORK-LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/ARTWORK-LICENSE.txt) 
 
 
