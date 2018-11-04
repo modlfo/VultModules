@@ -18,6 +18,7 @@ You can report any issue or ask me questions here: [issues](https://github.com/m
 These are some alternative skins that you can use to change the look of the modules. The skins are not maintained by Vult so if they are outdated you have to contact the authors to fix them.
 
 - [Shadowhenge](https://github.com/Shadowhenge/VCV-Skins) Alternative color schemes for all the Vult modules.
+- [infamedavid](https://github.com/infamedavid/infamous_vult_skins) Skins for Flame and others inspired by guitar pedals.
 
 You can submit your own skins to be included in this list. Just be sure to follow the conditions of the license. 
 
