@@ -7,19 +7,25 @@
             <h1>Vult Modules for VCV Rack</h1>
          </center>
          <center>
-            <img src="images/VultFamily.png" alt="Modules" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
+            <img src="images/VultFamily.png" alt="Modules" style="width:100%;margin-top:40px;margin-bottom:40px;">
+         </center>
 
          {{ partial "menu.html" . }}
 
          <p>
-            This is a set of modules that have been carefully designed to fit the Eurorack style of VCV Rack. The modules are coded in
+            This is a set of modules that have been carefully designed to fit the Eurorack style of VCV Rack. The
+            modules are coded in
             the Vult programming language.
          </p>
          <p>
-            The Vult modules are "Virtual Analog". The internals of the modules are modeled using electrical circuits and differential
-            equations, but some behaviors have been simplified when they are easier to do in code. These modules are not
-            emulations of an specific Eurorack module. In the case of the filters the modules try to capture the essence
-            and the sound of the analog versions, and at the same time provide very good performance. Some of the modules,
+            The Vult modules are "Virtual Analog". The internals of the modules are modeled using electrical circuits
+            and differential
+            equations, but some behaviors have been simplified when they are easier to do in code. These modules are
+            not
+            emulations of an specific Eurorack module. In the case of the filters the modules try to capture the
+            essence
+            and the sound of the analog versions, and at the same time provide very good performance. Some of the
+            modules,
             like Trummor 2, were inspired by existing hardware but have evolved into complete original designs.
          </p>
 
@@ -37,7 +43,8 @@
          <p>Following these rules helps me constrain the ideas for modules I have. But I may break them in the future.</p>
 
          <h2> Module Packages </h2>
-         <p>The modules are split into three packages: Premium, Compacts and Free. The Free package is a reduced version of
+         <p>The modules are split into three packages: Premium, Compacts and Free. The Free package is a reduced
+            version of
             the Premium. You can find more information in the following links:</p>
          <center>
             <a href="/premium/" class="btn btn-primary" role="button">VultModules</a>
@@ -49,15 +56,17 @@
          <h2> List of Modules </h2>
          <h4 id="filters">Filters</h4>
 
-         <center>
-            <img src="images/Filters.png" alt="Filters" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
-
 
          <ul>
             <li>
-               <a href="https://modlfo.github.io/VultModules/freak/">Freak</a>: Manifold Filter (all Vult filters in one).</li>
+               <a href="https://modlfo.github.io/VultModules/freak/">Freak</a>: Manifold Filter (all Vult filters in
+               one).</li>
             <li>
                <a href="https://modlfo.github.io/VultModules/ferox/">Ferox</a>: CMOS Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/vorg/">Vorg</a>: Low Pass Filter.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/nurage/">Nurage</a>: Dual Low Pass Gate/Filter.</li>
             <li>
                <a href="https://modlfo.github.io/VultModules/lateralus/">Lateralus</a>: Diode Ladder Filter.</li>
             <li>
@@ -67,7 +76,8 @@
             <li>
                <a href="https://modlfo.github.io/VultModules/stabile/">Stabile</a>: State Variable Filter.</li>
             <li>
-               <a href="https://modlfo.github.io/VultModules/unstabile/">Unstabile</a>: Circuit Bent State Variable Filter.</li>
+               <a href="https://modlfo.github.io/VultModules/unstabile/">Unstabile</a>: Circuit Bent State Variable
+               Filter.</li>
             <li>
                <a href="https://modlfo.github.io/VultModules/rescomb/">Rescomb</a>: Resonant Comb Filter.</li>
             <li>
@@ -75,50 +85,50 @@
             <li>
                <a href="https://modlfo.github.io/VultModules/tohe/">Tohe</a>: Tone Control.</li>
          </ul>
+         <h4 id="effects">Synthesizer</h4>
+         <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/incubus/">Incubus</a>: Nightmare Synthesizer.</li>
+
+         </ul>
+
          <h4 id="effects">Effects</h4>
-         <center>
-            <img src="images/Effects.png" alt="Effects" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
 
          <ul>
             <li>
-               <a href="https://modlfo.github.io/VultModules/debriatus/">Debriatus</a>: Wave Destruction. Wave Folder, Bit Crusher, Distortion and Saturation.</li>
+               <a href="https://modlfo.github.io/VultModules/debriatus/">Debriatus</a>: Wave Destruction. Wave Folder,
+               Bit Crusher, Distortion and Saturation.</li>
             <li>
-               <a href="https://modlfo.github.io/VultModules/flame/">Flame</a>: Analog distortion based on guitar pedals.</li>
+               <a href="https://modlfo.github.io/VultModules/flame/">Flame</a>: Analog distortion based on guitar
+               pedals.</li>
             <li>
-               <a href="https://modlfo.github.io/VultModules/nopskate/">Nopskate</a>: Flip-Flop octaver based on guitar pedals.</li>
+               <a href="https://modlfo.github.io/VultModules/nopskate/">Nopskate</a>: Flip-Flop octaver based on guitar
+               pedals.</li>
 
          </ul>
-         <h4 id="envelopes-vca">Envelopes &amp; VCA</h4>
 
-         <center>
-            <img src="images/Envelopes.png" alt="Envelopes" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
 
-         <ul>
-            <li>
-               <a href="https://modlfo.github.io/VultModules/spank/">Spank</a>: Drum Envelope.</li>
-            <li>
-               <a href="https://modlfo.github.io/VultModules/slap/">Slap</a>: Hitting Envelope.</li>
-            <li>
-               <a href="https://modlfo.github.io/VultModules/julste/">Julste</a>: Low Pass Gate. Buchla model.</li>
-         </ul>
          <h4 id="drums">Drums</h4>
 
-         <center>
-            <img src="images/Drums.png" alt="Drums" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
 
          <ul>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/knock/">Knock</a>: Bass Drum.</li>
+
             <li>
                <a href="https://modlfo.github.io/VultModules/trummor/">Trummor</a>: Drums Synthesizer.</li>
             <li>
                <a href="https://modlfo.github.io/VultModules/trummor2/">Trummor 2</a>: Drum (Percussion) Synthesizer.</li>
          </ul>
          <h4 id="oscillators">Oscillators</h4>
-         <center>
-            <img src="images/Oscillators.png" alt="Oscillators" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
 
          <ul>
             <li>
                <a href="https://modlfo.github.io/VultModules/vessek/">Vessek</a>: Complex Analog Oscillator.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/basal/">Basal</a>: Smooth Oscillator.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/bleak/">Bleak</a>: Analog Oscillator.</li>
             <li>
                <a href="https://modlfo.github.io/VultModules/caudal/">Caudal</a>: Mechanical Chaos Source.</li>
             <li>
@@ -126,12 +136,14 @@
 
          </ul>
          <h4 id="utilities">Utilities</h4>
-         <center>
-            <img src="images/Utilities.png" alt="Utilities" style="width:100%;margin-top:40px;margin-bottom:40px;"> </center>
 
          <ul>
             <li>
                <a href="flux/">Flux</a>: Quad Voltage Processor</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/spank/">Spank</a>: Drum Envelope.</li>
+            <li>
+               <a href="https://modlfo.github.io/VultModules/slap/">Slap</a>: Hitting Envelope.</li>
             <li>
                <a href="knobs/">Knobs</a>: Modulation mixer and macro control</li>
             <li>

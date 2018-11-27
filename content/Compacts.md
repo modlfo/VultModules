@@ -4,11 +4,11 @@ date = "2018-08-12T09:04:33+02:00"
 layout = "download"
 +++
 
-Vult Compacts is a new series that will contain free and paid modules. The idea behind the Compacts is to create alternate versions of the existing modules and expand/redesign the functionality. For example: the new Freak filter contains all Vult filters in a single package.
+Vult Compacts is a new series modules. VultCompacts contains the following modules:
 
-These are some of the modules that are planed for the paid version of Vult Compacts:
-
-- Trummor Kit: new percussion synthesizers derived from Trummor 2.
-- Full Synth Voice: a Vult synthesizer in a single package.
+- Incubus: Nightmare synthesizer (full voice synthesizer)
+- Freak: Manifold filter (all filters in one)
+- Knock: Bass drum (a very effective kick)
+- Vorg: Low pass filter (filter based on the MS 20 circuit, but with it's own character)
 
 <center><img src="../images/VultCompacts.png" style="max-width: 100%;"> </center>
