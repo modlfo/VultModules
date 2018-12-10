@@ -26,6 +26,9 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
    - Tangents-XX
    - Stabile-XX
    - Ferox
+   - Nurage
+   - Rescomb
+   - Vorg
 - **Mode**: selects the type of filter depending on the filter model
    - Band pass
    - Low pass
