@@ -49,7 +49,7 @@ All this controls affect the phase of the main oscillator. Individually, the cha
 
 **Mix Section**
 
-- **Sub**: controls the level of the sub oscillator. The sub oscillator is a low harmonic content oscillator that helps recover the low end that may have been lost by high modulations.
+- **Tone**: balances the sound of the oscillator. To the left, the highs are removed and the lows are enhanced.
 - **Noise**: controls the level of white noise. The noise is very useful when making percussive sounds with Noxious.
 
 **Chaos Section**

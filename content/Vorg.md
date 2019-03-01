@@ -7,7 +7,7 @@ image="../images/Vorg.png"
 
 <center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
 
-Vorg is based on the OTA (Operational Transconductance Amplifier) version of the MS-20 filter. Vorg is the first module that I developed with the idea of making it feel exactly as a real eurorack module. This considers the spacing between the knobs and sizes. Vorg is also part of Freak. Using it with Freak allows modulating the Resonance and Drive controls.
+Vorg is a low/high pass filter based on a modernized Operational Transconductance Amplifier version of the MS-20 filter. Vorg is the first module that I developed with the idea of making it feel exactly as a real eurorack module. This considers the spacing between the knobs and sizes. Vorg is also part of Freak. Using it with Freak allows modulating the Resonance and Drive controls.
 
 ## Documentation
 
