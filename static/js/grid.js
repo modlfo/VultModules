@@ -107,7 +107,7 @@ var premium = [
   {
     slug: 'Nurage',
     name: 'Nurage',
-    tags: ['Low pass gate', 'VCF', 'VCO'],
+    tags: ['Low pass gate', 'VCF', 'VCO', 'VCA'],
     description: 'Dual Low Pass Gate/Filter',
     packages: ['Premium']
   },
