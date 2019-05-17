@@ -5,10 +5,23 @@ layout = "download"
 +++
 
 
-The paid Vult Modules (Premium) contains all the Free modules plus some of the most complex modules I have developed:
+The Premium package (VultModules) contains all the Free modules plus some of the most complex modules I have developed.
 
-<center><img src="../images/VultModulesPremium.png" style="max-width: 100%;"> </center>
+### Differences with the Free (VultModulesFree) version
 
-In addition, Vult Modules Premium contains 3 extra filters which are alternative models for Lateralus and Tangents.
+- Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex.
+- Three extra filter modules shown as alternative models for Lateralus and Tangents.
+- Polyphonic versions of all Free modules
 
-<center><img src="../images/VultModulesExtra.png" style="max-width: 100%;"> </center>
+<script src="../js/grid.js"></script>
+<script type="text/javascript">
+   window.onload = populatePremium;
+</script>
+<div>
+            <div id="module-buttons">
+            </div>
+            <div id="module-tags">
+            </div>
+            <div id="modules">
+            </div>
+</div>

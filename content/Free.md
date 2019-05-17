@@ -4,15 +4,22 @@ date = "2018-08-12T09:04:47+02:00"
 layout = "download"
 +++
 
-The Free  and Premium versions contains the following modules among which you can find:
+The Free (VultModulesFree) package contains a subset of the Premium (VultModules) modules.
 
-- Two drum synthesizers
-- Six filters
-- One oscillator
-- One chaos source
-- Two envelopes
-- One low pass gate
-- Five utilities
-- Two effects
+### Differences with the Premium (VultModules) version
 
-<center><img src="../images/FreeModules.png" style="max-width: 100%;"> </center>
+- Alternative models for Lateralus and Tangents and disabled.
+- Only a few of the modules have polyphony support.
+
+<script src="../js/grid.js"></script>
+<script type="text/javascript">
+   window.onload = populateFree;
+</script>
+<div>
+            <div id="module-buttons">
+            </div>
+            <div id="module-tags">
+            </div>
+            <div id="modules">
+            </div>
+</div>

@@ -6,9 +6,30 @@ image = "../images/Leonardo.jpg"
 +++
 
 
-The Vult modules are designed and coded by me [Leonardo Laguna Ruiz](http://modlfo.github.io). Most of the modules have been refined with ideas from very talented people of the VCV Rack community, like Alejandro Galán Álvaro. I create all these modules during my free time, driven by the passion I have for music, synthesizers, electronics and technology. These modules may not be created by a recognized software company, but they are created by a professional in area of modeling and simulation.
+[Vult](https://www.vult-dsp.com) is the side project of Dr. [Leonardo Laguna Ruiz](http://modlfo.github.io).
 
-If you want to know more, you can find an interview with me here:[Switched On Rack: Meet the Devs](http://www.switchedonrack.com/meet-the-devs-vult.html)
+After more than 10 years developing scientific software, he decided to apply all his knowledge in electronics, mathematical modelling and simulation to his favorite hobby: Music Technology.
+​
+
+Currently, Leonardo still works developing the simulation core of Wolfram SystemModeler and runs Vult with the help of his family and friends.
+
+​
+Over the years, many people have helped with testing, design and ideas. My gratitude goes to:
+
+- Alejandro Galán Álvaro
+- David Rodriguez
+- Xavier Blemont
+- Nigel TheArt OfSound
+- Simon Bader
+- Omri Cohen
+- Andrew Belt
+- John Klimt
+
+If you want to know more, you can find an interviews with me here:
+
+[Omri Cohen: Patch Talk](https://youtu.be/VnwLg_vSGtc)
+
+[Switched On Rack: Meet the Devs](http://www.switchedonrack.com/meet-the-devs-vult.html)
 
 ## Support
 
