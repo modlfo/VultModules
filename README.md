@@ -1,17 +1,16 @@
 # Vult Modules for Rack
 
-A set of modules for VCV Rack written in Vult. You can see the full list and check the manuals here: https://modlfo.github.io/VultModules/
+A set of modules for VCV Rack written in Vult. You can find the main page here: https://modlfo.github.io/VultModules/
 
-![Modules](https://modlfo.github.io/VultModules/images/VultFamily.png "Modules")
+You can find other Vult related project in the main page: https://www.vult-dsp.com
+
+![Modules](https://modlfo.github.io/VultModules/images/Vult.png "Modules")
 
 ## Support
 You can report any issue or ask me questions here: [issues](https://github.com/modlfo/VultModules/issues)
 
 ## Get the modules
-
-[Buy](https://vcvrack.com/plugins.html#Leonardo%20Laguna%20Ruiz)
-[Donate](https://www.paypal.me/VultModules)
-[Download](https://github.com/modlfo/VultModules/releases)
+You can find all the free and pais modules in the [VCV Rack Store](https://vcvrack.com/plugins.html#Vult)
 
 ## Alternative Skins
 
