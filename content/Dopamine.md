@@ -8,7 +8,7 @@ image ="../images/Dopamine.png"
 
 <center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
 
-Dopamine is based on the idea that, every time tell one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.
+Dopamine is based on the idea that, every time we tell one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.
 
 Dopamine simulates this behavior by using different layers of virtual neurons. These neurons will try to store CV and Gate information and they will recall it as best as they can. The neurons can be trained by rating when we Love or Hate a sequence.
 
