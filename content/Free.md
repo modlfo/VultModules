@@ -9,7 +9,6 @@ The Free (VultModulesFree) package contains a subset of the Premium (VultModules
 ### Differences with the Premium (VultModules) version
 
 - Alternative models for Lateralus and Tangents and disabled.
-- Only a few of the modules have polyphony support.
 
 <script src="../js/grid.js"></script>
 <script type="text/javascript">
