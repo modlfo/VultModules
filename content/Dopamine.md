@@ -36,7 +36,7 @@ You can provide an input at the same time you are playing back. Every time there
 
 ### Training the Neurons
 
-We can influence the memories of our neurons by providing feedback with the LOVE or HATE buttons. These buttons rate the **previously played sequence**. If we like the previous sequence, pressing the LOVE button will tell the neurons that we liked the sequence we heard and it is gonna learn to provide sequences alike. The HATE button does the opposite. It will train the neurons to avoid the previous played sequence.
+We can influence the memories of our neurons by providing feedback with the LOVE or HATE buttons. These buttons rate the **previously output sequence**. If we like the previous sequence, pressing the LOVE button will tell the neurons that we liked the sequence we heard and it is gonna learn to provide sequences alike. The HATE button does the opposite. It will train the neurons to avoid the previous played sequence. It will take a few presses of LOVE/HATE until you start listening the effect in the output sequence.
 
 You have to consider that the output is at every moment affected by the value of the DEFECTS knob.
 
@@ -58,8 +58,8 @@ The OFFSET and RANGE control can be used to modify the output signal. As their n
 
 ### Train
 
-- **Love**: train the neurons by reinforcing the **previously played** sequence.
-- **Hate**: train the neurons by discouraging the **previously played** sequence.
+- **Love**: train the neurons by reinforcing the **previously output** sequence.
+- **Hate**: train the neurons by discouraging the **previously output** sequence.
 
 ### Record
 
