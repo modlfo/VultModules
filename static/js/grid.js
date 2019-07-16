@@ -30,7 +30,7 @@ var premium = [
   {
     slug: 'Dopamine',
     name: 'Dopamine',
-    tags: ['Sequencer'],
+    tags: ['Sequencer', 'Random'],
     description: 'Neural Tape',
     packages: ['Mysteries']
   },
@@ -75,7 +75,7 @@ var premium = [
   {
     slug: 'Lateralus',
     name: 'Lateralus',
-    tags: ['VCF', 'VCO'],
+    tags: ['VCF'],
     description: 'Diode Ladder Filter',
     packages: ['Free', 'Premium']
   },
@@ -114,7 +114,7 @@ var premium = [
   {
     slug: 'Nurage',
     name: 'Nurage',
-    tags: ['Low pass gate', 'VCF', 'VCO', 'VCA'],
+    tags: ['Low pass gate', 'VCF', 'VCA'],
     description: 'Dual Low Pass Gate/Filter',
     packages: ['Premium']
   },
@@ -128,7 +128,7 @@ var premium = [
   {
     slug: 'Rescomb2',
     name: 'Rescomb 2',
-    tags: ['VCF', 'Effect', 'VCO'],
+    tags: ['VCF', 'Effect', 'Physical modeling'],
     description: 'Resonant Comb Filter',
     packages: ['Premium']
   },
@@ -163,7 +163,7 @@ var premium = [
   {
     slug: 'Tangents',
     name: 'Tangents',
-    tags: ['VCF', 'VCO'],
+    tags: ['VCF'],
     description: 'Steiner-Parker Filter',
     packages: ['Free', 'Premium']
   },
@@ -205,14 +205,14 @@ var premium = [
   {
     slug: 'Vortex',
     name: 'Vortex',
-    tags: ['VCF', 'VCO'],
+    tags: ['VCF'],
     description: 'Russian Filter',
     packages: ['Premium']
   },
   {
     slug: 'Quincunx',
     name: 'Quincunx',
-    tags: ['Sequencer'],
+    tags: ['Sequencer', 'Random'],
     description: 'Probability Machine',
     packages: ['Mysteries']
   },
@@ -270,7 +270,7 @@ var compacts = [
   {
     slug: 'Freak',
     name: 'Freak',
-    tags: ['VCF', 'VCO'],
+    tags: ['VCF'],
     description: 'Manifold Filter',
     packages: ['Compacts']
   },
@@ -291,7 +291,7 @@ var compacts = [
   {
     slug: 'Vorg',
     name: 'Vorg',
-    tags: ['VCF', 'VCO'],
+    tags: ['VCF'],
     description: 'Low/High Pass Filter',
     packages: ['Compacts']
   }
