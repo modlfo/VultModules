@@ -28,6 +28,13 @@ var premium = [
     packages: ['Free']
   },
   {
+    slug: 'Dopamine',
+    name: 'Dopamine',
+    tags: ['Sequencer'],
+    description: 'Neural Tape',
+    packages: ['Mysteries']
+  },
+  {
     slug: 'Flame',
     name: 'Flame',
     tags: ['Distortion', 'Waveshaper', 'Effect'],
@@ -203,6 +210,13 @@ var premium = [
     packages: ['Premium']
   },
   {
+    slug: 'Quincunx',
+    name: 'Quincunx',
+    tags: ['Sequencer'],
+    description: 'Probability Machine',
+    packages: ['Mysteries']
+  },
+  {
     slug: 'BlackPanelSmall',
     name: 'Blank: 3 HP',
     tags: ['Blank'],
@@ -306,7 +320,7 @@ var tags = uniq(Array.prototype.concat.apply([], modules.map(x => x.tags)))
                    return 1;
                });
 
-var packages = ['All', 'Premium', 'Free', 'Compacts'];
+var packages = ['All', 'Premium', 'Free', 'Compacts', 'Mysteries'];
 
 var prefix = '';
 
@@ -487,4 +501,10 @@ function populateCompacts() {
   prefix = '../';
   populateGrid();
   packageFilter('Compacts');
+}
+
+function populateMysteries() {
+  prefix = '../';
+  populateGrid();
+  packageFilter('Mysteries');
 }

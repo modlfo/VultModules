@@ -16,12 +16,11 @@ Dopamine simulates this behavior by using different layers of virtual neurons. T
 
 ### Recording
 
-In order to record the input, you need to enable the INPUT monitoring by pressing the button.
-To record your own input, first, provide a clock signal into the CLK input and the data you want to record in the CV and GATE inputs. Select how long you want the sequence to be using the STEPS control. Pressing the REC button will arm the machine and the LED will turn light red. When the sequence ends, the recording will start and the LED will be full red. Once the sequence ends, the recording will stop. You can monitor what you are recording by checking the outputs, these will display exactly what's being recorded.
+To record your own input, first, provide a clock signal into the CLK input and the data you want to record in the CV and GATE inputs. Select how long you want the sequence to be using the STEPS control. Pressing the REC button will arm the machine and the LED will turn light red. When the sequence ends, the recording will start and the LED will be full red. Once the sequence ends, the recording will stop.
 
-By default, the input and output of Dopamine are merged and recorded. If you don't want to record the output, decrease the DEFECTS control.
+By default, Dopamine records only the input but you will be listening to the output as well (with defects included). If you want to record the output, you need to enable the feedback by pressing the FEED button.
 
-We can record multiple times information into the neurons. In this case, the memories are gonna be merged and the neurons will come up with variations of the recordings during playback.
+You can record multiple times information into the neurons. In this case, the memories are gonna be merged and the neurons will come up with variations of the recordings during playback.
 
 We can clear the data by pressing the WIPE button. Pressing it will delete layer by layer of the neurons and the LED will blink every time there's deletion. If there are no more layers to delete, the LED will not blink.
 
@@ -33,15 +32,21 @@ The sequence can be reset by providing a pulse in the RESET input. If you don't 
 
 The current location is displayed using the eight LEDs. The location is displayed proportionally to the number of steps. For example, if we use 64 steps, the first 8 will be displayed by the first LED.
 
+You can provide an input at the same time you are playing back. Every time there's an input GATE you will be able to listen to the data you are providing. If you want to ignore your input, you can turn it off by pressing the MODE button.
+
 ### Training the Neurons
 
-We can influence the memories of our neurons by providing feedback with the LOVE or HATE buttons. These buttons rate the previously played sequence. If we like the previous sequence, pressing the LOVE button will tell the neurons that we liked the sequence we heard and it is gonna learn to provide sequences alike. The HATE button does the opposite. It will train the neurons to avoid the previous played sequence.
+We can influence the memories of our neurons by providing feedback with the LOVE or HATE buttons. These buttons rate the **previously played sequence**. If we like the previous sequence, pressing the LOVE button will tell the neurons that we liked the sequence we heard and it is gonna learn to provide sequences alike. The HATE button does the opposite. It will train the neurons to avoid the previous played sequence.
 
 You have to consider that the output is at every moment affected by the value of the DEFECTS knob.
 
 ### Adjusting the Output Signal
 
 The OFFSET and RANGE control can be used to modify the output signal. As their names imply, OFFSET will introduce a constant voltage level to the output, while RANGE will change the values by multiplying them by a constant.
+
+<center><img src="../images/Dopamine-Schema.png"> </center>
+<center>Dopamine block diagram</center>
+
 
 ## Control Description
 
@@ -59,7 +64,7 @@ The OFFSET and RANGE control can be used to modify the output signal. As their n
 ### Record
 
 - **Rec**: arms the recording to start capturing data in the start of the next sequence.
-- **Input**: if enabled, we can monitor and record the input CV and Gate. If disabled, Dopamine will record only its own output.
+- **Feed**: if enabled, Dopamine will record it's own output merged with the provided input.
 - **Wipe**: erases (layer by layer) the information of the neurons.
 
 ### Playback
@@ -74,9 +79,9 @@ The OFFSET and RANGE control can be used to modify the output signal. As their n
 
 ### Inputs and Outputs
 
+- **Mode**: turns On or Off the input.
 - **Reset**: returns the read/record head to the initial step.
 - **Clk**: Moves the read/record head one step forward.
 - **Gate and CV (Inputs)**: main inputs used to record information into the neurons.
 - **Gate and CV (Outputs)**: main outputs of the machine.
-
 
