@@ -25,6 +25,6 @@ You can submit your own skins to be included in this list. Just be sure to follo
 
 Vult logo and artwork Copyright (c) 2017 Leonardo Laguna Ruiz , All rights reserved.
 
-For more information check the [LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/LICENSE.txt) and [ARTWORK-LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/ARTWORK-LICENSE.txt) 
+For more information about creating alternative skins check the file [ARTWORK-LICENSE.txt](https://github.com/modlfo/VultModules/blob/master/ARTWORK-LICENSE.txt) 
 
 
