@@ -28,6 +28,13 @@ var premium = [
     packages: ['Free']
   },
   {
+    slug: 'Decline',
+    name: 'Decline',
+    tags: ['Equalizer'],
+    description: 'Equalizer Line',
+    packages: ['Free']
+  },
+  {
     slug: 'Dopamine',
     name: 'Dopamine',
     tags: ['Sequencer', 'Random'],

@@ -21,6 +21,9 @@ The slots in which the beans fall are converted to voltages and pulses. The conv
 
 Because of the machine having seven slots, it tends to produce odd number sequences. The SKIP switch helps to make the sequences odd. When active, every eight clocks one will be skipped.
 
+<center><img src="../images/Quincunx-Schema.png"> </center>
+<center>Quincunx block diagram</center>
+
 ## Control Description
 
 - **Clk**: main input clock. Every pulse a new bean is thrown.
