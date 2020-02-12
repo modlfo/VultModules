@@ -42,6 +42,13 @@ var premium = [
     packages: ['Mysteries']
   },
   {
+    slug: 'Lapsus',
+    name: 'Lapsus',
+    tags: ['Sequencer'],
+    description: 'Non-Euclidean Rhythm Generator',
+    packages: ['Mysteries']
+  },
+  {
     slug: 'Flame',
     name: 'Flame',
     tags: ['Distortion', 'Waveshaper', 'Effect'],
