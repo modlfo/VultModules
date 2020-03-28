@@ -14,6 +14,13 @@ var premium = [
     packages: ['Free']
   },
   {
+    slug: 'Boomstick',
+    name: 'Boomstick',
+    tags: ['VCF', 'Polyphonic'],
+    description: 'Sallen-Key filter',
+    packages: ['Free', 'Premium']
+  },
+  {
     slug: 'Caudal',
     name: 'Caudal',
     tags: ['Random', 'LFO', 'Noise'],
@@ -33,6 +40,13 @@ var premium = [
     tags: ['Equalizer'],
     description: 'Equalizer Line',
     packages: ['Free']
+  },
+  {
+    slug: 'Disjoint',
+    name: 'Disjoint',
+    tags: ['Equalizer', 'VCF', 'Polyphonic'],
+    description: 'DJ Style Filter',
+    packages: ['Free', 'Premium']
   },
   {
     slug: 'Dopamine',
