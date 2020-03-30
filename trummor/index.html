@@ -1,0 +1,118 @@
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="A set of modules for VCV Rack">
+   <meta name="author" content="Leonardo Laguna Ruiz">
+   <link rel="icon" href="../images/favicon.ico">
+
+   <title>Vult Modules for VCV Rack</title>
+
+   <script async src="https://ackee.vultiverse.com/tracker.js" data-ackee-server="https://ackee.vultiverse.com" data-ackee-domain-id="c900af54-2461-497d-a3e7-31d8b4c8a820"></script>
+
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
+
+   <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<div class="container">
+   <ul class="nav nav-tabs">
+   <li class="nav-item">
+      <a class="nav-link" href="../">Home</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="https://www.vult-dsp.com">Store</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../download">Download</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../about">About</a>
+   </li>
+</ul>
+   <h1>Trummor</h1>
+   <div class="row">
+      <div class="col-md-10">
+         <center>
+            <img src=../images/Trummor.png style="max-width: 100%; max-height: 500px;"> </center>
+         
+
+<p><center>Included in: <a href="../premium/" class="btn btn-primary" role="button">VultModules</a> <a href="../free/" class="btn btn-primary" role="button">VultModules Free</a> </center></p>
+
+<p>Trummor is a drum synthesizer that produces 909 style kicks. Trummor can be used to produce other type of percusive sounds like toms and simple snares or hats.</p>
+
+<p>I started developing the algorithms behind Trummor a long time ago and I made a simplified <a href="http://modlfo.github.io/projects/vult-analog-module/">hardware version</a> of it. When VCV Rack came out, I adapted the code and started expanding the sonic capabilities.</p>
+
+<p>Trummor has been replaced by Trummor 2 which is an improved version with even more sonic capabilities.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>Trummor is split into two sections: the oscillator section and the noise section.</p>
+
+<h3 id="drum-section">Drum Section</h3>
+
+<ul>
+<li><strong>Tune</strong>: defines the main pitch of the kick drum. Goes from C0 to C4.</li>
+<li><strong>Bend</strong>: controls the time the pitch envelope takes. To the left, it will produce a more aggressive percusive sound. To the right, it will produce weird drum sounds.</li>
+<li><strong>Drive</strong>: add a gradual distortion to the sound until it gets very punchy.</li>
+<li><strong>Attack, Hold, Decay</strong>: these three controls are the main envelope of the Drum section. This envelope has been separated into an independent module <a href="../spank">Spank</a>. You can find more details there.</li>
+<li><strong>Mode</strong>:
+
+<ul>
+<li><strong>Soft</strong>: provides longer transitions times and less snappy envelope.</li>
+<li><strong>Hard</strong>: faster transition times and more snappy envelope.</li>
+</ul></li>
+<li><strong>Source</strong>: used to blend the internal oscillator signal with an external oscillator (input Ext In). This can be used to insert any oscillator signal and turn it into a percussion.</li>
+<li><strong>Level</strong>: Defines the output level of the section.</li>
+<li><strong>Modulation Slot</strong>: used to modulate one parameter of the oscillator section. Press the small button to rotate the parameters until you find the one you want to modulate.</li>
+<li><strong>Ext In (External Input)</strong>: insert any oscillator you want to compliment the sound of the drum.</li>
+<li><strong>Env Out (Envelope Output)</strong>: outputs the control signal produced by the envelope. This signal can be used in combination with a VCA to control any other sound.</li>
+<li><strong>Pitch</strong>: outputs the CV pitch signal of the internal oscillator. This signal is affected by the Bend parameter. You can use this signal to control any external oscillator and the input the signal into the Ext In jack.</li>
+</ul>
+
+<h3 id="noise-section">Noise Section</h3>
+
+<ul>
+<li><strong>Tone</strong>: defines the character of the noise. To the left you get a pink-like noise that can be used for snare sounds. To the right you get a noise without low frequencies that can be used for hi hats.</li>
+<li><strong>Decimate</strong>: reduces the sample rate of the noise producing glitchy percussion sounds.</li>
+<li><strong>Mode</strong>: same as in the oscillator section.</li>
+<li><strong>Source</strong>: same as in the oscillator section.</li>
+<li><strong>Level</strong>: same as in the oscillator section.</li>
+<li><strong>Modulation Slot</strong>: : same as in the oscillator section.</li>
+<li><strong>Ext In (External Input)</strong>: : same as in the oscillator section.</li>
+<li><strong>Env Out (Envelope Output)</strong>: : same as in the oscillator section.</li>
+</ul>
+
+<h3 id="common">Common</h3>
+
+<ul>
+<li><strong>Gate</strong>: the signal used to trigger the drum. Any signal larger than 2V will trigger the drum.</li>
+<li><strong>Output</strong>: main audio output.</li>
+</ul>
+
+<h2 id="videos">Videos</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gKq4NGLe7iw" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+   </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+   integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+   integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+   <div class="container">
+      <p style="margin-top:20px; margin-bottom:20px">
+         Check our hardware at  <a href="https://www.vult-dsp.com">Vult-DSP</a> page. </p>
+
+   </div>
+</footer>

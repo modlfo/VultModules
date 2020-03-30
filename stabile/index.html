@@ -1,0 +1,88 @@
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="A set of modules for VCV Rack">
+   <meta name="author" content="Leonardo Laguna Ruiz">
+   <link rel="icon" href="../images/favicon.ico">
+
+   <title>Vult Modules for VCV Rack</title>
+
+   <script async src="https://ackee.vultiverse.com/tracker.js" data-ackee-server="https://ackee.vultiverse.com" data-ackee-domain-id="c900af54-2461-497d-a3e7-31d8b4c8a820"></script>
+
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
+
+   <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<div class="container">
+   <ul class="nav nav-tabs">
+   <li class="nav-item">
+      <a class="nav-link" href="../">Home</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="https://www.vult-dsp.com">Store</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../download">Download</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../about">About</a>
+   </li>
+</ul>
+   <h1>Stabile</h1>
+   <div class="row">
+      <div class="col-md-10">
+         <center>
+            <img src=../images/Stabile.png style="max-width: 100%; max-height: 500px;"> </center>
+         
+
+<p><center>Included in: <a href="../premium/" class="btn btn-primary" role="button">VultModules</a> <a href="../free/" class="btn btn-primary" role="button">VultModules Free</a> </center></p>
+
+<p>Stabile is a state variable filter. It provides LP, HP, and BP filters. Additionally to the three filter outputs it provides an extra output imitates the behavior of the SEM filter.</p>
+
+<p>The story of this filter goes even before the existence of Vult. I implemented the initial version of this filter in a microcontroller. With the years I have made many tweaks an simplifications. In fact this filter is very efficient and the sound is very effective.</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<ul>
+<li><strong>Cutoff</strong>: as in all filters, this is the main knob in a filter. It defines the frequency at which the filter starts taking action. Full left, the filter is completely closed. Full right it&rsquo;s open and should not have effect. The cutoff frequency can be controlled with a 1V/Oct signal through the included attenuverter.</li>
+<li><strong>Resonance</strong>: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.</li>
+<li><strong>Semblance</strong>: this control affects only the output called SEM. It provides a behavior similar to the SEM filter. It blends the low pass and high pass outputs. In the center if produces a notch at the cutoff frequency.</li>
+<li><strong>Input</strong>: Input the audio to be filtered. This filter does not self-oscillate.</li>
+<li><strong>Output</strong>:
+
+<ul>
+<li><strong>LP</strong>: low pass output. Good for making anything sound awesome.</li>
+<li><strong>BP</strong>: band pass output. When static, this band is not very interesting, but when modulated magic happens.</li>
+<li><strong>HP</strong>: my favorite use is to remove very low frequencies and boost some bass by adding resonance and keeping the cutoff low.</li>
+<li><strong>SEM</strong>: this output is affected by the Semblance control. As mentioned above, it blends the low and high pass outputs.</li>
+</ul></li>
+</ul>
+
+<h2 id="videos">Videos</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gOSnVdaIj88" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+   </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+   integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+   integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+   <div class="container">
+      <p style="margin-top:20px; margin-bottom:20px">
+         Check our hardware at  <a href="https://www.vult-dsp.com">Vult-DSP</a> page. </p>
+
+   </div>
+</footer>
