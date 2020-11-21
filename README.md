@@ -12,6 +12,12 @@ You can report any issue or ask me questions here: [issues](https://github.com/m
 ## Get the modules
 You can find all the free and pais modules in the [VCV Rack Store](https://vcvrack.com/plugins.html#Vult)
 
+## Contribute
+
+You can help improving the documentation by editing the files in the branch `page-src`. You can find that branch here https://github.com/modlfo/VultModules/tree/page-src/content
+
+The html files are generated based on the content of those files.
+
 ## Alternative Skins
 
 These are some alternative skins that you can use to change the look of the modules. The skins are not maintained by Vult so if they are outdated you have to contact the authors to fix them.
