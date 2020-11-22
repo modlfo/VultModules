@@ -10,7 +10,7 @@ You can find other Vult related project in the main page: https://www.vult-dsp.c
 You can report any issue or ask me questions here: [issues](https://github.com/modlfo/VultModules/issues)
 
 ## Get the modules
-You can find all the free and pais modules in the [VCV Rack Store](https://vcvrack.com/plugins.html#Vult)
+You can find all the free and paid modules in the [VCV Rack Store](https://vcvrack.com/plugins.html#Vult)
 
 ## Contribute
 
