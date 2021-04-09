@@ -303,6 +303,13 @@ var compacts = [
     packages: ['Compacts']
   },
   {
+   slug: 'Freak-HW',
+   name: 'Freak-HW',
+   tags: ['VCF'],
+   description: 'Manifold Filter',
+   packages: ['Compacts']
+ },
+  {
     slug: 'Incubus',
     name: 'Incubus',
     tags: ['Synth Voice'],
@@ -322,7 +329,14 @@ var compacts = [
     tags: ['VCF'],
     description: 'Low/High Pass Filter',
     packages: ['Compacts']
-  }
+  },
+  {
+   slug: 'Vraids',
+   name: 'Vraids',
+   tags: ['VCO'],
+   description: 'Macro oscillator',
+   packages: ['Compacts']
+ }
 ];
 
 var modules = premium.concat(compacts).sort(function(a, b) {
