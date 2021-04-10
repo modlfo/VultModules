@@ -70,11 +70,17 @@ var premium = [
     packages: ['Premium']
   },
   {
-    slug: 'Ferox',
-    name: 'Ferox',
-    tags: ['VCF'],
-    description: 'CMOS Filter',
-    packages: ['Premium']
+   slug: 'Ferox',
+   name: 'Ferox',
+   tags: ['VCF'],
+   description: 'CMOS Filter',
+   packages: ['Premium']
+ },{
+    slug: 'Feigen',
+    name: 'Feigen',
+    tags: ['Random'],
+    description: 'Bifurcations Generator',
+    packages: ['Mysteries']
   },
   {
     slug: 'Flux',
