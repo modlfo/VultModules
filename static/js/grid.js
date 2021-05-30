@@ -297,7 +297,15 @@ var premium = [
     description: 'Stereo Channel Send/Return',
     packages: ['Free'],
     link: 'Send'
-  }
+  },
+  {
+   slug: 'Wolv',
+   name: 'Wolv',
+   tags: ['Waveshaper'],
+   description: 'Waveshaper',
+   packages: ['Free'],
+   link: 'Wolv'
+ }
 ];
 
 var compacts = [
