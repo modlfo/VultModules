@@ -1,0 +1,133 @@
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="A set of modules for VCV Rack">
+   <meta name="author" content="Leonardo Laguna Ruiz">
+   <link rel="icon" href="../images/favicon.ico">
+
+   <title>Vult Modules for VCV Rack</title>
+
+   <script async src="https://ackee.vultiverse.com/tracker.js" data-ackee-server="https://ackee.vultiverse.com" data-ackee-domain-id="c900af54-2461-497d-a3e7-31d8b4c8a820"></script>
+
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
+
+   <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<div class="container">
+   <ul class="nav nav-tabs">
+   <li class="nav-item">
+      <a class="nav-link" href="../">Home</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="https://www.vult-dsp.com">Store</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../download">Download</a>
+   </li>
+   <li class="nav-item">
+      <a class="nav-link" href="../about">About</a>
+   </li>
+</ul>
+   <h1>Vessek</h1>
+   <div class="row">
+      <div class="col-md-10">
+         <center>
+            <img src=../images/Vessek.png style="max-width: 100%; max-height: 500px;"> </center>
+         
+
+<p><center>Included in: <a href="../premium/" class="btn btn-primary" role="button">VultModules</a> <a href="../free/" class="btn btn-primary" role="button">VultModules Free</a> </center></p>
+
+<p>Vessek is an oscillator for people looking for analog sound.</p>
+
+<p>Vessek started modeling the basic circuit of an analog saw wave oscillator. Most of the parameters were initially obtained from my compact analog bass synth. I got a pretty good matching of the sound that I bet it would pass a blind test. Later in the development, samples of other well known analog oscillators were sent to me by members of the VCV Rack community. From the samples I was able of extracting characteristics of the waves that help me fit my model.</p>
+
+<p>The current model is a blend of the characteristics of different analog oscillators with some added tweaks to give Vessek it&rsquo;s own personality.</p>
+
+<h2 id="diagram">Diagram</h2>
+
+<p>Thanks to Bob Fuller for making the diagram of Vessek. You can get the pdf version <a href="../images/Vult-Vessek.pdf">HERE</a></p>
+
+<p><img src="../images/Vessek-internals.png" alt="Vessek" title="Signal Flow Diagram" /></p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>Vessek consists of two oscillators (A and B) with similar parameters. Oscillator A can modulate oscillator B using FM and AM. To see all features of Vessek check the &ldquo;Vessek Overview&rdquo; video below.</p>
+
+<p>Vessek features the Vult modulation section that allows controlling any parameter in the interface. To activate, press one of the buttons and move the parameter you want to change to assign it.</p>
+
+<ul>
+<li><strong>Tune Switch</strong>: defines how the Tune knob behaves. It has three modes:
+
+<ul>
+<li><strong>Fine</strong>: sets a tuning range one semitone up and down.</li>
+<li><strong>Coarse</strong>: sets a tuning range one octave up and down.</li>
+<li><strong>Semi</strong>: sets a tuning range one octave up and down but the tunning is quantized to every semitone.</li>
+</ul></li>
+<li><strong>Tune</strong>: offsets the V/OCT input. The range is defined by the Tune Switch.</li>
+<li><strong>Oct</strong>: offsets the V/OCT input three octaves up and down. Modulate this knob and you&rsquo;ll get some nice arpeggios.</li>
+<li><strong>PW</strong>: sets the pulse width of the wave. This parameter affects all the waveforms. In the case of the Saw it produces a double Saw sound which is more fat that the simple one. In the case of the triangle changes the asymmetry of the wave.</li>
+<li><strong>Wave</strong>: selects the wave.
+
+<ul>
+<li><strong>Pulse</strong>: the good old pulse. Modulate the PW parameter to make it mor interesting.</li>
+<li><strong>Saw</strong>: do you want a super-saw? change the PW and Tune of the two oscillators.</li>
+<li><strong>Triang</strong>: the triangle of Vessek is a bit more special, it produces a more fat triangle that is good for bass sounds.</li>
+</ul></li>
+<li><strong>Mix</strong>: controls the level of the two oscillators.</li>
+<li><strong>FM</strong>: uses the output from oscillator A to modulate the frequency of oscillator B. This modulation adds some nice harmonics to the sound.</li>
+<li><strong>AM</strong>: uses the output from oscillator A to modulate the amplitude of oscillator B.</li>
+<li><strong>Sync</strong>: produces a gradual modulation of oscillator B based on the reset signal of A. In a low value, it interferers the phase of oscillator B. As the value goes up, oscillator B starts resetting at the same time as oscillator A. In the maximum setting we have a hard-sync sound. Using Sync, the inharmonic sounds produced by the FM become more harmonic.</li>
+<li><strong>Shaper</strong>: adds a final distortion to the mixed wave. This can really spice the sound. The tonal characteristics can be changed with the Offset parameter.</li>
+<li><strong>Offset</strong>: adds a offset voltage to the wave before going into the Shaper in order to produce an asymmetric distortion.</li>
+<li><strong>Fade</strong>: this is probably the most overlooked feature of Vessek. The Fade parameter controls the decay time of an envelope triggered by the Gate input. If nothing is connected to the Ext input, the voltage of the envelope is output through the Out jack (in Fade section). If a signal is connected to the Ext jack, the envelope is multiplied (with a VCA) this signal and output through the Out jack. This signal can be used to modulate any parameter of Vessek using the modulation section. With this signal you can produce sounds that change, for example: percussive sounds by modulating the FM or Shape parameter.</li>
+<li><strong>Ext</strong>: this jack takes a signal that is affected by the Fade envelope (see Fade parameter).</li>
+<li><strong>Out (Fade section)</strong>: outputs the Fade envelope that can be used to modulate any parameter (see Fade parameter).</li>
+<li><strong>Glide</strong>: controls the maximum rate of change of the V/OCT signal. Glide can be used to produce a gradual change in pitch of the oscillator. For example, if the V/OCT signal changes abruptly, the glide will make Vessek change softer to the target voltage.</li>
+<li><strong>Mode(Glide section)</strong>: defines when the glide is applied.
+
+<ul>
+<li><strong>Skip Gate</strong>: Glide is not applied if the V/OCT signal changes at the same time as a Gate signal. This will produce an abrupt transition of the pitch when the Gate changes.</li>
+<li><strong>Always</strong>: always apply the glide no matter the signal of the Gate.</li>
+</ul></li>
+<li><strong>Master Tune</strong>: this is a non randomizable control that can be used to change the pitch of both oscillators at the same time.</li>
+<li><strong>V/OCT</strong>: this is the main input of the oscillator. It defines the pitch using the 1V per octave convention. Zero volts corresponds to a C1 note.</li>
+<li><strong>Gate</strong>: a typical gate signal that controls the Glide and Fade functions of Vessek.</li>
+<li><strong>Out</strong>: main output of the mixed waves.</li>
+</ul>
+
+<h2 id="videos">Videos</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GPf6u3PLKys" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FAXCNRXuP1w" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EvaDTWopD40" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qtY0TyNwIwQ" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+   </div>
+
+<p>Help improve this manual <a href="https://github.com/modlfo/VultModules/tree/page-src/content">here</a>.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+   integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+   integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+<footer class="footer">
+   <div class="container">
+      <p style="margin-top:20px; margin-bottom:20px">
+         Check our hardware at  <a href="https://www.vult-dsp.com">Vult-DSP</a> page. </p>
+
+   </div>
+</footer>
