@@ -37,90 +37,55 @@
       <div class="col-md-10">
          <center>
             <img src=../images/Dopamine.png style="max-width: 100%; max-height: 500px;"> </center>
-         
-
-<p><center>Included in: <a href="../mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center></p>
-
+         <!-- raw HTML omitted -->
 <p>Dopamine is based on the idea that, every time we tell one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.</p>
-
 <p>Dopamine simulates this behavior by using different layers of virtual neurons. These neurons will try to store CV and Gate information and they will recall it as best as they can. The neurons can be trained by rating when we Love or Hate a sequence.</p>
-
 <h2 id="basic-use">Basic Use</h2>
-
 <h3 id="recording">Recording</h3>
-
 <p>To record your own input, first, provide a clock signal into the CLK input and the data you want to record in the CV and GATE inputs. Select how long you want the sequence to be using the STEPS control. Pressing the REC button will arm the machine and the LED will turn light red. When the sequence ends, the recording will start and the LED will be full red. Once the sequence ends, the recording will stop.</p>
-
 <p>By default, Dopamine records only the input but you will be listening to the output as well (with defects included). If you want to record the output, you need to enable the feedback by pressing the FEED button.</p>
-
 <p>You can record multiple times information into the neurons. In this case, the memories are gonna be merged and the neurons will come up with variations of the recordings during playback.</p>
-
 <p>We can clear the data by pressing the WIPE button. Pressing it will delete layer by layer of the neurons and the LED will blink every time there&rsquo;s deletion. If there are no more layers to delete, the LED will not blink.</p>
-
 <h3 id="playing-back">Playing Back</h3>
-
 <p>The machine is continuously playing back sequences. The sequences are obtained by requesting information to the neurons. Even when there&rsquo;s nothing recorded the machine will produce and output that can be defective or not. The output can be controlled by the DEFECT and LEVEL knobs. The defect control can be seen as a probability of generating wrong data. This can be used to introduce variations to the patterns. At 0% the tape will produce recorded information only, while at 100% the output will be highly &ldquo;invented&rdquo; by the neurons. The amount of variation can be controlled by the LEVEL parameter which constraints (in Volts) the maximum deviation.</p>
-
 <p>The sequence can be reset by providing a pulse in the RESET input. If you don&rsquo;t like where the sequence starts, you can shift the start point with the left and right SHIFT buttons.</p>
-
 <p>The current location is displayed using the eight LEDs. The location is displayed proportionally to the number of steps. For example, if we use 64 steps, the first 8 will be displayed by the first LED.</p>
-
 <p>You can provide an input at the same time you are playing back. Every time there&rsquo;s an input GATE you will be able to listen to the data you are providing. If you want to ignore your input, you can turn it off by pressing the MODE button.</p>
-
 <h3 id="training-the-neurons">Training the Neurons</h3>
-
 <p>We can influence the memories of our neurons by providing feedback with the LOVE or HATE buttons. These buttons rate the <strong>previously output sequence</strong>. If we like the previous sequence, pressing the LOVE button will tell the neurons that we liked the sequence we heard and it is gonna learn to provide sequences alike. The HATE button does the opposite. It will train the neurons to avoid the previous played sequence. It will take a few presses of LOVE/HATE until you start listening the effect in the output sequence.</p>
-
 <p>You have to consider that the output is at every moment affected by the value of the DEFECTS knob.</p>
-
 <h3 id="adjusting-the-output-signal">Adjusting the Output Signal</h3>
-
 <p>The OFFSET and RANGE control can be used to modify the output signal. As their names imply, OFFSET will introduce a constant voltage level to the output, while RANGE will change the values by multiplying them by a constant.</p>
-
-<p><center><img src="../images/Dopamine-Schema.png"> </center>
-<center>Dopamine block diagram</center></p>
-
+<!-- raw HTML omitted -->
 <h2 id="control-description">Control Description</h2>
-
 <h3 id="location">Location</h3>
-
 <ul>
 <li><strong>Steps</strong>: defines the length of the sequence in steps, from 1 to 64.</li>
 <li><strong>Shift (Left and Right)</strong>: change the starting point of the sequence by one step.</li>
 <li><strong>Location LEDs</strong>: display the current playback location according to the number of steps.</li>
 </ul>
-
 <h3 id="train">Train</h3>
-
 <ul>
 <li><strong>Love</strong>: train the neurons by reinforcing the <strong>previously output</strong> sequence.</li>
 <li><strong>Hate</strong>: train the neurons by discouraging the <strong>previously output</strong> sequence.</li>
 </ul>
-
 <h3 id="record">Record</h3>
-
 <ul>
 <li><strong>Rec</strong>: arms the recording to start capturing data in the start of the next sequence.</li>
 <li><strong>Feed</strong>: if enabled, Dopamine will record it&rsquo;s own output merged with the provided input.</li>
 <li><strong>Wipe</strong>: erases (layer by layer) the information of the neurons.</li>
 </ul>
-
 <h3 id="playback">Playback</h3>
-
 <ul>
 <li><strong>Defects</strong>: controls the level of misinformation the neurons produces.</li>
 <li><strong>Range</strong>: constraints the maximum level of deviation that the defects can have.</li>
 </ul>
-
 <h3 id="output-adjust">Output Adjust</h3>
-
 <ul>
 <li><strong>Offset</strong>: adds a constant level of voltage to the output. This goes from -5 V to 5V.</li>
 <li><strong>Range</strong>: multiplies by a constant level the output. This goes from 0 to 2x.</li>
 </ul>
-
 <h3 id="inputs-and-outputs">Inputs and Outputs</h3>
-
 <ul>
 <li><strong>Mode</strong>: turns On or Off the input.</li>
 <li><strong>Reset</strong>: returns the read/record head to the initial step.</li>

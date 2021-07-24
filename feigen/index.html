@@ -37,15 +37,26 @@
       <div class="col-md-10">
          <center>
             <img src=../images/Feigen.png style="max-width: 100%; max-height: 500px;"> </center>
-         
-
-<p><center>Included in: <a href="../mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center></p>
-
-<p>Work in progress&hellip;</p>
-
+         <!-- raw HTML omitted -->
+<p>Feigen is a quasi-chaotic voltage source that has a few interesting properties for music. On it&rsquo;s core lies the Logistic Map equation which is capable of producing periodic and chaotic patterns depending on it&rsquo;s settings. Additionally, the generated sequences can be controlled by selecting the initial state (the Root) and resetting the module.</p>
+<h2 id="control-description">Control Description</h2>
+<h3 id="main-controls">Main controls</h3>
+<ul>
+<li><strong>Growth</strong>: It defines the characteristics of the generated voltages. When set full CCW, the module will generate oscillate producing two values. As the control is moved CW the bifurcation points are reached producing more values. In some special points, the produced patterns will be periodic. As you approach the full CW position the complexity of the sequences wil increase until these are perceived to be chaotic.</li>
+<li><strong>Range</strong>: Attenuates/amplifies the input signal from 0x to 2x.</li>
+<li><strong>Offset</strong>: Adds a constant voltage to the input signal from -5V to 5V.</li>
+<li><strong>Root</strong>: Defines the start of the sequence after a reset signal is received.</li>
+</ul>
+<h3 id="attenuverters">Attenuverters</h3>
+<p>The controls (Growth, Range and Offset) have a dedicated attenuverter and input jack. These can be used to control those parameters using CV.</p>
+<h3 id="inputs-and-outputs">Inputs and Outputs</h3>
+<ul>
+<li><strong>Reset</strong>: sets the internal state of the module to the value defined by the Root control and Root input.</li>
+<li><strong>Clk</strong>: receives the clock signal of the module.</li>
+<li><strong>Out</strong>: main output of the module. The offset and amplitude can be adjusted using the Offset and Range controls.</li>
+</ul>
 <h2 id="video">Video</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zhSa0nGoq5c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- raw HTML omitted -->
 
       </div>
 

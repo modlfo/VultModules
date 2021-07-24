@@ -37,104 +37,80 @@
       <div class="col-md-10">
          <center>
             <img src=../images/Noxious-Poly.png style="max-width: 100%; max-height: 500px;"> </center>
-         
-
-<p><center>Included in: <a href="../premium/"><a href="../premium/" class="btn btn-primary" role="button">VultModules</a></a> </center></p>
-
+         <!-- raw HTML omitted -->
 <p>Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.</p>
-
 <p>Noxious is unpredictable but controllable.</p>
-
 <p>There are available two versions: monophonic and polyphonic.</p>
-
 <h2 id="documentation">Documentation</h2>
-
 <ul>
 <li><strong>Tune Switch</strong>: defines how the Tune knob behaves. It has three modes:
-
 <ul>
 <li><strong>Fine</strong>: sets a tuning range one semitone up and down.</li>
 <li><strong>Coarse</strong>: sets a tuning range one octave up and down.</li>
 <li><strong>Semi</strong>: sets a tuning range one octave up and down but the tunning is quantized to every semitone.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Tune</strong>: offsets the V/OCT input. The range is defined by the Tune Switch.</li>
 <li><strong>Oct</strong>: offsets the V/OCT input three octaves up and down. Modulate this knob and you&rsquo;ll get some nice arpeggios.</li>
 <li><strong>Wave</strong>: controls the even and odd harmonics of the main oscillator. Full left produces a square signal. Full right produces a saw wave.</li>
 <li><strong>Harm</strong>: defines the number of harmonics used by the main oscillator. To the left, outputs only the fundamental. To the right produces the full waves. This control has an effect similar to a low pass filter.</li>
 <li><strong>Mode Switch</strong>: selects between audio oscillator or low frequency oscillator.</li>
 </ul>
-
 <p><strong>FM Section</strong></p>
-
 <ul>
 <li><strong>Tune</strong>: defines how the frequency of the modulator is defined.
-
 <ul>
-<li><strong>Ratio</strong>: makes the modulator select only frequencies that are a factor of the main oscillator frequency. It ranges from <sup>1</sup>&frasl;<sub>2</sub> to 8 times the main frequency.</li>
-<li><strong>Free</strong>: makes the modulator select any real frequency between <sup>1</sup>&frasl;<sub>2</sub> to 8 times the main frequency.</li>
-</ul></li>
+<li><strong>Ratio</strong>: makes the modulator select only frequencies that are a factor of the main oscillator frequency. It ranges from 1/2 to 8 times the main frequency.</li>
+<li><strong>Free</strong>: makes the modulator select any real frequency between 1/2 to 8 times the main frequency.</li>
+</ul>
+</li>
 <li><strong>Freq</strong>: defines the frequency of the modulator. The behavior is affected by the Tune parameter (see above).</li>
 <li><strong>FM</strong>: sets the amount of FM applied to the main oscillator.</li>
 <li><strong>Wave</strong>: defines the type of wave used by the modulator.
-
 <ul>
 <li><strong>Saw</strong>: produces a more edgy result that it&rsquo;s interesting for aggressive sounds.</li>
 <li><strong>Sine</strong>: produces a more soft modulation but still very interesting.</li>
-</ul></li>
+</ul>
+</li>
 <li><strong>Ext.FM</strong>: controls the amount of FM applied using the external signal provided in the input jack FM.</li>
 </ul>
-
 <p><strong>Phase Section</strong></p>
-
 <p>All this controls affect the phase of the main oscillator. Individually, the change may seem gentle, but combining them with other modulations can alter drastically the sound.</p>
-
 <ul>
 <li><strong>Overtone</strong>: applies a fold-like distortion to the phase that results in a sound that resembles adding overtones to the sound.</li>
 <li><strong>Body</strong>: transforms the phase in a log/exp way resulting in a thinner or more fat sound.</li>
 <li><strong>Boost</strong>: changes the amplitude of the phase producing a sound resembling to hard-clipping.</li>
 <li><strong>Feed</strong>: adds positive feedback to the phase. This produces a resonating-like sound.</li>
 </ul>
-
 <p><strong>Mix Section</strong></p>
-
 <ul>
 <li><strong>Tone</strong>: balances the sound of the oscillator. To the left, the highs are removed and the lows are enhanced.</li>
 <li><strong>Noise</strong>: controls the level of white noise. The noise is very useful when making percussive sounds with Noxious.</li>
 </ul>
-
 <p><strong>Chaos Section</strong></p>
-
 <p>The chaos section is used to provide random variations to the sound. In order to trigger the modulation you need to provide a Gate signal otherwise these controls will not affect at all the sound.</p>
-
 <ul>
 <li><strong>Spread</strong>: defines how much the parameters could move after a gate signal. In the maximum level, the parameters could move from minimum to maximum.</li>
 <li><strong>Settle</strong>: defines the time the parameters stay outside the current value. A low setting can help provide percussive sounds by making a very fast transition. Larger values will provide longer transitions. When set to the maximum the parameters will not return to the original value but will be reset to a new random state by a new gate.</li>
 </ul>
-
 <p><strong>Glide Section</strong></p>
-
 <ul>
 <li><strong>Glide</strong>: controls the maximum rate of change of the V/OCT signal. Glide can be used to produce a gradual change in pitch of the oscillator. For example, if the V/OCT signal changes abruptly, the glide will make the oscillator change softer to the target voltage.</li>
 <li><strong>Mode (Glide section)</strong>: defines when the glide is applied.
-
 <ul>
 <li><strong>Skip Gate</strong>: Glide is not applied if the V/OCT signal changes at the same time as a Gate signal. This will produce an abrupt transition of the pitch when the Gate changes.</li>
 <li><strong>Always</strong>: always apply the glide no matter the signal of the Gate.</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p><strong>Main Jacks</strong></p>
-
 <ul>
 <li><strong>V/OCT</strong>: this is the main input of the oscillator. It defines the pitch using the 1V per octave convention. Zero volts corresponds to a C1 note.</li>
 <li><strong>Gate</strong>: a typical gate signal that controls the Glide and Chaos functions of Noxious.</li>
 <li><strong>Out</strong>: main output of the mixed waves.</li>
 </ul>
-
 <p><strong>Poly Section</strong></p>
-
 <p>This extension is shown only in Noxious-Poly. The poly section allow to use multiple oscillators with the same settings. The additional voices are only active if the output or cv inputs are connected. Each voice has its own separated output but using the Level knob the sound can be mixed through the main output.</p>
-
 <ul>
 <li><strong>V/OCT</strong>: inputs the pitch voltage for the corresponding voice.</li>
 <li><strong>Tune</strong>: similar to the Tune control of the main voice.</li>
@@ -142,33 +118,18 @@
 <li><strong>Level</strong>: output level of the voice through the main output jack.</li>
 <li><strong>Out</strong>: separate audio output for the voice. The Level knob does not affect the output level on this jack.</li>
 </ul>
-
 <h2 id="audio">Audio</h2>
-
-<p>This is a demo by <a href="http://cornwarning.com">Kent Williams</a> where he uses four Noxious into the Ferox filter.</p>
-
-<p><audio controls>
-  <source src="../audio/beauty2.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio></p>
-
+<p>This is a demo by <!-- raw HTML omitted -->Kent Williams<!-- raw HTML omitted --> where he uses four Noxious into the Ferox filter.</p>
+<!-- raw HTML omitted -->
 <h2 id="videos">Videos</h2>
-
 <p>Audio demos by <a href="https://www.instagram.com/circadiansound/">Simon Bader</a>, <a href="https://www.youtube.com/user/AGalanKh/">Alejandro Galán Álvaro</a> and me.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q6Ts9B0_EeY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <p>This video explains all the features of Noxious</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dteMrGhLTC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <p>Audio demo by <a href="https://www.youtube.com/channel/UCI215RjXT1zqgTIrsUJUhPA">Time_Controlled_Organism</a>.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VjDNTYmUo-4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <p>Audio demo by <a href="https://www.youtube.com/user/TheKlirrfaktor">The Klirrfaktor</a>.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jUjVupZ67kY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- raw HTML omitted -->
 
       </div>
 
