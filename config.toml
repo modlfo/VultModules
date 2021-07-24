@@ -4,3 +4,6 @@ title = "My New Hugo Site"
 theme = "vultmodules"
 
 relativeURLs = "true"
+
+[markup.goldmark.renderer]
+unsafe= true
