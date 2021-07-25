@@ -491,8 +491,7 @@ Vessek started modeling the basic circuit of an analog saw wave oscillator. Most
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/wolv/</guid>
-      <description>Included in: VultModules VultModules Free  Wolv is a very special wave shaper/folder capable of producing a wide range of sounds out of basic waveforms. It is a model of the hardware module with the same name: https://www.vult-dsp.com/wolv
-The design is based on the original design by Ian Fritz.</description>
+      <description>Included in: VultModules VultModules Free  Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is an unique wave folder/shaper but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform and at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.</description>
     </item>
     
     <item>
