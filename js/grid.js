@@ -70,12 +70,13 @@ var premium = [
     packages: ['Premium']
   },
   {
-   slug: 'Ferox',
-   name: 'Ferox',
-   tags: ['VCF'],
-   description: 'CMOS Filter',
-   packages: ['Premium']
- },{
+    slug: 'Ferox',
+    name: 'Ferox',
+    tags: ['VCF'],
+    description: 'CMOS Filter',
+    packages: ['Premium']
+  },
+  {
     slug: 'Feigen',
     name: 'Feigen',
     tags: ['Random'],
@@ -121,6 +122,13 @@ var premium = [
       'Utility', 'Random', 'Noise'
     ],
     description: 'Voltage Processor',
+    packages: ['Free']
+  },
+  {
+    slug: 'Nitrous',
+    name: 'Nitrous',
+    tags: ['VCF'],
+    description: 'Acid Filter',
     packages: ['Free']
   },
   {
@@ -299,13 +307,13 @@ var premium = [
     link: 'Send'
   },
   {
-   slug: 'Wolv',
-   name: 'Wolv',
-   tags: ['Waveshaper'],
-   description: 'Waveshaper',
-   packages: ['Free'],
-   link: 'Wolv'
- }
+    slug: 'Wolv',
+    name: 'Wolv',
+    tags: ['Waveshaper'],
+    description: 'Waveshaper',
+    packages: ['Free'],
+    link: 'Wolv'
+  }
 ];
 
 var compacts = [
@@ -317,12 +325,12 @@ var compacts = [
     packages: ['Compacts']
   },
   {
-   slug: 'Freak-HW',
-   name: 'Freak-HW',
-   tags: ['VCF'],
-   description: 'Manifold Filter',
-   packages: ['Compacts']
- },
+    slug: 'Freak-HW',
+    name: 'Freak-HW',
+    tags: ['VCF'],
+    description: 'Manifold Filter',
+    packages: ['Compacts']
+  },
   {
     slug: 'Incubus',
     name: 'Incubus',
@@ -345,12 +353,12 @@ var compacts = [
     packages: ['Compacts']
   },
   {
-   slug: 'Vraids',
-   name: 'Vraids',
-   tags: ['VCO'],
-   description: 'Macro oscillator',
-   packages: ['Compacts']
- }
+    slug: 'Vraids',
+    name: 'Vraids',
+    tags: ['VCO'],
+    description: 'Macro oscillator',
+    packages: ['Compacts']
+  }
 ];
 
 var modules = premium.concat(compacts).sort(function(a, b) {

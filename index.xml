@@ -334,6 +334,16 @@ Some of the &amp;ldquo;weird&amp;rdquo; behaviors of the real filter were intent
     </item>
     
     <item>
+      <title>Nitrous</title>
+      <link>https://modlfo.github.io/VultModules/nitrous/</link>
+      <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/nitrous/</guid>
+      <description>Included in: VultModules VultModules Free  Nitrous is a model of the TB-303 filter. The TB-303 filter is a diode ladder consisting of four poles, but providing an effective attenuation of 18dB per octave.
+Control Description Main controls  Cutoff: sets the frequency where the attenuation starts taking effect Drive: controls the level of the input signal. Resonance: controls the feedback of the circuit.  CV control There are two inputs and attenuations that can be used to control the Cutoff control: CV1 and CV2.</description>
+    </item>
+    
+    <item>
       <title>Nopskate</title>
       <link>https://modlfo.github.io/VultModules/nopskate/</link>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
