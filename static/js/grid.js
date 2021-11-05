@@ -18,7 +18,7 @@ var premium = [
     name: 'Boomstick',
     tags: ['VCF', 'Polyphonic'],
     description: 'Sallen-Key filter',
-    packages: ['Free', 'Premium']
+    packages: ['Free']
   },
   {
     slug: 'Caudal',
@@ -46,7 +46,7 @@ var premium = [
     name: 'Disjoint',
     tags: ['Equalizer', 'VCF', 'Polyphonic'],
     description: 'DJ Style Filter',
-    packages: ['Free', 'Premium']
+    packages: ['Free']
   },
   {
     slug: 'Dopamine',
@@ -159,6 +159,13 @@ var premium = [
     tags: ['Low pass gate', 'VCF', 'VCA'],
     description: 'Dual Low Pass Gate/Filter',
     packages: ['Premium']
+  },
+  {
+    slug: 'Punch',
+    name: 'Punch',
+    tags: ['VCA'],
+    description: 'Volage Controlled Amplifier',
+    packages: ['Free']
   },
   {
     slug: 'Rescomb',
@@ -305,6 +312,14 @@ var premium = [
     description: 'Stereo Channel Send/Return',
     packages: ['Free'],
     link: 'Send'
+  },
+  {
+    slug: 'Vultari',
+    name: 'Vultari',
+    tags: ['VCO'],
+    description: 'Punk Console',
+    packages: ['Free'],
+    link: 'Vultari'
   },
   {
     slug: 'Wolv',

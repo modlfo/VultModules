@@ -5,7 +5,7 @@ layout = "download"
 
 +++
 
-All modules are available in the [VCV Rack store](https://vcvrack.com/plugins.html#Vult).
+All modules are available in the [VCV Rack store](https://library.vcvrack.com/?query=&brand=Vult&tag=&license=premium).
 
 The modules can be found in three packages:
 

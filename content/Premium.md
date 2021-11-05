@@ -11,7 +11,6 @@ The Premium package (VultModules) contains all the Free modules plus some of the
 
 - Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex.
 - Three extra filter modules shown as alternative models for Lateralus and Tangents.
-- Polyphonic versions of all Free modules
 
 <script src="../js/grid.js"></script>
 <script type="text/javascript">
