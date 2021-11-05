@@ -33,7 +33,7 @@ Differences with the Premium (VultModules) version  Alternative models for Later
       
       <guid>https://modlfo.github.io/VultModules/premium/</guid>
       <description>The Premium package (VultModules) contains all the Free modules plus some of the most complex modules I have developed.
-Differences with the Free (VultModulesFree) version  Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex. Three extra filter modules shown as alternative models for Lateralus and Tangents. Polyphonic versions of all Free modules   window.onload = populatePremium;       </description>
+Differences with the Free (VultModulesFree) version  Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex. Three extra filter modules shown as alternative models for Lateralus and Tangents.   window.onload = populatePremium;       </description>
     </item>
     
     <item>
@@ -363,6 +363,16 @@ Nopskate is based on a circuit I made many years ago which was a failed attempt 
     </item>
     
     <item>
+      <title>Punch</title>
+      <link>https://modlfo.github.io/VultModules/punch/</link>
+      <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/punch/</guid>
+      <description>Included in: VultModules VultModules Free  Punch is a VCA containing two analog models: one based on a BJT transistor and the other based on a Operational Transconductance Amplifier.
+Documentation </description>
+    </item>
+    
+    <item>
       <title>Quincunx</title>
       <link>https://modlfo.github.io/VultModules/quincunx/</link>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
@@ -493,6 +503,16 @@ It was designed based on the input of many members of the VCV Rack community spe
       <guid>https://modlfo.github.io/VultModules/vessek/</guid>
       <description>Included in: VultModules VultModules Free  Vessek is an oscillator for people looking for analog sound.
 Vessek started modeling the basic circuit of an analog saw wave oscillator. Most of the parameters were initially obtained from my compact analog bass synth. I got a pretty good matching of the sound that I bet it would pass a blind test. Later in the development, samples of other well known analog oscillators were sent to me by members of the VCV Rack community.</description>
+    </item>
+    
+    <item>
+      <title>Vultari</title>
+      <link>https://modlfo.github.io/VultModules/vultari/</link>
+      <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/vultari/</guid>
+      <description>Included in: VultModules VultModules Free  Vultari is an oscillator based on the classic VCO made using two 555 circuits. Vultari has a vew extensions, like the possibility of producing saw waves and blend the three waveforms it produces into a single complex one.
+Documentation </description>
     </item>
     
     <item>
