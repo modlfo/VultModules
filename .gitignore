@@ -2,3 +2,4 @@ build/
 /dist/
 /plugin.dylib
 public
+/.hugo_build.lock
