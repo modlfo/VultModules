@@ -108,6 +108,13 @@ var premium = [
     packages: ['Free']
   },
   {
+    slug: 'Jorus',
+    name: 'Jorus',
+    tags: ['Effect'],
+    description: 'Analog chorus',
+    packages: ['Free']
+  },
+  {
     slug: 'Lateralus',
     name: 'Lateralus',
     tags: ['VCF'],
