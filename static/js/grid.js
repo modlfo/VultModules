@@ -1,5 +1,12 @@
 var premium = [
   {
+    slug: 'Anima',
+    name: 'Anima',
+    tags: ['Sequencer', 'Random'],
+    description: 'Psychic Sequence Generator',
+    packages: ['Mysteries']
+  },
+  {
     slug: 'Basal',
     name: 'Basal',
     tags: ['VCO'],
