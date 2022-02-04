@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://modlfo.github.io/VultModules/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Anima</title>
+      <link>https://modlfo.github.io/VultModules/anima/</link>
+      <pubDate>Fri, 04 Feb 2022 19:33:43 +0200</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/anima/</guid>
+      <description>Included in: VultMysteries  Anima is my own version of the sequence generator found on the PsychTone published on February 1971 in the Popular Electronics magazine. Anima provides all the features of the PsychTone except for the sound generator (which is very basic) and adds a few extra features including a Turing-Machine-like behavior.
+Getting started Anima consists of a shift register working as pseudo random number generator algorithm. The fact that the shift register is short (6 stages) makes the sequences repeat periodically every 63 steps.</description>
+    </item>
+    
+    <item>
       <title>Vult Modules Free</title>
       <link>https://modlfo.github.io/VultModules/free/</link>
       <pubDate>Sun, 12 Aug 2018 09:04:47 +0200</pubDate>
