@@ -43,7 +43,7 @@ By default Anima produces a Gate pulse of the same width as the input clock. If 
 
 ### CV generation
 
-Anima includes different methods to combine the generated pulses to generate the CV output. The default algorithm spreads the notes with a similar weight. In order to select a different method, you have to press the F/B button for 2 seconds and then you can use the PAUSE/SELECT buttons to pick a different algorithm. Each algorithm has a different probability distribution of the notes therefore making the produced sequences different. The available algorithms are:
+Anima includes different methods to combine the generated pulses to generate the CV output. The default algorithm spreads the notes with a similar weight. In order to select a different method, you have to press the Bit4 button for 2 seconds and then you can use the PAUSE/SELECT buttons to pick a different algorithm. Each algorithm has a different probability distribution of the notes therefore making the produced sequences different. The available algorithms are:
 
 - Default: equal weight
 - Binary: each weight is twice the previous (1, 2, 4, 8)
