@@ -273,6 +273,20 @@ var premium = [
     packages: ['Premium']
   },
   {
+    slug: 'Opulus',
+    name: 'Opulus',
+    tags: ['Synth voice', 'Polyphonic'],
+    description: 'Retro FM Operator',
+    packages: ['Free']
+  },
+  {
+    slug: 'OpulusMicro',
+    name: 'OpulusMicro',
+    tags: ['Synth voice', 'Polyphonic'],
+    description: 'Accidental FM Operator',
+    packages: ['Free']
+  },
+  {
     slug: 'Quincunx',
     name: 'Quincunx',
     tags: ['Sequencer', 'Random'],

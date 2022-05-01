@@ -383,6 +383,26 @@ Nopskate is based on a circuit I made many years ago which was a failed attempt 
     </item>
     
     <item>
+      <title>Opulus</title>
+      <link>https://modlfo.github.io/VultModules/opulus/</link>
+      <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/opulus/</guid>
+      <description>Included in: VultModules VultModules Free  Opulus is a recreation of the Yamaha OPL2 (YM3812) FM chip. This chip was widely used on 90&amp;rsquo;s soundcards like the Ad Lib and were responsible of producing the sound of uncountable videogames. Opulus reproduces the sound engine to the point where all the sounds are very similar but does not aim to be a perfect emulation. Some of the differences are:
+  Quantization noise: The original OPL2 has a limited number of steps (bits) to represent different magnitudes in the engine which end up producing quantization noise.</description>
+    </item>
+    
+    <item>
+      <title>OpulusMicro</title>
+      <link>https://modlfo.github.io/VultModules/opulusmicro/</link>
+      <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/opulusmicro/</guid>
+      <description>Included in: VultModules VultModules Free  Opulus Micro is a compact version of Opulus. It features the same sound engine, but the interface is focused on &amp;ldquo;accidental&amp;rdquo; sound discovery.
+Basic usage The RAND button randomizes all the module internals and produces a new sound. The generated sounds can be saved into one of the four Slots (push buttons in the top). To save a sound, press and hold the button for 2 seconds until the LED flashes twice.</description>
+    </item>
+    
+    <item>
       <title>Punch</title>
       <link>https://modlfo.github.io/VultModules/punch/</link>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
