@@ -12,7 +12,7 @@
       <pubDate>Fri, 04 Feb 2022 19:33:43 +0200</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/anima/</guid>
-      <description>Included in: VultMysteries  Anima is my own version of the sequence generator found on the PsychTone published on February 1971 in the Popular Electronics magazine. Anima provides all the features of the PsychTone except for the sound generator (which is very basic) and adds a few extra features including a Turing-Machine-like behavior.
+      <description>Included in: VultMysteries Anima is my own version of the sequence generator found on the PsychTone published on February 1971 in the Popular Electronics magazine. Anima provides all the features of the PsychTone except for the sound generator (which is very basic) and adds a few extra features including a Turing-Machine-like behavior.
 Getting started Anima consists of a shift register working as pseudo random number generator algorithm. The fact that the shift register is short (6 stages) makes the sequences repeat periodically every 63 steps.</description>
     </item>
     
@@ -23,7 +23,7 @@ Getting started Anima consists of a shift register working as pseudo random numb
       
       <guid>https://modlfo.github.io/VultModules/free/</guid>
       <description>The Free (VultModulesFree) package contains a subset of the Premium (VultModules) modules.
-Differences with the Premium (VultModules) version  Alternative models for Lateralus and Tangents and disabled.   window.onload = populateFree;      </description>
+Differences with the Premium (VultModules) version Alternative models for Lateralus and Tangents and disabled. </description>
     </item>
     
     <item>
@@ -32,8 +32,7 @@ Differences with the Premium (VultModules) version  Alternative models for Later
       <pubDate>Sun, 12 Aug 2018 09:04:47 +0200</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/mysteries/</guid>
-      <description>Vult Mysteries is a collection modules aimed to explore crazy ideas and turn them into usable modules (if possible).
- window.onload = populateMysteries;      </description>
+      <description>Vult Mysteries is a collection modules aimed to explore crazy ideas and turn them into usable modules (if possible).</description>
     </item>
     
     <item>
@@ -43,7 +42,7 @@ Differences with the Premium (VultModules) version  Alternative models for Later
       
       <guid>https://modlfo.github.io/VultModules/premium/</guid>
       <description>The Premium package (VultModules) contains all the Free modules plus some of the most complex modules I have developed.
-Differences with the Free (VultModulesFree) version  Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex. Three extra filter modules shown as alternative models for Lateralus and Tangents.   window.onload = populatePremium;       </description>
+Differences with the Free (VultModulesFree) version Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex. Three extra filter modules shown as alternative models for Lateralus and Tangents. </description>
     </item>
     
     <item>
@@ -52,8 +51,7 @@ Differences with the Free (VultModulesFree) version  Six extra modules: Ferox, F
       <pubDate>Sun, 12 Aug 2018 09:04:33 +0200</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/compacts/</guid>
-      <description>Compacts (VultCompacts) is Vult&amp;rsquo;s second collection of modules.
- window.onload = populateCompacts;      </description>
+      <description>Compacts (VultCompacts) is Vult&amp;rsquo;s second collection of modules.</description>
     </item>
     
     <item>
@@ -62,8 +60,8 @@ Differences with the Free (VultModulesFree) version  Six extra modules: Ferox, F
       <pubDate>Mon, 21 May 2018 08:57:13 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/ferox/</guid>
-      <description>Included in: VultModules  Ferox is based on the ingenious CMOS filter design. The CMOS filter uses an digital inverter chip to replace operational amplifiers. The result filter full of character, distorted and aggressive. Ferox can transform the simplest waveforms into completely new sound. In some cases it will make you doubt that it is a filter at all.
-Documentation  Cutoff: this is the main knob in a filter. It defines the frequency at which the filter starts taking action.</description>
+      <description>Included in: VultModules Ferox is based on the ingenious CMOS filter design. The CMOS filter uses an digital inverter chip to replace operational amplifiers. The result filter full of character, distorted and aggressive. Ferox can transform the simplest waveforms into completely new sound. In some cases it will make you doubt that it is a filter at all.
+Documentation Cutoff: this is the main knob in a filter. It defines the frequency at which the filter starts taking action.</description>
     </item>
     
     <item>
@@ -72,9 +70,9 @@ Documentation  Cutoff: this is the main knob in a filter. It defines the frequen
       <pubDate>Mon, 21 May 2018 08:57:13 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/freak/</guid>
-      <description>Included in: VultCompacts  The Freak! is a collection of all the Vult filters into a single module (in stereo). The Freak! is part of the Vult Compacts package.
+      <description>Included in: VultCompacts The Freak! is a collection of all the Vult filters into a single module (in stereo). The Freak! is part of the Vult Compacts package.
 The Freak! has advantages and disadvantages over the individual filters. For example, it can process signals in stereo, but lacks the flexibility of having the individual inputs and outputs of the different filter modes.
-Documentation  Cutoff: this is the main knob in a filter.</description>
+Documentation Cutoff: this is the main knob in a filter.</description>
     </item>
     
     <item>
@@ -83,9 +81,9 @@ Documentation  Cutoff: this is the main knob in a filter.</description>
       <pubDate>Mon, 21 May 2018 08:57:13 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/freak-hw/</guid>
-      <description>Included in: VultCompacts  This version of Freak is a clone of the actual hardware module. This module simulates as close as possible all the aspects of the original hardware module. It is a simulator that runs the same code as the hardware module.
+      <description>Included in: VultCompacts This version of Freak is a clone of the actual hardware module. This module simulates as close as possible all the aspects of the original hardware module. It is a simulator that runs the same code as the hardware module.
 You can find the full manual in the main product page https://www.vult-dsp.com/freak
-Videos  </description>
+Videos </description>
     </item>
     
     <item>
@@ -94,7 +92,7 @@ Videos  </description>
       <pubDate>Mon, 21 May 2018 08:57:13 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/nurage/</guid>
-      <description>Included in: VultModules  Nurage was modeled after a modded version of the most famous Low Pass Gate. Nurage comprises Vult&amp;rsquo;s own (very detailed) model of the vactrol control and the filter.
+      <description>Included in: VultModules Nurage was modeled after a modded version of the most famous Low Pass Gate. Nurage comprises Vult&amp;rsquo;s own (very detailed) model of the vactrol control and the filter.
 This module can be used to produce very natural sounding percussion sounds. It provides the possibility to enable or disable the Vactrol, the VCA and the possibility of using the module as stereo filter.
 Documentation The Cutoff, Resonance and Drive knobs affect both filters.</description>
     </item>
@@ -105,9 +103,9 @@ Documentation The Cutoff, Resonance and Drive knobs affect both filters.</descri
       <pubDate>Mon, 21 May 2018 08:57:13 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/vraids/</guid>
-      <description>Included in: VultCompacts  Vraids is a module that simulates the alternative firmware available for the Freak hardware module. This meas that, if you have a Freak hardware, you can change the full behavior by uploading the Vraids firmware.
+      <description>Included in: VultCompacts Vraids is a module that simulates the alternative firmware available for the Freak hardware module. This meas that, if you have a Freak hardware, you can change the full behavior by uploading the Vraids firmware.
 You can find the full manual in the main product page https://www.vult-dsp.com/freak
-Videos  </description>
+Videos </description>
     </item>
     
     <item>
@@ -128,8 +126,8 @@ Currently, Leonardo still works developing the simulation core of Wolfram System
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/basal/</guid>
-      <description>Included in: VultModules VultModules Free  Basal is a easy to use and nice sounding oscillator. It&amp;rsquo;s specifically designed for creating smooth sounds with low harmonic content. Basal features a self modulation technique that acts when the oscillator is moved.
-Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets the V/OCT input three octaves up and down. Mod 1: creates overtones by distorting the phase of the main oscillator (-10V to +10V).</description>
+      <description>Included in: VultModules VultModules Free Basal is a easy to use and nice sounding oscillator. It&amp;rsquo;s specifically designed for creating smooth sounds with low harmonic content. Basal features a self modulation technique that acts when the oscillator is moved.
+Documentation Tune: offsets the V/OCT input one octave up or down. Oct: offsets the V/OCT input three octaves up and down. Mod 1: creates overtones by distorting the phase of the main oscillator (-10V to +10V).</description>
     </item>
     
     <item>
@@ -138,7 +136,7 @@ Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/panels/</guid>
-      <description>Included in: VultModules   The blank panels are an exclusive set of modules for the people that has the paid version. The only function of these panels is to make your Rack look more beautiful by adding the Vult logo.</description>
+      <description>Included in: VultModules The blank panels are an exclusive set of modules for the people that has the paid version. The only function of these panels is to make your Rack look more beautiful by adding the Vult logo.</description>
     </item>
     
     <item>
@@ -147,8 +145,8 @@ Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/bleak/</guid>
-      <description>Included in: VultModules VultModules Free  Bleak is a virtual analog oscillator with zero aliassing that provides very easy to use controls to help you transform the waves. Bleak provides three waveforms that can be morphed and PW modulated.
-Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets the V/OCT input three octaves up and down. PW: defines the pulse-with of the waves. In the case of saw and triangle an equivalent effect of the wave is provided.</description>
+      <description>Included in: VultModules VultModules Free Bleak is a virtual analog oscillator with zero aliassing that provides very easy to use controls to help you transform the waves. Bleak provides three waveforms that can be morphed and PW modulated.
+Documentation Tune: offsets the V/OCT input one octave up or down. Oct: offsets the V/OCT input three octaves up and down. PW: defines the pulse-with of the waves. In the case of saw and triangle an equivalent effect of the wave is provided.</description>
     </item>
     
     <item>
@@ -157,7 +155,7 @@ Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/boomstick/</guid>
-      <description>Included in: VultModules VultModules Free  Documentation not yet available.</description>
+      <description>Included in: VultModules VultModules Free Documentation not yet available.</description>
     </item>
     
     <item>
@@ -166,8 +164,8 @@ Documentation  Tune: offsets the V/OCT input one octave up or down. Oct: offsets
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/bypass/</guid>
-      <description>Included in: VultModules VultModules Free  Bypass (or Util-Bypass) provides an easy way to engage or disengage an audio effect. Bypass can be used to convert any effect into a stompbox like effect allowing to turn it on or off with the press of a pedal.
-Documentation  Status: displays if the effect is engaged (light on) or disengaged (light off). This is so far the only light that you&amp;rsquo;ll find in any Vult module.</description>
+      <description>Included in: VultModules VultModules Free Bypass (or Util-Bypass) provides an easy way to engage or disengage an audio effect. Bypass can be used to convert any effect into a stompbox like effect allowing to turn it on or off with the press of a pedal.
+Documentation Status: displays if the effect is engaged (light on) or disengaged (light off). This is so far the only light that you&amp;rsquo;ll find in any Vult module.</description>
     </item>
     
     <item>
@@ -176,7 +174,7 @@ Documentation  Status: displays if the effect is engaged (light on) or disengage
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/caudal/</guid>
-      <description>Included in: VultModules VultModules Free  Caudal is a chaotic source that is based on the model of a multi segment pendulum (see the video below). The core of Caudal is a detailed simulation of the pendulum system from which we can get measurements like the angular velocities and positions of the segments. These measures produces very natural oscillations that are interrelated due to the nature of the system.
+      <description>Included in: VultModules VultModules Free Caudal is a chaotic source that is based on the model of a multi segment pendulum (see the video below). The core of Caudal is a detailed simulation of the pendulum system from which we can get measurements like the angular velocities and positions of the segments. These measures produces very natural oscillations that are interrelated due to the nature of the system.
 I made the original model using SystemModeler and later applied manual optimizations to improve the performance and being able of running it in real-time.</description>
     </item>
     
@@ -186,8 +184,8 @@ I made the original model using SystemModeler and later applied manual optimizat
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/debriatus/</guid>
-      <description>Included in: VultModules VultModules Free  Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effect can turn a boring sine wave into a wave full of character.
-Documentation  Fold: in this mode transforms the input signal by &amp;ldquo;folding&amp;rdquo; it within a defined threshold. It provides a sound that resembles adding extra harmonics to the signal. Crush: Bit crusher. Reduces the number of bits used to represent the signal.</description>
+      <description>Included in: VultModules VultModules Free Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effect can turn a boring sine wave into a wave full of character.
+Documentation Fold: in this mode transforms the input signal by &amp;ldquo;folding&amp;rdquo; it within a defined threshold. It provides a sound that resembles adding extra harmonics to the signal. Crush: Bit crusher. Reduces the number of bits used to represent the signal.</description>
     </item>
     
     <item>
@@ -196,9 +194,9 @@ Documentation  Fold: in this mode transforms the input signal by &amp;ldquo;fold
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/decline/</guid>
-      <description>Included in: VultModules VultModules Free  Decline is a simple and efficient equalizer. It consist of two peak filters, one high shelf and one low shelf.
+      <description>Included in: VultModules VultModules Free Decline is a simple and efficient equalizer. It consist of two peak filters, one high shelf and one low shelf.
 Documentation All equalizers have a at least two controls: one for the Frequency and one for the Gain. The peak equalizers include an extra Q control. The actual values of the frequencies and gains can bee seed by enabling the tooltip values.
- Freq: defines the operating frequency of the equalizer.</description>
+Freq: defines the operating frequency of the equalizer.</description>
     </item>
     
     <item>
@@ -207,7 +205,7 @@ Documentation All equalizers have a at least two controls: one for the Frequency
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/disjoint/</guid>
-      <description>Included in: VultModules VultModules Free  Documentation not yet available.</description>
+      <description>Included in: VultModules VultModules Free Documentation not yet available.</description>
     </item>
     
     <item>
@@ -216,7 +214,7 @@ Documentation All equalizers have a at least two controls: one for the Frequency
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/dopamine/</guid>
-      <description>Included in: VultMysteries  Dopamine is based on the idea that, every time we tell one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.
+      <description>Included in: VultMysteries Dopamine is based on the idea that, every time we tell one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.
 Dopamine simulates this behavior by using different layers of virtual neurons. These neurons will try to store CV and Gate information and they will recall it as best as they can.</description>
     </item>
     
@@ -228,7 +226,7 @@ Dopamine simulates this behavior by using different layers of virtual neurons. T
       <guid>https://modlfo.github.io/VultModules/download/</guid>
       <description>All modules are available in the VCV Rack store.
 The modules can be found in three packages:
- Free Version - VultModulesFree Premium - VultModules Compacts - VultCompacts  You can find the details in the following links:
+Free Version - VultModulesFree Premium - VultModules Compacts - VultCompacts You can find the details in the following links:
 Premium Compacts Free</description>
     </item>
     
@@ -238,8 +236,8 @@ Premium Compacts Free</description>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/feigen/</guid>
-      <description>Included in: VultMysteries  Feigen is a quasi-chaotic voltage source that has a few interesting properties for music. On it&amp;rsquo;s core lies the Logistic Map equation which is capable of producing periodic and chaotic patterns depending on it&amp;rsquo;s settings. Additionally, the generated sequences can be controlled by selecting the initial state (the Root) and resetting the module.
-Control Description Main controls  Growth: It defines the characteristics of the generated voltages.</description>
+      <description>Included in: VultMysteries Feigen is a quasi-chaotic voltage source that has a few interesting properties for music. On it&amp;rsquo;s core lies the Logistic Map equation which is capable of producing periodic and chaotic patterns depending on it&amp;rsquo;s settings. Additionally, the generated sequences can be controlled by selecting the initial state (the Root) and resetting the module.
+Control Description Main controls Growth: It defines the characteristics of the generated voltages. When set full CCW, the module will generate oscillate producing two values.</description>
     </item>
     
     <item>
@@ -248,7 +246,7 @@ Control Description Main controls  Growth: It defines the characteristics of the
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/flame/</guid>
-      <description>Included in: VultModules  Flame is a simulation of three different distortion pedals and three tone circuits.
+      <description>Included in: VultModules Flame is a simulation of three different distortion pedals and three tone circuits.
 Over the years, I have build many distortion pedals based on known designs. Often times I didn&amp;rsquo;t have the exact components that the pedal required and I just used what I had. I built three different distortion circuits that I intended to use in my real eurorack and I based Flame on those three modules.</description>
     </item>
     
@@ -258,9 +256,9 @@ Over the years, I have build many distortion pedals based on known designs. Ofte
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/flux/</guid>
-      <description>Included in: VultModules VultModules Free  Flux is a module that was specifically designed to work with Caudal. Flux provides the following functions:
- Attenuation and offsetting Sample &amp;amp; Hold Clocked comparison Linear and exponential signal follower (slew limiter) Envelope follower  Flux provides 4 similar channels and the classical Vult modulation section that allows you to control all parameters.
-Documentation  Mode:  S&amp;amp;H: Sample and hold. Keeps the immediate value of the input on every rising edge of the clock.</description>
+      <description>Included in: VultModules VultModules Free Flux is a module that was specifically designed to work with Caudal. Flux provides the following functions:
+Attenuation and offsetting Sample &amp;amp; Hold Clocked comparison Linear and exponential signal follower (slew limiter) Envelope follower Flux provides 4 similar channels and the classical Vult modulation section that allows you to control all parameters.
+Documentation Mode: S&amp;amp;H: Sample and hold. Keeps the immediate value of the input on every rising edge of the clock.</description>
     </item>
     
     <item>
@@ -269,7 +267,7 @@ Documentation  Mode:  S&amp;amp;H: Sample and hold. Keeps the immediate value of
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/hyperpower/</guid>
-      <description>Included in: VultModules  This is a silly module I sent as gratitude to the people that donated money. Now it comes as part of the paid package.
+      <description>Included in: VultModules This is a silly module I sent as gratitude to the people that donated money. Now it comes as part of the paid package.
 HyperPower provides the best power supply in the market for your VCV Rack. If you love your Vult modules don’t let them get damaged; this is the recommended power supply. Using HyperPower will allow you using as many modules as your computer can handle.</description>
     </item>
     
@@ -279,7 +277,7 @@ HyperPower provides the best power supply in the market for your VCV Rack. If yo
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/incubus/</guid>
-      <description>Included in: VultCompacts  Incubus is full synthesizer in a single module. It&amp;rsquo;s assembled out of pieces of other modules like Vessek, Noxious, Caudal.
+      <description>Included in: VultCompacts Incubus is full synthesizer in a single module. It&amp;rsquo;s assembled out of pieces of other modules like Vessek, Noxious, Caudal.
 Full documentation coming soon.</description>
     </item>
     
@@ -289,8 +287,8 @@ Full documentation coming soon.</description>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/jorus/</guid>
-      <description>Included in: VultModules VultModules Free  Jorus is an analog chorus based on different versions the Juno chorus. Jorus models the core of the chorus and makes a few improvements over the original circuit. You can find the details in a section below.
-Documentation  Depth: this control has a dual purpose: controlling the dry/wet and also the depth of the modulation. It goes from no effect to full chorus effect.</description>
+      <description>Included in: VultModules VultModules Free Jorus is an analog chorus based on different versions the Juno chorus. Jorus models the core of the chorus and makes a few improvements over the original circuit. You can find the details in a section below.
+Documentation Depth: this control has a dual purpose: controlling the dry/wet and also the depth of the modulation. It goes from no effect to full chorus effect. I-II: defines the kind of modulation signals.</description>
     </item>
     
     <item>
@@ -299,7 +297,7 @@ Documentation  Depth: this control has a dual purpose: controlling the dry/wet a
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/julste/</guid>
-      <description>Included in: VultModules VultModules Free  Julste is the only model that I haven&amp;rsquo;t developed by myself. When I started doing research on low pass gates I came across the paper &amp;ldquo;A DIGITAL MODEL OF THE BUCHLA LOWPASS-GATE&amp;rdquo; by Julian Parker and Stefano D’Angelo. They did all the hard job modeling it, and I rewrote the code in the Vult language and created the module.
+      <description>Included in: VultModules VultModules Free Julste is the only model that I haven&amp;rsquo;t developed by myself. When I started doing research on low pass gates I came across the paper &amp;ldquo;A DIGITAL MODEL OF THE BUCHLA LOWPASS-GATE&amp;rdquo; by Julian Parker and Stefano D’Angelo. They did all the hard job modeling it, and I rewrote the code in the Vult language and created the module.
 The module has a few extensions to the original model, like controls to process the gate input.</description>
     </item>
     
@@ -309,8 +307,9 @@ The module has a few extensions to the original model, like controls to process 
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/knobs/</guid>
-      <description>Included in: VultModules VultModules Free  Knobs (or Util-Knobs) is a simple but very handy utility. Knobs features four inputs with attenuverters and a big offset knob. Knobs can be used for many purposes, for example: to blend many modulation signals and send them to a single destination, as audio mixer, as constant voltage output.
-Documentation Knobs contains two similar sections. Most of the elements in the interface are unlabeled.</description>
+      <description>Included in: VultModules VultModules Free Knobs (or Util-Knobs) is a simple but very handy utility. Knobs features four inputs with attenuverters and a big offset knob. Knobs can be used for many purposes, for example: to blend many modulation signals and send them to a single destination, as audio mixer, as constant voltage output.
+Documentation Knobs contains two similar sections. Most of the elements in the interface are unlabeled.
+Mode: defines how the big knob behaves.</description>
     </item>
     
     <item>
@@ -319,7 +318,7 @@ Documentation Knobs contains two similar sections. Most of the elements in the i
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/knock/</guid>
-      <description>Included in: VultCompacts  Knock is a modern take on a classic analog bass drum. It features a hybrid engine capable producing a wide variety of drum sounds. The Stress input allows for further shaping of the sound by using a vactrol model to control the envelope.
+      <description>Included in: VultCompacts Knock is a modern take on a classic analog bass drum. It features a hybrid engine capable producing a wide variety of drum sounds. The Stress input allows for further shaping of the sound by using a vactrol model to control the envelope.
 Knock is split in two sections: the oscillator and noise synthesizers. The oscillator section is analog modeled while the noise is a special oscillator capable of producing many kinds of clicking sounds.</description>
     </item>
     
@@ -329,7 +328,7 @@ Knock is split in two sections: the oscillator and noise synthesizers. The oscil
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/lapsus/</guid>
-      <description>Included in: VultMysteries  The manual is almost done&amp;hellip;</description>
+      <description>Included in: VultMysteries The manual is almost done&amp;hellip;</description>
     </item>
     
     <item>
@@ -338,7 +337,7 @@ Knock is split in two sections: the oscillator and noise synthesizers. The oscil
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/lateralus/</guid>
-      <description>Included in: VultModules VultModules Free  Lateralus is ladder filter which is the same structure that a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
+      <description>Included in: VultModules VultModules Free Lateralus is ladder filter which is the same structure that a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
 The paid version of Lateralus has two implementations. Each implementation is based on a different simulation model that I have developed.
 Some of the &amp;ldquo;weird&amp;rdquo; behaviors of the real filter were intentionally not reproduced in order to bring a more controllable filter.</description>
     </item>
@@ -349,8 +348,8 @@ Some of the &amp;ldquo;weird&amp;rdquo; behaviors of the real filter were intent
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/leakage/</guid>
-      <description>Included in: VultCompacts  Leakage is a multi purpose voltage processor. It&amp;rsquo;s a single line of Flux but with a few improvements. It can be used as:
- Gain control Offset Sample and hold Slew limiter (linear and exponential) Envelope follower Noise source Gate  Documentation  Range: Attenuates/amplifies the input signal (or noise) from 0x to 2x. Offset: Adds a constant voltage to the input signal from -5V to 5V.</description>
+      <description>Included in: VultCompacts Leakage is a multi purpose voltage processor. It&amp;rsquo;s a single line of Flux but with a few improvements. It can be used as:
+Gain control Offset Sample and hold Slew limiter (linear and exponential) Envelope follower Noise source Gate Documentation Range: Attenuates/amplifies the input signal (or noise) from 0x to 2x. Offset: Adds a constant voltage to the input signal from -5V to 5V. Follower: Lin: The output signal will approach the input signal linearly at a rate defined by the Rate knob.</description>
     </item>
     
     <item>
@@ -359,8 +358,8 @@ Some of the &amp;ldquo;weird&amp;rdquo; behaviors of the real filter were intent
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/nitrous/</guid>
-      <description>Included in: VultModules VultModules Free  Nitrous is a model of the TB-303 filter. The TB-303 filter is a diode ladder consisting of four poles, but providing an effective attenuation of 18dB per octave.
-Control Description Main controls  Cutoff: sets the frequency where the attenuation starts taking effect Drive: controls the level of the input signal. Resonance: controls the feedback of the circuit.  CV control There are two inputs and attenuations that can be used to control the Cutoff control: CV1 and CV2.</description>
+      <description>Included in: VultModules VultModules Free Nitrous is a model of the TB-303 filter. The TB-303 filter is a diode ladder consisting of four poles, but providing an effective attenuation of 18dB per octave.
+Control Description Main controls Cutoff: sets the frequency where the attenuation starts taking effect Drive: controls the level of the input signal. Resonance: controls the feedback of the circuit. CV control There are two inputs and attenuations that can be used to control the Cutoff control: CV1 and CV2.</description>
     </item>
     
     <item>
@@ -369,7 +368,7 @@ Control Description Main controls  Cutoff: sets the frequency where the attenuat
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/nopskate/</guid>
-      <description>Included in: VultModules VultModules Free  Nopskate is my take on the classic flip-flop octaver pedal but adapted to VCV Rack. Given any input signal, Nopskate will generate signals that are one and two octaves below the input signal. The generated signals can be added or multiplied (AM) to the original. These two ways of blending the generated signal can transform a simple input signal into a richer wave.
+      <description>Included in: VultModules VultModules Free Nopskate is my take on the classic flip-flop octaver pedal but adapted to VCV Rack. Given any input signal, Nopskate will generate signals that are one and two octaves below the input signal. The generated signals can be added or multiplied (AM) to the original. These two ways of blending the generated signal can transform a simple input signal into a richer wave.
 Nopskate is based on a circuit I made many years ago which was a failed attempt to clone the octaver guitar pedal.</description>
     </item>
     
@@ -379,7 +378,8 @@ Nopskate is based on a circuit I made many years ago which was a failed attempt 
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/noxious/</guid>
-      <description>Included in: VultModules  Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.</description>
+      <description>Included in: VultModules Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.
+Noxious is unpredictable but controllable.</description>
     </item>
     
     <item>
@@ -388,8 +388,8 @@ Nopskate is based on a circuit I made many years ago which was a failed attempt 
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/opulus/</guid>
-      <description>Included in: VultModules VultModules Free  Opulus is a recreation of the Yamaha OPL2 (YM3812) FM chip. This chip was widely used on 90&amp;rsquo;s soundcards like the Ad Lib and were responsible of producing the sound of uncountable videogames. Opulus reproduces the sound engine to the point where all the sounds are very similar but does not aim to be a perfect emulation. Some of the differences are:
-  Quantization noise: The original OPL2 has a limited number of steps (bits) to represent different magnitudes in the engine which end up producing quantization noise.</description>
+      <description>Included in: VultModules VultModules Free Opulus is a recreation of the Yamaha OPL2 (YM3812) FM chip. This chip was widely used on 90&amp;rsquo;s soundcards like the Ad Lib and were responsible of producing the sound of uncountable videogames. Opulus reproduces the sound engine to the point where all the sounds are very similar but does not aim to be a perfect emulation. Some of the differences are:
+Quantization noise: The original OPL2 has a limited number of steps (bits) to represent different magnitudes in the engine which end up producing quantization noise.</description>
     </item>
     
     <item>
@@ -398,7 +398,7 @@ Nopskate is based on a circuit I made many years ago which was a failed attempt 
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/opulusmicro/</guid>
-      <description>Included in: VultModules VultModules Free  Opulus Micro is a compact version of Opulus. It features the same sound engine, but the interface is focused on &amp;ldquo;accidental&amp;rdquo; sound discovery.
+      <description>Included in: VultModules VultModules Free Opulus Micro is a compact version of Opulus. It features the same sound engine, but the interface is focused on &amp;ldquo;accidental&amp;rdquo; sound discovery.
 Basic usage The RAND button randomizes all the module internals and produces a new sound. The generated sounds can be saved into one of the four Slots (push buttons in the top). To save a sound, press and hold the button for 2 seconds until the LED flashes twice.</description>
     </item>
     
@@ -408,7 +408,7 @@ Basic usage The RAND button randomizes all the module internals and produces a n
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/punch/</guid>
-      <description>Included in: VultModules VultModules Free  Punch is a VCA containing two analog models: one based on a BJT transistor and the other based on a Operational Transconductance Amplifier.
+      <description>Included in: VultModules VultModules Free Punch is a VCA containing two analog models: one based on a BJT transistor and the other based on a Operational Transconductance Amplifier.
 Documentation </description>
     </item>
     
@@ -418,8 +418,8 @@ Documentation </description>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/quincunx/</guid>
-      <description>Included in: VultMysteries  Quincunx is based on the machine with the same name, also known as &amp;ldquo;bean machine&amp;rdquo; or &amp;ldquo;Galton board&amp;rdquo;. Quincunx simulates this machine but adds some special features that make it more usable to generate voltages and pulses.
- Real Quincunx (source wikipedia: https://en.wikipedia.org/wiki/Bean_machine)  Basic Use Connect a clock signal to the input CLK. Every time a pulse is received a bean will be dropped and it will land in one of the seven slots of the machine.</description>
+      <description>Included in: VultMysteries Quincunx is based on the machine with the same name, also known as &amp;ldquo;bean machine&amp;rdquo; or &amp;ldquo;Galton board&amp;rdquo;. Quincunx simulates this machine but adds some special features that make it more usable to generate voltages and pulses.
+Real Quincunx (source wikipedia: https://en.wikipedia.org/wiki/Bean_machine) Basic Use Connect a clock signal to the input CLK. Every time a pulse is received a bean will be dropped and it will land in one of the seven slots of the machine.</description>
     </item>
     
     <item>
@@ -428,7 +428,7 @@ Documentation </description>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/rescomb/</guid>
-      <description>Included in: VultModules VultModules Free  Rescomb is a resonant Comb filter. A comb filter is a special kind of filter that creates multiple spaced notches. This module provides an CV input which is tuned (1V/octave) and a feedback parameter. when the feedback is high it will resonate enhancing the frequencies of the comb.
+      <description>Included in: VultModules VultModules Free Rescomb is a resonant Comb filter. A comb filter is a special kind of filter that creates multiple spaced notches. This module provides an CV input which is tuned (1V/octave) and a feedback parameter. when the feedback is high it will resonate enhancing the frequencies of the comb.
 This is the first module that I designed for VCV Rack. I really like Comb filters, so I coded in Vult a very simple version after playing with it and tweaking parameters I got this version.</description>
     </item>
     
@@ -438,7 +438,7 @@ This is the first module that I designed for VCV Rack. I really like Comb filter
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/rescomb2/</guid>
-      <description>Included in: VultModules  Rescomb 2 is a simple but effective comb filter that can be used to create metallic and glitchy sounds. Thanks to it&amp;rsquo;s high feedback and input distortion it can be used to mangle the sound in extreme ways.
+      <description>Included in: VultModules Rescomb 2 is a simple but effective comb filter that can be used to create metallic and glitchy sounds. Thanks to it&amp;rsquo;s high feedback and input distortion it can be used to mangle the sound in extreme ways.
 Rescomb 2 can be used as well as a Karplus-Strong like sound generator by using it&amp;rsquo;s direct V/OCT input and stimulating it with short pulses.
 Documentation Filter Section The knobs Frequency, Feedback and Drive provide a pair of inputs and attenuverters that can be used to modulate the parameter.</description>
     </item>
@@ -449,8 +449,8 @@ Documentation Filter Section The knobs Frequency, Feedback and Drive provide a p
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/send/</guid>
-      <description>Included in: VultModules VultModules Free  Send (or Util-Send) provides the send/return functionality found in most mixers but for a single stereo channel. Just connect you audio to the inputs and take from the outputs. Connect your effect from the send jacks and connect it back in the return jacks.
-Documentation  Blend: controls the mix between the unprocessed and processed signals. Includes an input modulation with attenuverter. Send (jacks): provides the audio signal to connect to you audio processor.</description>
+      <description>Included in: VultModules VultModules Free Send (or Util-Send) provides the send/return functionality found in most mixers but for a single stereo channel. Just connect you audio to the inputs and take from the outputs. Connect your effect from the send jacks and connect it back in the return jacks.
+Documentation Blend: controls the mix between the unprocessed and processed signals. Includes an input modulation with attenuverter. Send (jacks): provides the audio signal to connect to you audio processor.</description>
     </item>
     
     <item>
@@ -459,9 +459,9 @@ Documentation  Blend: controls the mix between the unprocessed and processed sig
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/slap/</guid>
-      <description>Included in: VultModules VultModules Free  Slap is an envelope based on the electrical circuit I found in a book of electronics for music. Slap has the same hitting nature of Spank. The module includes a VCA so you can use it directly to control an input source.
+      <description>Included in: VultModules VultModules Free Slap is an envelope based on the electrical circuit I found in a book of electronics for music. Slap has the same hitting nature of Spank. The module includes a VCA so you can use it directly to control an input source.
 Documentation Each of the following controls provides an attenuverter and a CV input to modulate them.
- Attack: rising rate of the envelope.</description>
+Attack: rising rate of the envelope. Decay: decaying rate until the signal reaches the Sustain value .</description>
     </item>
     
     <item>
@@ -470,9 +470,9 @@ Documentation Each of the following controls provides an attenuverter and a CV i
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/spank/</guid>
-      <description>Included in: VultModules VultModules Free  Spank is the envelope generator in charge of producing the snappy sounds of Trummor and Trummor 2. All transitions are exponential since they are modeled after the behavior of an analog envelope. The module includes a VCA so you can use it directly to control an input source.
+      <description>Included in: VultModules VultModules Free Spank is the envelope generator in charge of producing the snappy sounds of Trummor and Trummor 2. All transitions are exponential since they are modeled after the behavior of an analog envelope. The module includes a VCA so you can use it directly to control an input source.
 Documentation Each of the knobs provides an attenuverter and a CV input to modulate them.
- Attack: rising rate of the envelope.</description>
+Attack: rising rate of the envelope.</description>
     </item>
     
     <item>
@@ -481,7 +481,7 @@ Documentation Each of the knobs provides an attenuverter and a CV input to modul
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/splie/</guid>
-      <description>Included in: VultModules VultModules Free  Splie is an utility module that I made because it was handy when developing my modules. It provides a buffered input that can be distributed to other modules. This is very handy when one wants to change only one patch cable and distribute the signal to many other modules.</description>
+      <description>Included in: VultModules VultModules Free Splie is an utility module that I made because it was handy when developing my modules. It provides a buffered input that can be distributed to other modules. This is very handy when one wants to change only one patch cable and distribute the signal to many other modules.</description>
     </item>
     
     <item>
@@ -490,7 +490,7 @@ Documentation Each of the knobs provides an attenuverter and a CV input to modul
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/stabile/</guid>
-      <description>Included in: VultModules VultModules Free  Stabile is a state variable filter. It provides LP, HP, and BP filters. Additionally to the three filter outputs it provides an extra output imitates the behavior of the SEM filter.
+      <description>Included in: VultModules VultModules Free Stabile is a state variable filter. It provides LP, HP, and BP filters. Additionally to the three filter outputs it provides an extra output imitates the behavior of the SEM filter.
 The story of this filter goes even before the existence of Vult. I implemented the initial version of this filter in a microcontroller. With the years I have made many tweaks an simplifications. In fact this filter is very efficient and the sound is very effective.</description>
     </item>
     
@@ -500,8 +500,8 @@ The story of this filter goes even before the existence of Vult. I implemented t
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/tohe/</guid>
-      <description>Included in: VultModules VultModules Free  Sometimes one needs just a gentle change to the sound in order to make it fit better. Tohe is a tone control that balances the high and low
-Documentation  Tone: controls the internal filters. Full left you&amp;rsquo;ll get a bass sound. Full right cuts the bass and enhances the treble. Input: signal to be processed. Output: processed signal.  </description>
+      <description>Included in: VultModules VultModules Free Sometimes one needs just a gentle change to the sound in order to make it fit better. Tohe is a tone control that balances the high and low
+Documentation Tone: controls the internal filters. Full left you&amp;rsquo;ll get a bass sound. Full right cuts the bass and enhances the treble. Input: signal to be processed. Output: processed signal. </description>
     </item>
     
     <item>
@@ -510,7 +510,7 @@ Documentation  Tone: controls the internal filters. Full left you&amp;rsquo;ll g
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/trummor/</guid>
-      <description>Included in: VultModules VultModules Free  Trummor is a drum synthesizer that produces 909 style kicks. Trummor can be used to produce other type of percusive sounds like toms and simple snares or hats.
+      <description>Included in: VultModules VultModules Free Trummor is a drum synthesizer that produces 909 style kicks. Trummor can be used to produce other type of percusive sounds like toms and simple snares or hats.
 I started developing the algorithms behind Trummor a long time ago and I made a simplified hardware version of it. When VCV Rack came out, I adapted the code and started expanding the sonic capabilities.
 Trummor has been replaced by Trummor 2 which is an improved version with even more sonic capabilities.</description>
     </item>
@@ -521,7 +521,7 @@ Trummor has been replaced by Trummor 2 which is an improved version with even mo
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/trummor2/</guid>
-      <description>Included in: VultModules VultModules Free  Trummor 2 is the evolution of Trummor that was designed with the idea of expanding the sonic capabilities of Trummor.
+      <description>Included in: VultModules VultModules Free Trummor 2 is the evolution of Trummor that was designed with the idea of expanding the sonic capabilities of Trummor.
 It was designed based on the input of many members of the VCV Rack community specially Alejandro Galán Álvaro who participated in most of the stages. Trummor 2 is, in his words:
 &amp;ldquo;a powerhouse of drum sounds. FM drums, metalic claps, analog-style kicks, all sorts of resonated karplus-strong style strings, blips and blops.</description>
     </item>
@@ -532,7 +532,7 @@ It was designed based on the input of many members of the VCV Rack community spe
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/unstabile/</guid>
-      <description>Included in: VultModules VultModules Free  Unstabile is &amp;ldquo;circuit bent&amp;rdquo; version of Stabile. When making Stabile I aimed to have a ver efficient and smooth filter that I could run in a small ARM processor. To achieve that I left out many things from the original circuit. With Unstabile remade the model and introduced nonlinearities that can occur when the circuit is fed with low voltage. The result is Unstabile a filter that makes everything sound big and distorted&amp;hellip; and it can self-oscillate.</description>
+      <description>Included in: VultModules VultModules Free Unstabile is &amp;ldquo;circuit bent&amp;rdquo; version of Stabile. When making Stabile I aimed to have a ver efficient and smooth filter that I could run in a small ARM processor. To achieve that I left out many things from the original circuit. With Unstabile remade the model and introduced nonlinearities that can occur when the circuit is fed with low voltage. The result is Unstabile a filter that makes everything sound big and distorted&amp;hellip; and it can self-oscillate.</description>
     </item>
     
     <item>
@@ -541,7 +541,7 @@ It was designed based on the input of many members of the VCV Rack community spe
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/vessek/</guid>
-      <description>Included in: VultModules VultModules Free  Vessek is an oscillator for people looking for analog sound.
+      <description>Included in: VultModules VultModules Free Vessek is an oscillator for people looking for analog sound.
 Vessek started modeling the basic circuit of an analog saw wave oscillator. Most of the parameters were initially obtained from my compact analog bass synth. I got a pretty good matching of the sound that I bet it would pass a blind test. Later in the development, samples of other well known analog oscillators were sent to me by members of the VCV Rack community.</description>
     </item>
     
@@ -551,7 +551,7 @@ Vessek started modeling the basic circuit of an analog saw wave oscillator. Most
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/vultari/</guid>
-      <description>Included in: VultModules VultModules Free  Vultari is an oscillator based on the classic VCO made using two 555 circuits. Vultari has a vew extensions, like the possibility of producing saw waves and blend the three waveforms it produces into a single complex one.
+      <description>Included in: VultModules VultModules Free Vultari is an oscillator based on the classic VCO made using two 555 circuits. Vultari has a vew extensions, like the possibility of producing saw waves and blend the three waveforms it produces into a single complex one.
 Documentation </description>
     </item>
     
@@ -561,7 +561,7 @@ Documentation </description>
       <pubDate>Sat, 28 Oct 2017 22:37:03 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/wolv/</guid>
-      <description>Included in: VultModules VultModules Free  Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is an unique wave folder/shaper but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform and at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.</description>
+      <description>Included in: VultModules VultModules Free Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is an unique wave folder/shaper but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform and at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.</description>
     </item>
     
     <item>
@@ -570,7 +570,7 @@ Documentation </description>
       <pubDate>Fri, 27 Oct 2017 11:54:59 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/tangents/</guid>
-      <description>Included in: VultModules VultModules Free  Tangents is a filter based on the Steiner-Parker structure. One big addition I made in this version compared with the hardware version is that this module leaves exposed three inputs (LP, BP and HP). This makes possible to connect three sources and affecting the frequency content for each input differently.
+      <description>Included in: VultModules VultModules Free Tangents is a filter based on the Steiner-Parker structure. One big addition I made in this version compared with the hardware version is that this module leaves exposed three inputs (LP, BP and HP). This makes possible to connect three sources and affecting the frequency content for each input differently.
 The paid version of Tangents has 3 different implementations. Each implementation is based on a different simulation model I developed.</description>
     </item>
     
@@ -580,8 +580,8 @@ The paid version of Tangents has 3 different implementations. Each implementatio
       <pubDate>Fri, 27 Oct 2017 11:54:59 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/vorg/</guid>
-      <description>Included in: VultCompacts  Vorg is a low/high pass filter based on a modernized Operational Transconductance Amplifier version of the MS-20 filter. Vorg is the first module that I developed with the idea of making it feel exactly as a real eurorack module. This considers the spacing between the knobs and sizes. Vorg is also part of Freak. Using it with Freak allows modulating the Resonance and Drive controls.
-Documentation  Cutoff: Defines the frequency at which the filters starts attenuating frequencies.</description>
+      <description>Included in: VultCompacts Vorg is a low/high pass filter based on a modernized Operational Transconductance Amplifier version of the MS-20 filter. Vorg is the first module that I developed with the idea of making it feel exactly as a real eurorack module. This considers the spacing between the knobs and sizes. Vorg is also part of Freak. Using it with Freak allows modulating the Resonance and Drive controls.
+Documentation Cutoff: Defines the frequency at which the filters starts attenuating frequencies.</description>
     </item>
     
     <item>
@@ -590,9 +590,9 @@ Documentation  Cutoff: Defines the frequency at which the filters starts attenua
       <pubDate>Fri, 27 Oct 2017 11:54:59 +0300</pubDate>
       
       <guid>https://modlfo.github.io/VultModules/vortex/</guid>
-      <description>Included in: VultModules  Vortex is filter based on a famous russian design. The filter is a Low pass and Band pass capable of self-oscillating. Vortex is a detailed simulation of the original circuit with a few small tweaks to give my personal touch.
+      <description>Included in: VultModules Vortex is filter based on a famous russian design. The filter is a Low pass and Band pass capable of self-oscillating. Vortex is a detailed simulation of the original circuit with a few small tweaks to give my personal touch.
 Vortex is part of the Premium package that can be purchased through the VCV store.
-Documentation  Cutoff: this is the main knob in a filter. It defines the frequency at which the filter starts taking action.</description>
+Documentation Cutoff: this is the main knob in a filter. It defines the frequency at which the filter starts taking action.</description>
     </item>
     
   </channel>
