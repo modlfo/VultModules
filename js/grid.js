@@ -248,6 +248,13 @@ var premium = [
     slug: 'Trummor2',
     name: 'Trummor 2',
     tags: ['Drum', 'Envelope generator', 'Noise'],
+    description: 'Drum Synthesizer',
+    packages: ['Free']
+  },
+  {
+    slug: 'TrummorFM',
+    name: 'Trummor FM',
+    tags: ['Drum', 'Envelope generator', 'Noise'],
     description: 'Percussion Synthesizer',
     packages: ['Free']
   },

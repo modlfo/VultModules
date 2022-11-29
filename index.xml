@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://modlfo.github.io/VultModules/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>TrummorFM</title>
+      <link>https://modlfo.github.io/VultModules/trummorfm/</link>
+      <pubDate>Sat, 26 Nov 2022 10:28:42 +0200</pubDate>
+      
+      <guid>https://modlfo.github.io/VultModules/trummorfm/</guid>
+      <description>Trummor FM is the result of combining the best bits of Opulus (FM synth) and Trummor2 (analog drum). Trummor FM is capable of producing a wide variety of percussive and synth sounds. It features four operators and exposes a nice set of parameters that simplify the creation of FM sounds.
+Documentation Trummor FM is divided into two sections: Oscillator and Noise.
+The Noise section is responsible for producing the impulse sound of the percussion while the Oscillator produces the main drum sound.</description>
+    </item>
+    
+    <item>
       <title>Anima</title>
       <link>https://modlfo.github.io/VultModules/anima/</link>
       <pubDate>Fri, 04 Feb 2022 19:33:43 +0200</pubDate>
