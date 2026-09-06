@@ -5,5 +5,9 @@ theme = "vultmodules"
 
 relativeURLs = "true"
 
+# No content uses tags or categories; without this Hugo emits empty
+# /tags/ and /categories/ feeds.
+[taxonomies]
+
 [markup.goldmark.renderer]
 unsafe= true
