@@ -37,3 +37,18 @@ Each voice also keeps its own **CV**, **Gate** and **Vel/Ext** inputs, which tak
 - **Left** and **Right**: both voices, panned.
 
 The individual **Out** jack of each voice is still available, so the two halves can also be processed separately before leaving the module.
+
+## Context menu
+
+Right-clicking Overon 2V gives control over how the randomize command treats the two voices, which is what makes randomization usable on a bi-timbral module.
+
+### Randomization groups
+
+Each of these can be turned off so that randomizing leaves that part of the module alone.
+
+- **Randomize Voice 1** and **Randomize Voice 2**: include or exclude each voice. Turning one off lets you keep a patch you like on one voice while rolling the dice on the other.
+- **Randomize Voice Controls**: includes the Level, Pan, Uni/Sprd and Assign settings. Turn it off to keep your stereo layout while the timbres change.
+
+### Actions
+
+- **Copy Voice 1 to Voice 2** and **Copy Voice 2 to Voice 1**: duplicates every setting of one voice onto the other. This is the quickest way into a unison patch: copy one voice across, then use **Uni/Sprd** to detune and spread the pair.

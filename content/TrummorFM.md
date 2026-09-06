@@ -48,3 +48,11 @@ Each section provides its own set if Pitch and Gate inputs and sound output. The
 ### Modulations
 
 Trummor FM provides the classic modulation router for Vult modules. To select a destination, press one of the slot buttons and move the destiation parameter.
+
+## Context menu
+
+Right-clicking the module selects which sections the randomize command touches. All three are enabled by default; turning one off freezes that section so you can roll the dice on the rest while keeping what you already have.
+
+- **Rand. Oscillator**: the Oscillator section, including tune, bend, time, wave, mult, tone, FM level, its envelope and its level.
+- **Rand. Noise**: the Noise section, including tune, feed, body, wave, mult, tone, FM level, its envelope and its level.
+- **Rand. Modulation**: the amounts of the four modulation router slots.

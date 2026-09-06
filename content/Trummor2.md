@@ -64,6 +64,14 @@ Trummor 2 is split into two main sections: the oscillator section and the noise 
 - **Gate**: the signal used to trigger the drum. Any signal larger than 2V will trigger the drum.
 - **Output**: main audio output.
 
+## Context menu
+
+Right-clicking the module selects which sections the randomize command touches. All three are enabled by default; turning one off freezes that section so you can roll the dice on the rest while keeping what you already have.
+
+- **Rand. Oscillator**: the Drum section, including tune, bend, time, sub, wave, shaper, its envelope and its level.
+- **Rand. Noise**: the Noise section, including pitch, rescomb, tone, the filter cutoff, resonance and type, its envelope and its level.
+- **Rand. Modulation**: the amounts of the four modulation router slots.
+
 ## Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GHLu03h0-vs" frameborder="0" allowfullscreen></iframe>

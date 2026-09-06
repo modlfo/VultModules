@@ -55,7 +55,17 @@ Anima includes different methods to combine the generated pulses to generate the
 
 ### Special functions in VCV Rack
 
-All the settings of the module are available through the context menu which can be obtained by right-clicking the module.
+Every setting that the panel buttons reach through their press-and-hold gestures is also available directly in the context menu, obtained by right-clicking the module. This is the easier way to set them, since nothing has to be held down and the current value is shown with a checkmark.
+
+- **Run Mode**: Deterministic or Non-Deterministic.
+- **Non-Deterministic Value**: the probability used in non-deterministic mode, from 0% to 100% in steps of 20%.
+- **Glide**: whether the CV changes On Gate or Always.
+- **Gate Length**: Clock, or 20% to 100% of the clock period in steps of 20%.
+- **Forward/Backward**: the F/B setting.
+- **Up/Down**: the U/D setting.
+- **Note Distribution**: Default, Binary, Primes, Exponential, Golden Ratio or Oblate.
+- **Register Size**: 6 or 12 stages.
+- **Bit 4**: enabled or disabled.
 
 ## Developing this module
 

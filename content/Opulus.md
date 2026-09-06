@@ -89,21 +89,25 @@ Opulus provides a "smart" randomization algorithm which can be used to explore t
 
 *NOTE: at the moment, the screen and navigation buttons are not implemented, therefore most of the settings can only be accessed with the right-click menu.*
 
-Some of the "advanced" settings can only be accessed through the menus. Here's a small description:
+Some of the "advanced" settings can only be accessed through the menus. Most of them appear twice, once per oscillator, as **-1** and **-2**.
 
-- Env Output: selects which envelope is output through the Env jack, either 1 or 2.
+- **Mode**: FM (1 modulates 2) or Additive (1 + 2). Same as the panel switch.
 
-- Shape: gives direct access to select the desired wave.
+- **Env-Output**: selects which envelope is sent to the Env jack, either Env-1 or Env-2.
 
-- Env: selects the type of envelope: ADSR or ADR either linear or exponential.
+- **Shape-1** and **Shape-2**: direct access to the eight wavetables, rather than stepping through them with the panel button. Sine, Sine 1/2, Sine Rect, Sine 1/4, Sine 2x, Triangle, Square and Saw. The first four are the OPL2 originals; the rest are additions.
 
-- Tremolo: selects the depth of the built-in tremolo effect. The tremolo uses an LFO of approximately 3.7 Hz.
+- **Env-1** and **Env-2**: the envelope type, ADR or ADSR, in linear or exponential form. The ADR variants skip the sustain stage and jump from decay straight to release, which suits percussive sounds.
 
-- Vibrato: selects the depth of the Vibrato effect. It uses an LFO of approximately 6.4 Hz.
+- **Tremolo-1** and **Tremolo-2**: depth of the built-in tremolo, Off or 1 to 4. The tremolo uses an LFO of approximately 3.7 Hz.
 
-- Key Scale Level: defines a level of attenuation for high pitch notes. This is done in order to replicate the behavior of real instruments.
+- **Vibrato-1** and **Vibrato-2**: depth of the vibrato, Off or 1 to 4. It uses an LFO of approximately 6.4 Hz.
 
-- Detune: defines the level of detuning of the oscillator. The quantity is given in Multiples.
+- **Key-Scale-Level-1** and **Key-Scale-Level-2**: attenuation applied as the pitch rises, to replicate the behavior of real instruments. 0, 1.5, 3 or 6 dB per octave.
+
+- **Detune-1** and **Detune-2**: detuning of the oscillator, given in multiples from 0.0 to 0.9.
+
+- **M1** and **M2**: the destination of each modulation input. Any of the twenty-one targets can be picked from the list instead of using the press-and-move gesture on the panel.
 
 ### Micro Opulus
 
