@@ -1,11 +1,12 @@
 +++
 title = "Caudal-HW"
+description = "Mechanical Chaos Source"
 date = "2026-09-01T10:00:00+03:00"
 image = "../images/Caudal-HW.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 This version of [Caudal](../caudal/) is a clone of the actual hardware module. It simulates as close as possible all the aspects of the original hardware module: it is a simulator that runs the same code as the hardware module.
 

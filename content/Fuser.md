@@ -1,11 +1,12 @@
 +++
 title = "Fuser"
+description = "Voltage Mixer"
 date = "2026-09-01T10:00:00+03:00"
 layout = "module"
 image = "../images/Fuser.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Fuser is a compact six channel voltage mixer. Besides the main sum, it provides separate outputs for the odd and even channels, which makes it useful as two independent three channel mixers or as a mixer with two sub-groups.
 

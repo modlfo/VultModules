@@ -1,11 +1,12 @@
 +++
 title = "Overon 2V"
+description = "Bi-Timbral Synthesizer"
 date = "2026-09-01T10:00:00+03:00"
 layout = "module"
 image = "../images/Overon2V.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Overon 2V is a bi-timbral synthesizer: two complete [Overon](../overon/) voices in a single module, with a small mixer section that combines them into a stereo output.
 

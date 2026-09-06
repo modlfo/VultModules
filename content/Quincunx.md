@@ -1,17 +1,18 @@
 
 +++
 title = "Quincunx"
+description = "Probability Machine"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Quincunx.png"
 +++
 
-<center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
+<div class="text-center ModulePackage"><a href="/mysteries/" class="PackageButton" role="button">Part of VultMysteries</a></div>
 
 Quincunx is based on the machine with the same name, also known as "bean machine" or "Galton board". Quincunx simulates this machine but adds some special features that make it more usable to generate voltages and pulses.
 
-<center><img src="../images/Galton_box.jpg"> </center>
-<center>Real Quincunx (source wikipedia: https://en.wikipedia.org/wiki/Bean_machine) </center>
+<div class="text-center"><img src="../images/Galton_box.jpg"> </div>
+<div class="text-center">Real Quincunx (source wikipedia: https://en.wikipedia.org/wiki/Bean_machine) </div>
 
 ## Basic Use
 
@@ -21,8 +22,8 @@ The slots in which the beans fall are converted to voltages and pulses. The conv
 
 Because the machine has seven slots, it tends to produce sequences of odd length. The SKIP switch helps them line up with even bar lengths: when active, one of every eight clocks is skipped, so seven beans are dropped for every eight clock pulses.
 
-<center><img src="../images/Quincunx-Schema.png"> </center>
-<center>Quincunx block diagram</center>
+<div class="text-center"><img src="../images/Quincunx-Schema.png"> </div>
+<div class="text-center">Quincunx block diagram</div>
 
 ## Control Description
 

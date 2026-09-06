@@ -1,11 +1,12 @@
 +++
 title = "Nurage"
+description = "Dual Low Pass Gate/Filter"
 date = "2018-05-21T08:57:13+03:00"
 image = "../images/Nurage.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Nurage was modeled after a modded version of the most famous Low Pass Gate. Nurage comprises Vult's own (very detailed) model of the vactrol control and the filter.
 

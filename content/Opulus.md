@@ -1,11 +1,12 @@
 +++
 title = "Opulus"
+description = "Retro FM Operator"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Opulus.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Opulus is a recreation of the Yamaha OPL2 (YM3812) FM chip. This chip was widely used in 90's soundcards like the Ad Lib and was responsible for producing the sound of countless videogames. Opulus reproduces the sound engine to the point where all the sounds are very similar but does not aim to be a perfect emulation. Some of the differences are:
 

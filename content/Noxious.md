@@ -1,11 +1,12 @@
 +++
 title = "Noxious"
+description = "Pure Distortion Oscillator, available in monophonic and polyphonic versions."
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Noxious-Poly.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.
 

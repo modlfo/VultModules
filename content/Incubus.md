@@ -1,11 +1,12 @@
 +++
 title = "Incubus"
+description = "Nightmare Synthesizer"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Incubus.png"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 Incubus is a full synthesizer voice in a single module. It is assembled out of pieces of other Vult modules: the oscillators come from [Vessek](../vessek/), the FM section from [Noxious](../noxious/), the filter is the whole collection found in [Freak](../freak/), and one of the random generators is the pendulum from [Caudal](../caudal/). On top of that it adds two envelopes, an LFO, a distortion stage, a delay and a reverb, and the Vult modulation router.
 

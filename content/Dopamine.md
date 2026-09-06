@@ -1,12 +1,13 @@
 
 +++
 title = "Dopamine"
+description = "Neural Tape"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Dopamine.png"
 +++
 
-<center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
+<div class="text-center ModulePackage"><a href="/mysteries/" class="PackageButton" role="button">Part of VultMysteries</a></div>
 
 Dopamine is based on the idea that, every time we recall one of our memories our brain reconstructs the events rather than just recalling them. Our brain is an imperfect medium of storage where our memories can get confused or we can forget parts of the story.
 
@@ -44,8 +45,8 @@ You have to consider that the output is at every moment affected by the value of
 
 The OFFSET and RANGE control can be used to modify the output signal. As their names imply, OFFSET will introduce a constant voltage level to the output, while RANGE will change the values by multiplying them by a constant.
 
-<center><img src="../images/Dopamine-Schema.png"> </center>
-<center>Dopamine block diagram</center>
+<div class="text-center"><img src="../images/Dopamine-Schema.png"> </div>
+<div class="text-center">Dopamine block diagram</div>
 
 
 ## Control Description

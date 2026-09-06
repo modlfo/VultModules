@@ -1,12 +1,13 @@
 
 +++
 title = "Feigen"
+description = "Bifurcations Generator"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Feigen.png"
 +++
 
-<center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
+<div class="text-center ModulePackage"><a href="/mysteries/" class="PackageButton" role="button">Part of VultMysteries</a></div>
 
 Feigen is a quasi-chaotic voltage source that has a few interesting properties for music. At its core lies the Logistic Map equation, which is capable of producing periodic and chaotic patterns depending on its settings. Additionally, the generated sequences can be controlled by selecting the initial state (the Root) and resetting the module.
 

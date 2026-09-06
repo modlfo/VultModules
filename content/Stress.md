@@ -1,11 +1,12 @@
 +++
 title = "Stress"
+description = "Test Signal Generator"
 date = "2026-09-01T10:00:00+03:00"
 layout = "module"
 image = "../images/Stress.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Stress is a test signal generator. It was originally written to stress-test modules during development: instead of patching an oscillator, an LFO and a noise source by hand to check how a module reacts, Stress produces a signal that keeps changing shape, amplitude and character on its own.
 

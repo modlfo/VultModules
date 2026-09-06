@@ -1,11 +1,12 @@
 +++
 title = "Bypass"
+description = "Stereo Channel Effect Bypass"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/UtilBypass.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Bypass (or Util-Bypass) provides an easy way to engage or disengage an audio effect. Bypass can be used to convert any effect into a stompbox like effect allowing to turn it on or off with the press of a pedal.
 

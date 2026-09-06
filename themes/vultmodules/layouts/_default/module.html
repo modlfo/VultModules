@@ -3,13 +3,11 @@
 <div class="container">
    {{ partial "menu.html" . }}
    <h1>{{ .Title }}</h1>
-   <div class="row">
-      <div class="col-md-10">
-         <center>
-            <img src={{ .Params.image }} style="max-width: 100%; max-height: 500px;"> </center>
-         {{ .Content }}
+   <div class="Prose">
+      <div class="text-center ModulePanel">
+         <img src="{{ .Params.image }}" alt="{{ .Title }} panel" style="max-width: 100%; max-height: 500px;">
       </div>
-
+      {{ .Content }}
    </div>
 
 <p>Help improve this manual <a href="https://github.com/modlfo/VultModules/tree/page-src/content">here</a>.</p>

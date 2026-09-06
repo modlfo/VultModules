@@ -1,11 +1,12 @@
 +++
 title = "Overon"
+description = "Dual Oscillator Synthesizer Voice"
 date = "2026-09-01T10:00:00+03:00"
 layout = "module"
 image = "../images/Overon.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Overon is a complete synthesizer voice built around two oscillators, a state variable filter, two envelopes and an LFO. It follows the layout of the classic dual-oscillator expander modules: everything is normalled internally so that the module makes sound as soon as you patch a CV and a gate, but every stage is also exposed on its own jack so it can be broken apart and used as separate modules.
 

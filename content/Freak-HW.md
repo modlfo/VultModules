@@ -1,11 +1,12 @@
 +++
 title = "Freak-HW"
+description = "Manifold Filter"
 date = "2018-05-21T08:57:13+03:00"
 image = "../images/Freak-HW.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 This version of Freak is a clone of the actual hardware module. This module simulates as close as possible all the aspects of the original hardware module. It is a simulator that runs the same code as the hardware module.
 

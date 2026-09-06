@@ -1,11 +1,12 @@
 +++
 title = "Caudal"
+description = "Mechanical Chaos Source"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Caudal.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Caudal is a chaotic source that is based on the model of a multi segment pendulum (see the video below). The core of Caudal is a detailed simulation of the pendulum system from which we can get measurements like the angular velocities and positions of the segments. These measures produce very natural oscillations that are interrelated due to the nature of the system.
 

@@ -1,11 +1,12 @@
 +++
 title = "Slap"
+description = "Hitting Envelope"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Slap.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Slap is an envelope based on the electrical circuit I found in a book of electronics for music. Slap has the same hitting nature of Spank. The module includes a VCA so you can use it directly to control an input source.
 

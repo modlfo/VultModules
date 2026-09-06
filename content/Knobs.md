@@ -1,11 +1,12 @@
 +++
 title = "Knobs"
+description = "Modulation Mixer and Macro Control"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/UtilKnobs.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Knobs (or Util-Knobs) is a simple but very handy utility. Knobs features four inputs with attenuverters and a big offset knob. Knobs can be used for many purposes, for example: to blend many modulation signals and send them to a single destination, as an audio mixer, or as a constant voltage output.
 

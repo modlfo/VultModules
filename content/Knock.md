@@ -1,11 +1,12 @@
 +++
 title = "Knock"
+description = "Bass Drum"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Knock.png"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 Knock is a modern take on a classic analog bass drum. It features a hybrid engine capable of producing a wide variety of drum sounds. The Stress input allows for further shaping of the sound by using a vactrol model to control the envelope.
 

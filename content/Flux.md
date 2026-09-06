@@ -1,11 +1,12 @@
 +++
 title = "Flux"
+description = "Quad Voltage Processor"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Flux.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Flux is a module that was specifically designed to work with Caudal. Flux provides the following functions:
 

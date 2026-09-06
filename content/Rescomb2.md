@@ -1,12 +1,13 @@
 +++
 title = "Rescomb2"
+description = "Resonant Comb Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Rescomb2.png"
 
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Rescomb 2 is a simple but effective comb filter that can be used to create metallic and glitchy sounds. Thanks to its high feedback and input distortion it can be used to mangle the sound in extreme ways.
 

@@ -1,11 +1,12 @@
 +++
 title = "Vraids"
+description = "Macro Oscillator"
 date = "2018-05-21T08:57:13+03:00"
 image = "../images/Vraids.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 Vraids is a module that simulates the alternative firmware available for the Freak hardware module. This means that, if you have a Freak hardware, you can change the full behavior by uploading the Vraids firmware.
 

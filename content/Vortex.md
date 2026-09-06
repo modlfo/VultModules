@@ -1,11 +1,12 @@
 +++
 date = "2017-10-27T11:54:59+03:00"
 title = "Vortex"
+description = "Russian Filter"
 layout = "module"
 image="../images/Vortex.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Vortex is a filter based on a famous Russian design. The filter is a Low pass and Band pass capable of self-oscillating. Vortex is a detailed simulation of the original circuit with a few small tweaks to give my personal touch.
 

@@ -1,11 +1,12 @@
 +++
 title = "Unstabile"
+description = "Bent State Variable Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Unstabile.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Unstabile is a "circuit bent" version of Stabile. When making Stabile I aimed to have a very efficient and smooth filter that I could run in a small ARM processor. To achieve that I left out many things from the original circuit. With Unstabile I remade the model and introduced the nonlinearities that can occur when the circuit is fed with low voltage. The result is a filter that makes everything sound big and distorted... and it can self-oscillate.
 

@@ -1,11 +1,12 @@
 +++
 title = "Lateralus"
+description = "Diode Ladder Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Lateralus.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Lateralus is a ladder filter that uses the same structure a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
 

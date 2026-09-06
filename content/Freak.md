@@ -1,11 +1,12 @@
 +++
 title = "Freak"
+description = "Manifold Filter"
 date = "2018-05-21T08:57:13+03:00"
 image = "../images/Freak.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 The Freak! is a collection of all the Vult filters into a single module (in stereo). The Freak! is part of the Vult Compacts package.
 

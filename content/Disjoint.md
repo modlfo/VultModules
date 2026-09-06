@@ -1,11 +1,12 @@
 +++
 title = "Disjoint"
+description = "DJ Style Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Disjoint.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Disjoint is a stereo DJ style filter. It is built around a single bipolar frequency knob: at the center position the signal passes untouched, turning it to the left sweeps a four pole lowpass down, and turning it to the right sweeps a four pole highpass up. The crossfade between the two responses happens around the center, so the transition is smooth and there is a comfortable dead zone where the filter is out of the way.
 

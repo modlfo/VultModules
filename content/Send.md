@@ -1,11 +1,12 @@
 +++
 title = "Send"
+description = "Stereo Channel Send/Return"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/UtilSend.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Send (or Util-Send) provides the send/return functionality found in most mixers but for a single stereo channel. Just connect your audio to the inputs and take it from the outputs. Connect your effect from the send jacks and connect it back in the return jacks.
 

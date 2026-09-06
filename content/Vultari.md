@@ -1,11 +1,12 @@
 +++
 title = "Vultari"
+description = "Punk Console"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Vultari.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Vultari is a model of the Atari Punk Console, the little noise box built with two 555 timer chips. The first 555 runs free as an oscillator, and its output triggers the second one, which stretches every pulse it receives. The two chips are not independent: the second one can only start a new pulse once the first has fired, so as its timing is stretched past the period of the first, cycles get skipped and the output drops to a lower octave, or to something in between. That interaction is where the stepped, gritty, slightly out-of-control character of the circuit comes from.
 

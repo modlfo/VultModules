@@ -1,11 +1,12 @@
 +++
 title = "Basal"
+description = "Smooth Oscillator"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Basal.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Basal is an easy to use and nice sounding oscillator. It's specifically designed for creating smooth sounds with low harmonic content. Basal features a self modulation technique that acts when the oscillator is moved.
 

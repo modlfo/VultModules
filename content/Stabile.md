@@ -1,11 +1,12 @@
 +++
 title = "Stabile"
+description = "State Variable Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Stabile.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Stabile is a state variable filter. It provides LP, HP, and BP filters. In addition to the three filter outputs, it provides an extra output that imitates the behavior of the SEM filter.
 

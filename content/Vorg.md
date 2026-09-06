@@ -1,11 +1,12 @@
 +++
 date = "2017-10-27T11:54:59+03:00"
 title = "Vorg"
+description = "Low/High Pass Filter"
 layout = "module"
 image="../images/Vorg.png"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
+<div class="text-center ModulePackage"><a href="/compacts/" class="PackageButton" role="button">Part of VultCompacts</a></div>
 
 Vorg is a low/high pass filter based on a modernized Operational Transconductance Amplifier version of the MS-20 filter. Vorg is the first module that I developed with the idea of making it feel exactly as a real eurorack module. This considers the spacing between the knobs and sizes. Vorg is also part of Freak. Using it with Freak allows modulating the Resonance and Drive controls.
 
@@ -26,9 +27,9 @@ The filter section in the real MS-20 consists of two filters: one HP and one LP.
 
 ## Videos
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/r_r9GcBLdKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/r_r9GcBLdKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/vKQGOJNimAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/vKQGOJNimAg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 --
 
@@ -36,12 +37,12 @@ The filter section in the real MS-20 consists of two filters: one HP and one LP.
 
 These are the slides I prepared for a presentation where I talk about the process of modeling Vorg.
 
-<center><img src="../images/Vorg-0.png" style="max-width: 100%;"> </center>
-<center><img src="../images/Vorg-1.png" style="max-width: 100%;"> </center>
-<center><img src="../images/Vorg-2.png" style="max-width: 100%;"> </center>
-<center><img src="../images/Vorg-3.png" style="max-width: 100%;"> </center>
-<center><img src="../images/Vorg-4.png" style="max-width: 100%;"> </center>
-<center><img src="../images/Vorg-5.png" style="max-width: 100%;"> </center>
+<div class="text-center"><img src="../images/Vorg-0.png" style="max-width: 100%;"> </div>
+<div class="text-center"><img src="../images/Vorg-1.png" style="max-width: 100%;"> </div>
+<div class="text-center"><img src="../images/Vorg-2.png" style="max-width: 100%;"> </div>
+<div class="text-center"><img src="../images/Vorg-3.png" style="max-width: 100%;"> </div>
+<div class="text-center"><img src="../images/Vorg-4.png" style="max-width: 100%;"> </div>
+<div class="text-center"><img src="../images/Vorg-5.png" style="max-width: 100%;"> </div>
 
 
 

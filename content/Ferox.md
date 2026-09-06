@@ -1,11 +1,12 @@
 +++
 title = "Ferox"
+description = "CMOS Filter"
 date = "2018-05-21T08:57:13+03:00"
 image = "../images/Ferox.png"
 layout = "module"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Ferox is based on the ingenious CMOS filter design. The CMOS filter uses a digital inverter chip to replace operational amplifiers. The result is a filter full of character, distorted and aggressive. Ferox can transform the simplest waveforms into completely new sounds. In some cases it will make you doubt that it is a filter at all.
 

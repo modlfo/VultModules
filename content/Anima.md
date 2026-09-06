@@ -1,11 +1,12 @@
 +++
 title = "Anima"
+description = "Psychic Sequence Generator"
 date = "2022-02-04T19:33:43+02:00"
 layout = "module"
 image ="../images/Anima.png"
 +++
 
-<center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
+<div class="text-center ModulePackage"><a href="/mysteries/" class="PackageButton" role="button">Part of VultMysteries</a></div>
 
 Anima is my own version of the sequence generator found on the PsychTone published in February 1971 in Popular Electronics magazine. Anima provides all the features of the PsychTone except for the sound generator (which is very basic) and adds a few extra features including a Turing-Machine-like behavior.
 
@@ -71,8 +72,8 @@ Then I decided that it would be worth designing a PCB, because that way I would 
 Here's where Rack enters. I made this module just to prototype the hardware version I'm making for myself. That's the main reason why the module does not have additional CV inputs; it is made to be used with the hands.
 
 
-<center><img src="../images/Anima-PCB.png"> </center>
-<center>Anima PCB ready for manufacturing</center>
+<div class="text-center"><img src="../images/Anima-PCB.png"> </div>
+<div class="text-center">Anima PCB ready for manufacturing</div>
 
 If you would like to have a hardware version of Anima, send me a message or check the Vult store.
 

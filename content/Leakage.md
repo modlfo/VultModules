@@ -1,11 +1,12 @@
 +++
 title = "Leakage"
+description = "Voltage Processor"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/Leakage.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Leakage is a multi purpose voltage processor. It's a single line of Flux but with a few improvements. It can be used as:
 

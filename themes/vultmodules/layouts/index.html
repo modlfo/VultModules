@@ -5,16 +5,16 @@
    window.onload = populateGrid;
 </script>
 <div class="container">
-   <div class="row">
-      <div class="col-md-8">
-         {{ partial "menu.html" . }}
+   {{ partial "menu.html" . }}
 
-         <center>
+   <div class="Prose">
+
+         <div class="text-center">
             <a target="_blank" rel="noopener noreferrer" href="https://www.vult-dsp.com"><img src="images/Vult.png"></a>
-         </center>
-         <center>
+         </div>
+         <div class="text-center">
             <h1>Modules for VCV Rack</h1>
-         </center>
+         </div>
 
          <p>
             This is a set of modules that have been carefully designed to fit the Eurorack style of VCV Rack. The
@@ -49,17 +49,16 @@
             in the future.
          </p>
 
-         <h2> List of Modules </h2>
+   </div>
 
-         <div>
-            <div id="module-buttons">
-            </div>
-            <div id="module-tags">
-            </div>
-            <div id="modules">
-            </div>
-         </div>
+   <h2> List of Modules </h2>
 
+   <div>
+      <div id="module-buttons">
+      </div>
+      <div id="module-tags">
+      </div>
+      <div id="modules">
       </div>
    </div>
 </div>

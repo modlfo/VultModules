@@ -1,11 +1,12 @@
 +++
 title = "Boomstick"
+description = "Sallen-Key Filter"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Boomstick.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Boomstick is a two pole lowpass filter based on the Sallen-Key topology, the same arrangement used in many classic american synthesizers. It is solved as a zero delay feedback filter, and the saturation of the feedback path is part of the model, which is what gives the filter its characteristic behavior when the resonance is up: instead of ringing cleanly, the peak compresses and the filter becomes louder and dirtier as it is pushed.
 

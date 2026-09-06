@@ -1,11 +1,12 @@
 +++
 title = "Arp 46&2"
+description = "Ladder Filter"
 date = "2026-09-01T10:00:00+03:00"
 layout = "module"
 image = "../images/Arp46and2.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Arp 46&2 is a model of the four-pole transistor ladder filter used in the classic american synthesizers of the seventies, the one built around the 4072 board.
 

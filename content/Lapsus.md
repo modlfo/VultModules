@@ -1,11 +1,12 @@
 +++
 title = "Lapsus"
+description = "Non-Euclidean Rhythm Generator"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Lapsus.png"
 +++
 
-<center>Included in: <a href="/mysteries/" class="btn btn-primary" role="button">VultMysteries</a> </center>
+<div class="text-center ModulePackage"><a href="/mysteries/" class="PackageButton" role="button">Part of VultMysteries</a></div>
 
 Lapsus is a dual rhythm generator. A Euclidean generator spreads a number of pulses as evenly as possible over a number of steps, and that even spacing is the whole idea. Lapsus places the pulses along a curve instead, and the **Flex** control bends that curve: at the center the pulses come out evenly spaced, and as you turn it the pulses crowd towards the beginning or the end of the pattern. That is the non-euclidean part, and it is what lets Lapsus produce patterns that accelerate, slow down, or clump, while still landing on the grid.
 

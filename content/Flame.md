@@ -1,11 +1,12 @@
 +++
 title = "Flame"
+description = "Analog Distortion"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Flame.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 Flame is a simulation of three different distortion pedals and three tone circuits. 
 

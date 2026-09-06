@@ -1,11 +1,12 @@
 +++
 title = "Punch"
+description = "Voltage Controlled Amplifier"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Punch.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Punch is a stereo VCA containing two analog models: one based on a BJT transistor pair and the other on an Operational Transconductance Amplifier. Neither is a clean multiplier. The two models differ in how the gain responds to the control voltage, and both of them saturate when the signal is pushed, so the gain stage itself colours the sound.
 

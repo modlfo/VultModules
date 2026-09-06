@@ -282,14 +282,14 @@ var premium = [
   {
     slug: 'Opulus',
     name: 'Opulus',
-    tags: ['Synth voice', 'Polyphonic'],
+    tags: ['Synth Voice', 'Polyphonic'],
     description: 'Retro FM Operator',
     packages: ['Free']
   },
   {
     slug: 'OpulusMicro',
     name: 'OpulusMicro',
-    tags: ['Synth voice', 'Polyphonic'],
+    tags: ['Synth Voice', 'Polyphonic'],
     description: 'Accidental FM Operator',
     packages: ['Free']
   },
@@ -502,7 +502,10 @@ function addModuleElement(m) {
   div.appendChild(description);
 
   var img = document.createElement('img');
-  img.src = prefix + 'images/' + m.slug + '.png';
+  img.src = prefix + 'images/thumbs/' + m.slug + '.png';
+  img.alt = m.name + ' panel';
+  img.loading = 'lazy';
+  img.decoding = 'async';
   div.appendChild(img);
 
   document.getElementById('module-grid').appendChild(div);
@@ -585,12 +588,6 @@ function tagFilter(id) {
 
 function addButton(name, to, callback) {
   var div = document.createElement('div');
-  div.style.marginTop = '5px';
-  div.style.marginBottom = '5px';
-  div.style.marginLeft = '2px';
-  div.style.marginRight = '2px';
-
-  div.style.float = 'left'
   var b = document.createElement('a');
   b.id = name + '-filter';
   b.className = 'FilterButton';
@@ -608,7 +605,7 @@ function addButton(name, to, callback) {
 
 function addButtons() {
   var div = document.createElement('div');
-  div.style.float = 'left'
+  div.className = 'FilterLabel';
   div.innerHTML = 'Packages:';
   document.getElementById('module-buttons').appendChild(div);
 
@@ -617,8 +614,8 @@ function addButtons() {
   }
 
   var tags_container = document.createElement('div');
+  tags_container.className = 'FilterLabel';
   tags_container.innerHTML = 'Tags:';
-  tags_container.style.float = 'left'
   document.getElementById('module-tags').appendChild(tags_container);
 
   for (var i = 0; i < tags.length; i++) {

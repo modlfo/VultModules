@@ -1,11 +1,12 @@
 +++
 title = "Tohe"
+description = "Tone Control"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Tohe.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Sometimes one needs just a gentle change to the sound in order to make it fit better. Tohe is a tone control that balances the high and low frequencies.
 

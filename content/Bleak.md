@@ -1,11 +1,12 @@
 +++
 title = "Bleak"
+description = "Analog Oscillator"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Bleak.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Bleak is a virtual analog oscillator with zero aliasing that provides very easy to use controls to help you transform the waves. Bleak provides three waveforms that can be morphed and PW modulated.
 

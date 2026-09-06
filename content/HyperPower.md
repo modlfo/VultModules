@@ -1,11 +1,12 @@
 +++
 title = "HyperPower"
+description = "Infinite Power Supply"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image = "../images/HyperPower.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
+<div class="text-center ModulePackage"><a href="/premium/" class="PackageButton" role="button">Part of VultModules</a></div>
 
 *This is a silly module I sent as gratitude to the people that donated money. Now it comes as part of the paid package.*
 

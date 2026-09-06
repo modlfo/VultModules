@@ -1,12 +1,13 @@
 
 +++
 title = "Wolv"
+description = "Waveshaper"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Wolv.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is a unique wave folder/shaper, but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform while at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.
 

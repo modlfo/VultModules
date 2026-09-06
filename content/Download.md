@@ -1,5 +1,6 @@
 +++
 title = "Download"
+description = "Where to get the Vult modules for VCV Rack and what each package contains."
 date = "2017-10-28T22:37:03+03:00"
 layout = "download"
 
@@ -9,16 +10,11 @@ All modules are available in the [VCV Rack store](https://library.vcvrack.com/?q
 
 The modules are distributed in four packages. The packages do not overlap: every module belongs to exactly one of them.
 
-- Free Version - VultModulesFree
-- Premium - VultModules
-- Compacts - VultCompacts
-- Mysteries - VultMysteries
-
-You can find the details in the following links:
-
-<a href="/free/" class="btn btn-primary" role="button">Free</a>
-<a href="/premium/" class="btn btn-primary" role="button">Premium</a>
-<a href="/compacts/" class="btn btn-primary" role="button">Compacts</a>
-<a href="/mysteries/" class="btn btn-primary" role="button">Mysteries</a>
+| Package | Modules | Install |
+|---|---|---|
+| Free | <a href="/free/">VultModulesFree</a> | <a href="https://library.vcvrack.com/VultModulesFree">VCV Rack Library</a> |
+| Premium | <a href="/premium/">VultModules</a> | <a href="https://library.vcvrack.com/VultModules">VCV Rack Library</a> |
+| Compacts | <a href="/compacts/">VultCompacts</a> | <a href="https://library.vcvrack.com/VultCompacts">VCV Rack Library</a> |
+| Mysteries | <a href="/mysteries/">VultMysteries</a> | <a href="https://library.vcvrack.com/VultMysteries">VCV Rack Library</a> |
 
 

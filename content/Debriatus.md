@@ -1,11 +1,12 @@
 +++
 title = "Debriatus"
+description = "Wave Destruction"
 date = "2017-10-28T22:37:03+03:00"
 layout = "module"
 image ="../images/Debriatus.png"
 +++
 
-<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<div class="text-center ModulePackage"><a href="/free/" class="PackageButton" role="button">Part of VultModulesFree</a></div>
 
 Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effects can turn a boring sine wave into a wave full of character.
 
