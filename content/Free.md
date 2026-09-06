@@ -4,11 +4,9 @@ date = "2018-08-12T09:04:47+02:00"
 layout = "download"
 +++
 
-The Free (VultModulesFree) package contains a subset of the Premium (VultModules) modules.
+The Free (VultModulesFree) package is the largest of the Vult collections, and it is free. It covers the whole range: oscillators, filters, drums, envelopes, effects and utilities.
 
-### Differences with the Premium (VultModules) version
-
-- Alternative models for Lateralus and Tangents and disabled.
+The Vult packages do not overlap. Every module belongs to exactly one of them, so the Free package is not a reduced version of any other collection: the modules listed below are only available here.
 
 <script src="../js/grid.js"></script>
 <script type="text/javascript">

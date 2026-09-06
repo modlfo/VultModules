@@ -126,7 +126,7 @@ var premium = [
     name: 'Lateralus',
     tags: ['VCF'],
     description: 'Diode Ladder Filter',
-    packages: ['Free', 'Premium']
+    packages: ['Free']
   },
   {
     slug: 'Leakage',
@@ -228,7 +228,7 @@ var premium = [
     name: 'Tangents',
     tags: ['VCF'],
     description: 'Steiner-Parker Filter',
-    packages: ['Free', 'Premium']
+    packages: ['Free']
   },
   {
     slug: 'Tohe',
@@ -363,6 +363,41 @@ var premium = [
     description: 'Waveshaper',
     packages: ['Free'],
     link: 'Wolv'
+  },
+  {
+    slug: 'Arp46and2',
+    name: 'Arp 46&2',
+    tags: ['VCF', 'Polyphonic'],
+    description: 'Ladder Filter',
+    packages: ['Free']
+  },
+  {
+    slug: 'Fuser',
+    name: 'Fuser',
+    tags: ['Mixer', 'Polyphonic'],
+    description: 'Voltage Mixer',
+    packages: ['Free']
+  },
+  {
+    slug: 'Overon',
+    name: 'Overon',
+    tags: ['Synth Voice', 'Polyphonic'],
+    description: 'Dual Oscillator Synthesizer Voice',
+    packages: ['Free']
+  },
+  {
+    slug: 'Overon2V',
+    name: 'Overon 2V',
+    tags: ['Synth Voice', 'Polyphonic'],
+    description: 'Bi-Timbral Synthesizer',
+    packages: ['Premium']
+  },
+  {
+    slug: 'Stress',
+    name: 'Stress',
+    tags: ['Utility'],
+    description: 'Test Signal Generator',
+    packages: ['Free']
   }
 ];
 
@@ -407,6 +442,13 @@ var compacts = [
     name: 'Vraids',
     tags: ['VCO'],
     description: 'Macro oscillator',
+    packages: ['Compacts']
+  },
+  {
+    slug: 'Caudal-HW',
+    name: 'Caudal-HW',
+    tags: ['Random', 'LFO'],
+    description: 'Mechanical Chaos Source',
     packages: ['Compacts']
   }
 ];

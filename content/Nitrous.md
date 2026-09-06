@@ -6,7 +6,7 @@ layout = "module"
 image ="../images/Nitrous.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Nitrous is a model of the TB-303 filter. The TB-303 filter is a diode ladder consisting of four poles, but providing an effective attenuation of 18dB per octave.
 
@@ -14,13 +14,13 @@ Nitrous is a model of the TB-303 filter. The TB-303 filter is a diode ladder con
 
 ### Main controls
 
-- **Cutoff**: sets the  frequency where the attenuation starts taking effect
+- **Cutoff**: sets the frequency where the attenuation starts taking effect.
 - **Drive**: controls the level of the input signal.
 - **Resonance**: controls the feedback of the circuit.
 
 ### CV control
 
-There are two inputs and attenuations that can be used to control the Cutoff control: CV1 and CV2.
+There are two inputs with attenuators that can be used to control the Cutoff: CV1 and CV2.
 
 ### Inputs and Outputs
 

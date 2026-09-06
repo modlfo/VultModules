@@ -5,15 +5,15 @@ layout = "module"
 image ="../images/Debriatus.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
-Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effect can turn a boring sine wave into a wave full of character.
+Debriatus is a chain of distortion effects that can be controlled with CV. A little bit of all the effects can turn a boring sine wave into a wave full of character.
 
 ## Documentation
 
-- **Fold**: in this mode transforms the input signal by "folding" it within a defined threshold. It provides a sound that resembles adding extra harmonics to the signal.
+- **Fold**: transforms the input signal by "folding" it within a defined threshold. It provides a sound that resembles adding extra harmonics to the signal.
 - **Crush**: Bit crusher. Reduces the number of bits used to represent the signal. It provides a sound that resembles low-fi digital equipment.
-- **Distort**: performs asymetric clipping of the signal.
+- **Distort**: performs asymmetric clipping of the signal.
 - **Saturate**: performs hard clipping of the signal.
 
 ## Videos

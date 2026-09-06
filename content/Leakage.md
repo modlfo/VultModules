@@ -5,8 +5,7 @@ layout = "module"
 image = "../images/Leakage.png"
 +++
 
-<center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
-
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Leakage is a multi purpose voltage processor. It's a single line of Flux but with a few improvements. It can be used as:
 
@@ -38,7 +37,7 @@ Leakage provides a pair of inputs and attenuverters to control the *Range* and t
 
 ### Special Functions
 
-Leakage behaves differently depending on which signals are connected. When the *In* signal is not connected, Leakage generates noise at it's input. When a signal is connected to the *Clk* input, Leakage becomes a Sample and Hold.
+Leakage behaves differently depending on which signals are connected. When the *In* signal is not connected, Leakage generates noise at its input. When a signal is connected to the *Clk* input, Leakage becomes a Sample and Hold.
 
 ## Videos
 

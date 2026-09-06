@@ -14,8 +14,8 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
 ## Documentation
 
 - **Cutoff**: this is the main knob in a filter. It defines the frequency at which the filter starts taking action. Full left, the filter is completely closed. Full right it's open and should not have effect. The cutoff frequency can be controlled with a 1V/Oct signal through the included attenuverter.
-- **Resonance**: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
-- **Drive**: controls the amount of signal that enters to the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
+- **Resonance**: the resonance boosts the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
+- **Drive**: controls the amount of signal that enters the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
 - **Filter**: selects the filter model among the Vult filters:
    - Vortex
    - Unstabile
@@ -24,7 +24,7 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
    - Tangents-YU
    - Tangents-MS
    - Tangents-XX
-   - Stabile-XX
+   - Stabile
    - Ferox
    - Nurage
    - Rescomb
@@ -35,9 +35,9 @@ The Freak! has advantages and disadvantages over the individual filters. For exa
    - High pass
    - Low pass 6, 12, 18, 24 dB (Lateralus only)
 - **Mod Route**: The cutoff knob has two modulation inputs: A and B. These signals are routed differently depending on the selected mode:
-   - **Combined**: (A+B->L, A+B->R). In this mode the sum of modulation A and B a routed to the filters in the Left and Right channel.
+   - **Combined**: (A+B->L, A+B->R). In this mode the sum of modulations A and B is routed to the filters in both the Left and Right channels.
    - **Individual**: (A->L, B->R). Modulation from channel A is applied to the Left channel only and B is applied to the Right channel.
-   - **Inverse**: (A-B->L, B-A->R). In this mode modulation the difference of modulation A and B is applied to the Left channel while the difference B minus A is applied to the Right. This mode produces very interesting results in the stereo field.
+   - **Inverse**: (A-B->L, B-A->R). In this mode the difference A minus B is applied to the Left channel, while the difference B minus A is applied to the Right. This mode produces very interesting results in the stereo field.
 - **Outputs**: Marked L and R for the stereo pair.
 - **Input**: Marked L and R for the stereo pair.
 

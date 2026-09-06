@@ -5,12 +5,9 @@ layout = "download"
 +++
 
 
-The Premium package (VultModules) contains all the Free modules plus some of the most complex modules I have developed.
+The Premium package (VultModules) is a small collection of some of the most complex modules I have developed.
 
-### Differences with the Free (VultModulesFree) version
-
-- Six extra modules: Ferox, Flame, Noxious, Nurage, Rescomb 2 and Vortex.
-- Three extra filter modules shown as alternative models for Lateralus and Tangents.
+The Vult packages do not overlap. The modules in this package are not part of the Free (VultModulesFree) collection, and the Free modules are not part of this one.
 
 <script src="../js/grid.js"></script>
 <script type="text/javascript">

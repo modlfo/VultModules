@@ -7,8 +7,7 @@ image = "../images/Knock.png"
 
 <center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
 
-
-Knock is a modern take on a classic analog bass drum. It features a hybrid engine capable producing a wide variety of drum sounds. The Stress input allows for further shaping of the sound by using a vactrol model to control the envelope.
+Knock is a modern take on a classic analog bass drum. It features a hybrid engine capable of producing a wide variety of drum sounds. The Stress input allows for further shaping of the sound by using a vactrol model to control the envelope.
 
 Knock is split in two sections: the oscillator and noise synthesizers. The oscillator section is analog modeled while the noise is a special oscillator capable of producing many kinds of clicking sounds.
 
@@ -25,8 +24,8 @@ Knock is split in two sections: the oscillator and noise synthesizers. The oscil
 ### Noise section
 
 - **Type**: changes the kind of noise oscillator used.
-- **Depth**: defines the level of the noise
-- **Shift**: changes the perceived pitch of the noise
+- **Depth**: defines the level of the noise.
+- **Shift**: changes the perceived pitch of the noise.
 
 ### Modulation section
 

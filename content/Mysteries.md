@@ -4,7 +4,7 @@ date = "2018-08-12T09:04:47+02:00"
 layout = "download"
 +++
 
-Vult Mysteries is a collection modules aimed to explore crazy ideas and turn them into usable modules (if possible).
+Vult Mysteries is a collection of modules aimed at exploring crazy ideas and turning them into usable modules (if possible).
 
 
 <script src="../js/grid.js"></script>

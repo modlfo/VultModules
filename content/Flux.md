@@ -5,8 +5,7 @@ layout = "module"
 image = "../images/Flux.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
-
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Flux is a module that was specifically designed to work with Caudal. Flux provides the following functions:
 
@@ -16,14 +15,14 @@ Flux is a module that was specifically designed to work with Caudal. Flux provid
 - Linear and exponential signal follower (slew limiter)
 - Envelope follower
 
-Flux provides 4 similar channels and the classical Vult modulation section that allows you to control all parameters.
+Flux provides four similar channels and the classic Vult modulation section that allows you to control all parameters.
 
 
 ## Documentation
 - **Mode**:
    - **S&H**: Sample and hold. Keeps the immediate value of the input on every rising edge of the clock.
    - **Comp**: Clocked comparison. Outputs +10V if the input signal (after attenuation and offset) is larger than 0V on every rising edge of the clock, otherwise outputs 0V.
-   - **Off**: Bypass the S&H and comparison. The input signal (after attenuation and offset) goes straight into the follower.
+   - **Off**: bypasses the S&H and comparison. The input signal (after attenuation and offset) goes straight into the follower.
 - **Range**: Attenuates/amplifies the input signal from 0x to 2x.
 - **Offset**: Adds a constant voltage to the input signal from -5V to 5V.
 - **Follower**:

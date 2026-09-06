@@ -5,23 +5,22 @@ layout = "module"
 image = "../images/Lateralus.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
+Lateralus is a ladder filter that uses the same structure a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
 
-Lateralus is ladder filter which is the same structure that a very famous inventor created for his synthesizers. Lateralus is a detailed simulation model based on my own diode ladder filter.
+Lateralus has two implementations. Each implementation is based on a different simulation model that I have developed.
 
-The paid version of Lateralus has two implementations. Each implementation is based on a different simulation model that I have developed.
-
-Some of the "weird" behaviors of the real filter were intentionally not reproduced in order to bring a more controllable filter. For example: large changes in gain with the resonance equals zero or with the cutoff completely open.
+Some of the "weird" behaviors of the real filter were intentionally not reproduced in order to bring a more controllable filter. For example: large changes in gain when the resonance is at zero or the cutoff is completely open.
 
 ## Documentation
 
 - **Cutoff**: this is the main knob in a filter. It defines the frequency at which the filter starts taking action. Full left, the filter is completely closed. Full right it's open and should not have effect. The cutoff frequency can be controlled with a 1V/Oct signal through the included attenuverter.
-- **Resonance**: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
-- **Drive**: controls the amount of signal that enters to the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
-- **Model**: (Premium version only)
+- **Resonance**: the resonance boosts the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
+- **Drive**: controls the amount of signal that enters the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
+- **Model**:
    - **DF**: this model is the diode based version of the circuit. It provides a smoother sound.
-   - **TH**: This is an alternative model that follows the same ladder architecture but provides more harsh sounds when distorting.
+   - **TH**: this is an alternative model that follows the same ladder architecture but provides more harsh sounds when distorting.
 - **Outputs**: The outputs of Lateralus provide different slopes:
    - **24 dB**: This is the classical sound of this filter. But if you are adventurous you should try the other outputs.
    - **18 dB**: This kind of filter was used by a famous acid box. Use this output and some drive to get some nice distorted sounds.

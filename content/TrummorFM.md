@@ -5,6 +5,8 @@ layout = "module"
 image = "../images/TrummorFM.png"
 +++
 
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+
 Trummor FM is the result of combining the best bits of Opulus (FM synth) and Trummor2 (analog drum). Trummor FM is capable of producing a wide variety of percussive and synth sounds. It features four operators and exposes a nice set of parameters that simplify the creation of FM sounds.
 
 ## Documentation 

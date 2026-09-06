@@ -5,9 +5,9 @@ layout = "module"
 image ="../images/Basal.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
-Basal is a easy to use and nice sounding oscillator. It's specifically designed for creating smooth sounds with low harmonic content. Basal features a self modulation technique that acts when the oscillator is moved.
+Basal is an easy to use and nice sounding oscillator. It's specifically designed for creating smooth sounds with low harmonic content. Basal features a self modulation technique that acts when the oscillator is moved.
 
 ## Documentation
 

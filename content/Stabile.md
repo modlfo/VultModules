@@ -5,17 +5,17 @@ layout = "module"
 image = "../images/Stabile.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
-Stabile is a state variable filter. It provides LP, HP, and BP filters. Additionally to the three filter outputs it provides an extra output imitates the behavior of the SEM filter.
+Stabile is a state variable filter. It provides LP, HP, and BP filters. In addition to the three filter outputs, it provides an extra output that imitates the behavior of the SEM filter.
 
-The story of this filter goes even before the existence of Vult. I implemented the initial version of this filter in a microcontroller. With the years I have made many tweaks an simplifications. In fact this filter is very efficient and the sound is very effective.
+The story of this filter goes even before the existence of Vult. I implemented the initial version of this filter in a microcontroller. Over the years I have made many tweaks and simplifications. In fact this filter is very efficient and the sound is very effective.
 
 ## Documentation
 
 - **Cutoff**: as in all filters, this is the main knob in a filter. It defines the frequency at which the filter starts taking action. Full left, the filter is completely closed. Full right it's open and should not have effect. The cutoff frequency can be controlled with a 1V/Oct signal through the included attenuverter.
-- **Resonance**: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
-- **Semblance**: this control affects only the output called SEM. It provides a behavior similar to the SEM filter. It blends the low pass and high pass outputs. In the center if produces a notch at the cutoff frequency.
+- **Resonance**: the resonance boosts the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
+- **Semblance**: this control affects only the output called SEM. It provides a behavior similar to the SEM filter. It blends the low pass and high pass outputs. In the center it produces a notch at the cutoff frequency.
 - **Input**: Input the audio to be filtered. This filter does not self-oscillate.
 - **Output**:
    - **LP**: low pass output. Good for making anything sound awesome.

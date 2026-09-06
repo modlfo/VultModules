@@ -5,21 +5,20 @@ layout = "module"
 image = "../images/Noxious-Poly.png"
 +++
 
-<center>Included in: <a href="../premium/"><a href="/premium/" class="btn btn-primary" role="button">VultModules</a></a> </center>
-
+<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> </center>
 
 Noxious is a digital oscillator and LFO based on Frequency and Phase modulation techniques. The idea for Noxious was to create an oscillator that captures the crazy and experimental nature of FM and PM but at the same time making easy to obtain usable results. Noxious can create from soft and cheesy sounds to very abrasive and distorted screams. In LFO mode can create quasi-chaotic signals.
 
 Noxious is unpredictable but controllable.
 
-There are available two versions: monophonic and polyphonic.
+Two versions are available: monophonic and polyphonic.
 
 ## Documentation
 
 - **Tune Switch**: defines how the Tune knob behaves. It has three modes:
    - **Fine**: sets a tuning range one semitone up and down.
    - **Coarse**: sets a tuning range one octave up and down.
-   - **Semi**: sets a tuning range one octave up and down but the tunning is quantized to every semitone.
+   - **Semi**: sets a tuning range one octave up and down but the tuning is quantized to every semitone.
 - **Tune**: offsets the V/OCT input. The range is defined by the Tune Switch.
 - **Oct**: offsets the V/OCT input three octaves up and down. Modulate this knob and you'll get some nice arpeggios.
 - **Wave**: controls the even and odd harmonics of the main oscillator. Full left produces a square signal. Full right produces a saw wave.
@@ -40,11 +39,11 @@ There are available two versions: monophonic and polyphonic.
 
 **Phase Section**
 
-All this controls affect the phase of the main oscillator. Individually, the change may seem gentle, but combining them with other modulations can alter drastically the sound.
+All these controls affect the phase of the main oscillator. Individually, the change may seem gentle, but combining them with other modulations can alter the sound drastically.
 
 - **Overtone**: applies a fold-like distortion to the phase that results in a sound that resembles adding overtones to the sound.
-- **Body**: transforms the phase in a log/exp way resulting in a thinner or more fat sound.
-- **Boost**: changes the amplitude of the phase producing a sound resembling to hard-clipping.
+- **Body**: transforms the phase in a log/exp way, resulting in a thinner or fatter sound.
+- **Boost**: changes the amplitude of the phase, producing a sound resembling hard clipping.
 - **Feed**: adds positive feedback to the phase. This produces a resonating-like sound.
 
 **Mix Section**
@@ -54,14 +53,14 @@ All this controls affect the phase of the main oscillator. Individually, the cha
 
 **Chaos Section**
 
-The chaos section is used to provide random variations to the sound. In order to trigger the modulation you need to provide a Gate signal otherwise these controls will not affect at all the sound.
+The chaos section is used to provide random variations to the sound. In order to trigger the modulation you need to provide a Gate signal; otherwise these controls will not affect the sound at all.
 
 - **Spread**: defines how much the parameters could move after a gate signal. In the maximum level, the parameters could move from minimum to maximum.
 - **Settle**: defines the time the parameters stay outside the current value. A low setting can help provide percussive sounds by making a very fast transition. Larger values will provide longer transitions. When set to the maximum the parameters will not return to the original value but will be reset to a new random state by a new gate.
 
 **Glide Section**
 
-- **Glide**: controls the maximum rate of change of the V/OCT signal. Glide can be used to produce a gradual change in pitch of the oscillator. For example, if the V/OCT signal changes abruptly, the glide will make the oscillator change softer to the target voltage.
+- **Glide**: controls the maximum rate of change of the V/OCT signal. Glide can be used to produce a gradual change in pitch of the oscillator. For example, if the V/OCT signal changes abruptly, the glide will make the oscillator move more smoothly to the target voltage.
 - **Mode (Glide section)**: defines when the glide is applied.
    - **Skip Gate**: Glide is not applied if the V/OCT signal changes at the same time as a Gate signal. This will produce an abrupt transition of the pitch when the Gate changes.
    - **Always**: always apply the glide no matter the signal of the Gate.
@@ -74,11 +73,11 @@ The chaos section is used to provide random variations to the sound. In order to
 
 **Poly Section**
 
-This extension is shown only in Noxious-Poly. The poly section allow to use multiple oscillators with the same settings. The additional voices are only active if the output or cv inputs are connected. Each voice has its own separated output but using the Level knob the sound can be mixed through the main output.
+This extension is shown only in Noxious-Poly. The poly section allows using multiple oscillators with the same settings. The additional voices are only active if the output or CV inputs are connected. Each voice has its own separate output, but using the Level knob the sound can be mixed through the main output.
 
 - **V/OCT**: inputs the pitch voltage for the corresponding voice.
 - **Tune**: similar to the Tune control of the main voice.
-- **Gate**: similar to the Gate input of the main voice. Each voice has it's own chaos engine.
+- **Gate**: similar to the Gate input of the main voice. Each voice has its own chaos engine.
 - **Level**: output level of the voice through the main output jack.
 - **Out**: separate audio output for the voice. The Level knob does not affect the output level on this jack.
 

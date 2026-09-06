@@ -6,21 +6,20 @@ image ="../images/Rescomb.png"
 
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
+Rescomb is a resonant Comb filter. A comb filter is a special kind of filter that creates multiple spaced notches. This module provides a CV input which is tuned (1V/octave) and a feedback parameter. When the feedback is high it will resonate, enhancing the frequencies of the comb.
 
-Rescomb is a resonant Comb filter. A comb filter is a special kind of filter that creates multiple spaced notches. This module provides an CV input which is tuned (1V/octave) and a feedback parameter. when the feedback is high it will resonate enhancing the frequencies of the comb.
-
-This is the first module that I designed for VCV Rack. I really like Comb filters, so I coded in Vult a very simple version after playing with it and tweaking parameters I got this version. Rescomb is a weird effect, which in fact I use it more as an instrument than as a filter.
+This is the first module that I designed for VCV Rack. I really like comb filters, so I coded a very simple version in Vult; after playing with it and tweaking parameters I got this version. Rescomb is a weird effect, which in fact I use more as an instrument than as a filter.
 
 ## Documentation
 
 - **V/Oct**: this input will define the frequency of the filter/resonator.
-- **Tune**: provides an offset for the V/OCT signal. When there is not V/OCT signal the reference is 0V.
+- **Tune**: provides an offset for the V/OCT signal. When there is no V/OCT signal the reference is 0V.
 - **Comb**: defines the type of comb filter. Depending on the V/OCT and the input, it will provide different sonic characteristics.
-- **Feedback**: defines the type of comb filter. Depending on the V/OCT and the input, it will provide different sonic characteristics.
+- **Feedback**: controls how much of the output is fed back into the filter. High feedback makes the comb resonate, enhancing its frequencies until it rings.
 - **Input**: used to provide the input audio. Without a signal there will be no sound.
-- **Outpus**: the output signal.
+- **Output**: the output signal.
 
 
 

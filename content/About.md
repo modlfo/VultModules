@@ -25,7 +25,7 @@ Over the years, many people have helped with testing, design and ideas. My grati
 - Andrew Belt
 - John Klimt
 
-If you want to know more, you can find an interviews with me here:
+If you want to know more, you can find some interviews with me here:
 
 [Omri Cohen: Patch Talk](https://youtu.be/VnwLg_vSGtc)
 
@@ -33,5 +33,5 @@ If you want to know more, you can find an interviews with me here:
 
 ## Support
 
-You can report any issue with my modules in the [GitHub issues page](https://github.com/modlfo/VultModules/issues). You can also send me a message to my email [modlfo@gmail.com](mailto:modlfo@gmail.com) of a message through Facebook. You can find me hanging around the [VCV Rack Facebook group](https://www.facebook.com/groups/vcvrack/).
+You can report any issue with my modules in the [GitHub issues page](https://github.com/modlfo/VultModules/issues). You can also send me a message to my email [modlfo@gmail.com](mailto:modlfo@gmail.com) or a message through Facebook. You can find me hanging around the [VCV Rack Facebook group](https://www.facebook.com/groups/vcvrack/).
 

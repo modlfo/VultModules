@@ -5,7 +5,17 @@ layout = "module"
 image = "../images/Splie.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
+Splie is a utility module that I made because it was handy when developing my modules. It is a dual buffered multiple: it takes one signal and distributes it to three destinations, twice over.
 
-Splie is an utility module that I made because it was handy when developing my modules. It provides a buffered input that can be distributed to other modules. This is very handy when one wants to change only one patch cable and distribute the signal to many other modules.
+The usefulness is in the patching rather than in the sound. When a signal has to reach several modules, moving it means repatching every one of them; with Splie you move a single cable into the input and everything downstream follows. The two halves are completely independent, so one 3 HP module covers two signals, for example a pitch CV and its gate.
+
+## Documentation
+
+Splie has no controls. It is made of two identical sections, each with one input at the top and three outputs below it.
+
+- **Input (A and B)**: the signal to be distributed.
+- **Outputs (three per section)**: buffered copies of the corresponding input.
+
+Splie works with audio and control voltages, and it is polyphonic: the copies carry the same number of channels as the input.

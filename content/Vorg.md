@@ -11,17 +11,17 @@ Vorg is a low/high pass filter based on a modernized Operational Transconductanc
 
 ## Documentation
 
-- **Cutoff**: Defines the frequency at which the filters starts attenuating frequencies.
+- **Cutoff**: defines the frequency at which the filter starts attenuating.
 - **CV1 & CV2**: these pairs of input jack and attenuation knob are the modulation sources for the Cutoff control. Notice that the knobs are attenuators not attenuverters.
-- **Resonance**: the resonance boost the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
-- **Drive**: controls the amount of signal that enters to the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
+- **Resonance**: the resonance boosts the frequencies near the cutoff frequency. Increase this knob and you will hear the personality of the filter. After some point the filter will start self-oscillating and can be used as a sound generator.
+- **Drive**: controls the amount of signal that enters the filter. Increasing the drive will cause the filter to saturate which adds interesting harmonics to the sound.
 - **Mode**: pressing the button switches between low pass and high pass filter mode. The current mode is shown by the LED lights in the panel.
 - **In**: input to the filter.
 - **Out**: output of the filter.
 
 ### Patching Tips
 
-The filter section in the real MS-20 consists of two filters: one HP and one LP. You can easily recreate this behavior with Vorg by creating two instances and experimenting different ways of connecting them.
+The filter section in the real MS-20 consists of two filters: one HP and one LP. You can easily recreate this behavior with Vorg by creating two instances and experimenting with different ways of connecting them.
 
 
 ## Videos

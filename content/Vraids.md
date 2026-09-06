@@ -7,9 +7,9 @@ layout = "module"
 
 <center>Included in: <a href="/compacts/" class="btn btn-primary" role="button">VultCompacts</a> </center>
 
-Vraids is a module that simulates the alternative firmware available for the Freak hardware module. This meas that, if you have a Freak hardware, you can change the full behavior by uploading the Vraids firmware.
+Vraids is a module that simulates the alternative firmware available for the Freak hardware module. This means that, if you have a Freak hardware, you can change the full behavior by uploading the Vraids firmware.
 
-You can find the full manual in the main product page https://www.vult-dsp.com/freak
+You can find the full manual in the main product page <a href="https://www.vult-dsp.com/freak">https://www.vult-dsp.com/freak</a>
 
 
 ## Videos

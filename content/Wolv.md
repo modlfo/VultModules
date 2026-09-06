@@ -6,9 +6,9 @@ layout = "module"
 image ="../images/Wolv.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
-Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is an unique wave folder/shaper but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform and at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.
+Wolv is a module capable of producing very interesting timbres out of basic waveforms. It is a unique wave folder/shaper, but it is lesser known than other modules in the same category. Using Wolv, you can add a PWM-like effect to any waveform while at the same time combining it with a folded version of the wave. It can gradually alter the odd-even relation of the harmonics.
 
 ## Control Description
 
@@ -16,7 +16,7 @@ Wolv is a module capable of producing very interesting timbres out of basic wave
 
 - **Width**: defines the pulse width of the signal. This control defines the precise point where the signal is chopped.
 - **Fold-Mix**: controls the level of the folded signal. This signal is mixed only within the blank spaces produced when changing the Width control.
-- **Pulse-Amp**: performs a gradual rectification of the main signal producing double-frequency effect.
+- **Pulse-Amp**: performs a gradual rectification of the main signal, producing a double-frequency effect.
 - **Offset**: changes the input signal DC component. This will affect the resulting wave produced when tweaking the other parameters described before.
 
 ### CV control

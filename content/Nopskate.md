@@ -5,8 +5,7 @@ layout = "module"
 image ="../images/Nopskate.png"
 +++
 
-<center>Included in: <a href="/premium/" class="btn btn-primary" role="button">VultModules</a> <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
-
+<center>Included in: <a href="/free/" class="btn btn-primary" role="button">VultModules Free</a> </center>
 
 Nopskate is my take on the classic flip-flop octaver pedal but adapted to VCV Rack. Given any input signal, Nopskate will generate signals that are one and two octaves below the input signal. The generated signals can be added or multiplied (AM) to the original. These two ways of blending the generated signal can transform a simple input signal into a richer wave.
 
@@ -20,9 +19,9 @@ Each of the following controls provides an attenuverter and a CV input to modula
 
 - **Blend**: it's a dry/wet control to balance how much of the original and processed signal you want.
 - **Octave**: balances the generated sound of octave-1 and octave-2 signals. In the middle you get an equal balance between the two signals.
-- **Oct-1**: defines how the octave-1 signal is mixed. To the left the signal is added to the input signal, to the right the signal is multiplied producing a AM style of sound.
+- **Oct-1**: defines how the octave-1 signal is mixed. To the left the signal is added to the input signal, to the right the signal is multiplied, producing an AM style of sound.
 - **Oct-2**: defines how the octave-2 signal is mixed. The behavior is similar to the Oct-1 control.
-- **Input**: left and right inputs to the effect. If only one is connected, the processed signal is send to both outputs.
+- **Input**: left and right inputs to the effect. If only one is connected, the processed signal is sent to both outputs.
 - **Output**: left and right outputs.
 
 ## Videos

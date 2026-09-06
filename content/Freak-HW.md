@@ -9,7 +9,7 @@ layout = "module"
 
 This version of Freak is a clone of the actual hardware module. This module simulates as close as possible all the aspects of the original hardware module. It is a simulator that runs the same code as the hardware module.
 
-You can find the full manual in the main product page https://www.vult-dsp.com/freak
+You can find the full manual in the main product page <a href="https://www.vult-dsp.com/freak">https://www.vult-dsp.com/freak</a>
 
 
 ## Videos
