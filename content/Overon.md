@@ -28,8 +28,8 @@ Each oscillator provides **Saw** and **Pulse** outputs, and a **CV** input that 
 
 ### Mixer
 
-- **VCO 1** and **VCO 2**: bipolar knobs that crossfade between the saw wave (left) and the pulse wave (right) of each oscillator. At the center the oscillator is silent.
-- **Ext 1 / Ext 2**: crossfades between the two external inputs. **Ext 1** is normalled to the internal noise generator and **Ext 2** to a 440 Hz tuning reference, so with nothing patched this knob mixes noise (left) against a tuning tone (right).
+- **VCO 1** and **VCO 2**: bipolar knobs that controls the level of the waves, the saw wave (left) and the pulse wave (right) of each oscillator. At the center the oscillator is silent.
+- **Ext 1 / Ext 2**: controls the level of the two external inputs. **Ext 1** is normalled to the internal noise generator and **Ext 2** to a 440 Hz tuning reference, so with nothing patched this knob mixes noise (left) against a tuning tone (right).
 
 ### VCF
 
